@@ -1,0 +1,180 @@
+$breakpoint-medium: 1600px;
+$breakpoint-small: 520px;
+
+@mixin line-clamp($maxLines) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $maxLines;
+  -webkit-box-orient: vertical;
+}
+
+//FOR ANIMATION DELAYS
+@mixin delay($rule, $number, $value) {
+  @for $i from 1 to ($number + 1) {
+    &:nth-child(#{$i}) {
+      -webkit-#{$rule}-delay: (#{$i * $value});
+      #{$rule}-delay: (#{$i * $value});
+    }
+  }
+}
+
+// PAGE ENTERY ANIMATION
+@keyframes fade-in-pageentry {
+  0% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-tooltip {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(30px);
+  }
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Mobile sidebar fade (from left to right)
+@keyframes fade-in-sidebar {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-normal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-back {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// FOR RESPONSIVNES
+@mixin medium {
+  @media (max-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: 736px) {
+    @content;
+  }
+}
+
+// POPUP MODAL STYLING & ANIMATION
+.popup-content {
+  margin: auto;
+  // background: #fff;
+  width: 750px;
+  height: max-content;
+
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  animation-name: fade-in-popup;
+  animation-fill-mode: both;
+  animation-duration: 0.3s;
+}
+.popup-arrow {
+  color: #000;
+}
+[role="tooltip"].popup-content {
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+[data-popup="tooltip"].popup-overlay {
+  background: transparent;
+}
+
+@keyframes fade-in-popup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+}
+
+.vjs-slider-bar {
+  background-color: #43a4ff !important;
+}
+
+.vjs-menu li.vjs-selected {
+  background-color: #43a4ff !important;
+
+  &:hover {
+    background-color: #43a4ff !important;
+  }
+}
+
+.vjs-theme-lion.vjs-big-play-button:focus,
+.vjs-theme-lion:hover .vjs-big-play-button {
+  color: #43a4ff !important;
+}
+
+.vjs-theme-lion .vjs-mouse-display .vjs-time-tooltip {
+  background-color: #43a4ff !important;
+}
+
+.pincode-input-container {
+  .pincode-input-text {
+    padding: 0 !important;
+    margin: 0 2px;
+    text-align: center;
+    border: 1px solid;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+  }
+  .pincode-input-text:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
