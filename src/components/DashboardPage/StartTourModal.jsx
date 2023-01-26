@@ -37,6 +37,10 @@ const StartTourModal = () => {
 
   const navigate = useNavigate();
 
+  useEffect(() => {
+    localStorage.setItem("tour-modal-popped", "true");
+  }, []);
+
   // useEffect(() => play(), [play]);
 
   return (

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import useSound from "use-sound";
 import { useStateContext } from "../../contexts/ContextProvider";
 import startUp from "../../assets/sfx/startUp.mp3";
@@ -22,6 +22,12 @@ const MobileStartModal = () => {
       setSoundPlayed(true);
     }
   };
+
+
+  useEffect(() => {
+    localStorage.setItem("mobile-modal-popped", "true");
+  }, []);
+
 
   return (
     <>

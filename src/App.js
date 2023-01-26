@@ -143,6 +143,11 @@ const App = () => {
     setWidth(window.innerWidth);
   }
 
+  // Get local storage data
+  // If start tour modal has been shown
+  const tourModalPopped = localStorage.getItem("tour-modal-popped");
+  const mobileModalPopped = localStorage.getItem("mobile-modal-popped");
+
   useEffect(() => {
     // Use OneSignal to recieve & send notifications
     // const runOneSignal = async () => {
@@ -154,10 +159,10 @@ const App = () => {
     // Start the tour
     // Show start tour modal
     window.addEventListener("resize", handleWindowSizeChange);
-    if (width > 768) {
+    if (width > 768 && tourModalPopped !== "true") {
       // Desktop pop up to start tour
       setTimeout(() => setShowStartTourModal(true), 300);
-    } else {
+    } else if (width < 768 && mobileModalPopped !== "true") {
       // Mobile pop up
       setTimeout(() => setShowMobileStart(true), 300);
     }

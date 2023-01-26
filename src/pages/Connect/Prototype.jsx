@@ -159,15 +159,15 @@ const Prototype = () => {
 
   return (
     <div className="page-animation">
-      <div className="flex h-screen  ">
+      <div className="flex h-full ">
         {/* Side App Preview Panel */}
         <div className="fixed nav-item top-0 right-0 ">
           <div className="delay-1">
             <div
               data-tour="6"
-              className="float-right h-screen dark:text-gray-200 bg-white shadow-md dark:bg-section-dark w-[500px] overflow-y-hidden	"
+              className="float-right h-full dark:text-gray-200 bg-white shadow-md dark:bg-section-dark w-[500px]	"
             >
-              <div className="flex flex-col  h-full ">
+              <div className="flex flex-col h-full  ">
                 <div className="flex flex-col p-5">
                   <span className="text-[20px] font-medium">Preview</span>
                   {/* Select */}
@@ -189,11 +189,11 @@ const Prototype = () => {
                     </Dropdown>
                   </div>
                   {/* Phone */}
-                  <div className="flex flex-row items-center content-center justify-center mt-[60px] ">
+                  <div className="flex flex-row items-center content-center justify-center mt-[60px] mb-2 ">
                     {/* Simulator Mockup */}
                     {device === "iOS" ? (
                       <LazyLoadImage
-                        className="absolute z-50 select-none pointer-events-none"
+                        className="absolute z-50 select-none pointer-events-none "
                         src="https://media.publit.io/file/StockPics/ios-simulator.webp"
                       />
                     ) : (
@@ -255,8 +255,9 @@ const Prototype = () => {
             <div className="mt-5 ">
               <div
                 data-tour="7"
-                className="flex bg-greyelement rounded-lg w-[900px] h-[300px] mb-5 dark:bg-section-dark"
+                className="flex bg-greyelement rounded-lg w-[580px]  h-[300px] mb-5 dark:bg-section-dark"
               >
+                {/* w-[900px] */}
                 <Tree
                   id="treeWrapper"
                   data={orgChart}
@@ -318,6 +319,8 @@ const Prototype = () => {
               </div>
               {/* End Card */}
             </div>
+            <div className="h-[254px]" />
+
             {/* <TextIconBlueButton text="hey" /> */}
           </div>
         </div>

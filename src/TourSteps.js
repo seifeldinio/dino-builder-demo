@@ -109,9 +109,9 @@ const steps = [
     content: (
       <div className="flex flex-col ">
         <span className="font-normal ">
-          You can see many tabs below,
-          <br />
-          <span className="font-normal text-[#8d8d8d]">
+          You can find more options below.
+          {/* <br /> */}
+          {/* <span className="font-normal text-[#8d8d8d]">
             <span className="font-medium mr-1 text-black">Recents:</span> To
             check your recently sent notifications.
           </span>
@@ -129,7 +129,7 @@ const steps = [
           <span className="font-normal text-[#8d8d8d]">
             <span className="font-medium mr-1 text-black">Settings:</span> To
             enable automated notifications.
-          </span>
+          </span> */}
         </span>
       </div>
     ),

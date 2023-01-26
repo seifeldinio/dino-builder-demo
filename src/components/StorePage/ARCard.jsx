@@ -44,8 +44,8 @@ const ARCard = (props) => {
                   </div>
                 </div>
                 <span className="text-[14px] text-[#9A9A9A] mt-1">
-                  Upload images of your product and it will be converted to a 3D
-                  AR product available in your app.
+                  Upload images of your product and it will be converted to AR
+                  available in your app.
                   {/* Our engine will convert your static image to a 3D VR product display
             in your app. */}
                 </span>
@@ -99,8 +99,8 @@ const ARCard = (props) => {
                 )}
               </div>
               <span className="text-[14px] text-[#9A9A9A] mt-1">
-                Upload images of your product and it will be converted to a 3D
-                AR product available in your app.
+                Upload images of your product and it will be converted to AR
+                available in your app.
                 {/* Our engine will convert your static image to a 3D VR product display
             in your app. */}
               </span>
