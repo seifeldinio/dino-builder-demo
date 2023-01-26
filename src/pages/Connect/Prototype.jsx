@@ -319,7 +319,7 @@ const Prototype = () => {
               </div>
               {/* End Card */}
             </div>
-            <div className="h-[254px]" />
+            <div className="h-[314px]" />
 
             {/* <TextIconBlueButton text="hey" /> */}
           </div>
