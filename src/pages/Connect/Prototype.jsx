@@ -189,7 +189,7 @@ const Prototype = () => {
                     </Dropdown>
                   </div>
                   {/* Phone */}
-                  <div className="flex flex-row items-center content-center justify-center mt-[60px] mb-2 ">
+                  <div className="flex flex-row items-center content-center justify-center mt-[60px] mb-10 ">
                     {/* Simulator Mockup */}
                     {device === "iOS" ? (
                       <LazyLoadImage

@@ -11,7 +11,7 @@ const Console = () => {
   return (
     <>
       {/* Console */}
-      <div className="flex flex-col items-start mt-auto bg-greyelement dark:bg-button-dark border-t dark:border-[#2C2C2C] h-[140px] p-4">
+      <div className="flex flex-col items-start mt-auto bg-greyelement dark:bg-button-dark border-t dark:border-[#2C2C2C]  h-[170px] p-4">
         {/* Console message */}
         <div className="flex flex-row items-center w-full select-none">
           <img
