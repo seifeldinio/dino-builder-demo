@@ -8,7 +8,7 @@ import EmptyKanbanCard from "./EmptyKanbanCard";
 import DisabledButton from "../Buttons/DisabledButton";
 import Popup from "reactjs-popup";
 import ReportBugModal from "./ReportBugModal";
-import { TooltipComponent } from "@syncfusion/ej2-react-popups";
+// import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import BugKanbanCard from "./BugKanbanCard";
 import { BsCheck2 } from "react-icons/bs";
 import { MdOutlineFlag } from "react-icons/md";
@@ -20,7 +20,7 @@ const BugFixesStatus = (props) => {
   const { doneBug } = props;
   const { progress } = props;
 
-  const { tourStarted, setTourStarted } = useStateContext();
+  const { tourStarted } = useStateContext();
 
   return (
     <div
@@ -122,8 +122,12 @@ const BugFixesStatus = (props) => {
                   nested={false}
                   modal
                 >
-                  {/* Report a bug modal */}
-                  <ReportBugModal />
+                  {(close) => (
+                    <>
+                      {/* Report a bug modal */}
+                      <ReportBugModal close={close} />
+                    </>
+                  )}
                 </Popup>
               </>
             ) : (
@@ -134,13 +138,13 @@ const BugFixesStatus = (props) => {
                   content="You can report bugs once there's a beta version available."
                   target="#tooltip"
                 > */}
-                <div id="tooltip">
+                {/* <div id="tooltip"> */}
                   <DisabledButton
                     text={"Report a bug"}
                     icon={<MdOutlineFlag className="ml-1.5" />}
                     // ml={"ml-1.5"}
                   />
-                </div>
+                {/* </div> */}
                 {/* </TooltipComponent> */}
               </>
             )}

@@ -1,4 +1,4 @@
-import {  useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { AiOutlineFlag } from "react-icons/ai";
 import { GrClose } from "react-icons/gr";
 import {
@@ -21,12 +21,14 @@ import { BsUpload } from "react-icons/bs";
 import BlueCheckLottie from "../../assets/Lotties/BlueCheck.json";
 import Lottie from "lottie-react-web";
 import BugScreenshotPlaceholder from "./BugScreenshotUpload/BugScreenshotPlaceholder";
-import { currentUserData, projectData } from "../../data/DemoData";
+// import { currentUserData, projectData } from "../../data/DemoData";
 
-const ReportBugModal = () => {
+const ReportBugModal = (props) => {
+  const { close } = props;
+
   const [bugTitle, setBugTitle] = useState("");
-  const [briefDescription, setBriefDescription] = useState("");
-  const [priority, setPriority] = useState("Medium");
+  const [, setBriefDescription] = useState("");
+  const [, setPriority] = useState("Medium");
 
   const [bugSent, setBugSent] = useState(false);
 
@@ -70,10 +72,8 @@ const ReportBugModal = () => {
             <div className="flex flex-1">
               <div className="ml-auto">
                 <GrClose
-                  className="cursor-pointer hover:scale-110 transition-all duration-200"
-                  onClick={() => {
-                    window.top.location.href = `http://localhost:3000/dashboard`;
-                  }}
+                  className="close cursor-pointer hover:scale-110 transition-all duration-200"
+                  onClick={close}
                 />
               </div>
             </div>
@@ -111,10 +111,12 @@ const ReportBugModal = () => {
             <div className="flex flex-1">
               <div className="ml-auto">
                 <GrClose
-                  className="cursor-pointer hover:scale-110 transition-all duration-200"
-                  onClick={() => {
-                    window.top.location.href = `http://localhost:3000/dashboard`;
-                  }}
+                  className="close cursor-pointer hover:scale-110 transition-all duration-200"
+                  onClick={close}
+                  // onClick={close}
+                  // onClick={() => {
+                  //   window.top.location.href = `http://localhost:3000/dashboard`;
+                  // }}
                 />
               </div>
             </div>
@@ -263,52 +265,56 @@ const ReportBugModal = () => {
 
               <div className="flex flex-row items-center mt-[20px] mb-[50px]">
                 <BugScreenshotPlaceholder
-                  appName={projectData?.app_name}
-                  company={currentUserData?.company}
-                  firstName={currentUserData?.first_name}
-                  userId={currentUserData?.id}
-                  bugTitle={bugTitle}
-                  fileName={"bug1"}
-                  elementId={"select-bug-1"}
+                // appName={projectData?.app_name}
+                // company={currentUserData?.company}
+                // firstName={currentUserData?.first_name}
+                // userId={currentUserData?.id}
+                // bugTitle={bugTitle}
+                // fileName={"bug1"}
+                // elementId={"select-bug-1"}
                 />
                 <div className="mr-4" />
                 <BugScreenshotPlaceholder
-                  appName={projectData?.app_name}
-                  company={currentUserData?.company}
-                  firstName={currentUserData?.first_name}
-                  userId={currentUserData?.id}
-                  bugTitle={bugTitle}
-                  fileName={"bug2"}
-                  elementId={"select-bug-2"}
-                />
-
-                <div className="mr-4" />
-                <BugScreenshotPlaceholder
-                  appName={projectData?.app_name}
-                  company={currentUserData?.company}
-                  firstName={currentUserData?.first_name}
-                  userId={currentUserData?.id}
-                  bugTitle={bugTitle}
-                  fileName={"bug3"}
-                  elementId={"select-bug-3"}
+                // appName={projectData?.app_name}
+                // company={currentUserData?.company}
+                // firstName={currentUserData?.first_name}
+                // userId={currentUserData?.id}
+                // bugTitle={bugTitle}
+                // fileName={"bug1"}
+                // elementId={"select-bug-1"}
                 />
 
                 <div className="mr-4" />
                 <BugScreenshotPlaceholder
-                  appName={projectData?.app_name}
-                  company={currentUserData?.company}
-                  firstName={currentUserData?.first_name}
-                  userId={currentUserData?.id}
-                  bugTitle={bugTitle}
-                  fileName={"bug4"}
-                  elementId={"select-bug-4"}
+                // appName={projectData?.app_name}
+                // company={currentUserData?.company}
+                // firstName={currentUserData?.first_name}
+                // userId={currentUserData?.id}
+                // bugTitle={bugTitle}
+                // fileName={"bug1"}
+                // elementId={"select-bug-1"}
+                />
+
+                <div className="mr-4" />
+                <BugScreenshotPlaceholder
+                // appName={projectData?.app_name}
+                // company={currentUserData?.company}
+                // firstName={currentUserData?.first_name}
+                // userId={currentUserData?.id}
+                // bugTitle={bugTitle}
+                // fileName={"bug1"}
+                // elementId={"select-bug-1"}
                 />
               </div>
               {/* Send button */}
               <div className="absolute bottom-[20px] right-[20px]">
                 <TextIconBlueButton
                   onClick={() => {
-                    setBugSent(true);
+                    if (bugTitle === "") {
+                      RequiredFields();
+                    } else {
+                      setBugSent(true);
+                    }
                     // if (
                     //   bugTitle === "" ||
                     //   briefDescription === "" ||
@@ -348,8 +354,8 @@ const ReportBugModal = () => {
                   }}
                   text={"Send"}
                   reactIcons={true}
-                  icon={<MdSend />}
-                  ml={"ml-1"}
+                  icon={<MdSend className="ml-1" />}
+                  // ml={""}
                 />
               </div>
             </div>

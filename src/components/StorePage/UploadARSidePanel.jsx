@@ -12,9 +12,10 @@ import ARImagePlaceHolder from "../Placeholders/ARUpload/ARImagePlaceHolder";
 
 // import { toast } from "react-toastify";
 import ARfbxUpload from "../Placeholders/ARUpload/ARfbxUpload";
-import { currentUserData, projectData } from "../../data/DemoData";
+// import { currentUserData, projectData } from "../../data/DemoData";
 import useSound from "use-sound";
 import clickB from "../../assets/sfx/clickB.mp3";
+import { Alert } from "antd";
 
 const UploadARSidePanel = () => {
   // To 1. Close the side panel once the back button is clicked 2.get the downloadURL from the context state
@@ -51,13 +52,14 @@ const UploadARSidePanel = () => {
   // }, [project?.id]);
 
   // FOR INPUT FIELDS
-  const [measurements, setMeasurements] = useState("");
-  const [productName, setProductName] = useState("");
-  const [price, setPrice] = useState("");
-  const [currency, setCurrency] = useState("USD");
-  const [sku, setSku] = useState("");
+  const [, setMeasurements] = useState("");
+  const [, setProductName] = useState("");
+  const [, setPrice] = useState("");
+  const [, setCurrency] = useState("USD");
+  const [, setSku] = useState("");
+  const [placeholderClicked, setPlaceholderClicked] = useState(false);
 
-  const [fieldError, setFieldError] = useState(false);
+  // const [fieldError, setFieldError] = useState(false);
 
   const [playB] = useSound(clickB, { volume: 0.5 });
 
@@ -80,45 +82,73 @@ const UploadARSidePanel = () => {
               Please upload 4 pictures of your product with different angles
               (Front, Back, Right, Left).
             </span>
+            {/* Alert  */}
+            {placeholderClicked && (
+              <Alert
+                message="Demo 💡: Enabled when you have a Bloxat Built app."
+                type="warning"
+                closable
+                className="mt-3 mb-2 fade-down"
+                onClose={() => {
+                  setPlaceholderClicked(false);
+                }}
+              />
+            )}
 
             {/* Image Upload Placeholder grid */}
 
             <div className="grid grid-cols-2 mt-4 gap-x-5 gap-y-5">
               <ARImagePlaceHolder
-                appName={projectData?.app_name}
-                company={currentUserData?.company}
-                firstName={currentUserData?.first_name}
-                userId={currentUserData?.id}
+                onClick={() => {
+                  setPlaceholderClicked(true);
+                }}
+                // onClick={warning}
+                // appName={projectData?.app_name}
+                // company={currentUserData?.company}
+                // firstName={currentUserData?.first_name}
+                // userId={currentUserData?.id}
                 text={"Front"}
-                fileName={"front"}
-                elementId={"select-front"}
+                // fileName={"front"}
+                // elementId={"select-front"}
               />
               <ARImagePlaceHolder
-                appName={projectData?.app_name}
-                company={currentUserData?.company}
-                firstName={currentUserData?.first_name}
-                userId={currentUserData?.id}
+                onClick={() => {
+                  setPlaceholderClicked(true);
+                }}
+                // onClick={warning}
+                // appName={projectData?.app_name}
+                // company={currentUserData?.company}
+                // firstName={currentUserData?.first_name}
+                // userId={currentUserData?.id}
                 text={"Back"}
-                fileName={"back"}
-                elementId={"select-back"}
+                // fileName={"back"}
+                // elementId={"select-back"}
               />
               <ARImagePlaceHolder
-                appName={projectData?.app_name}
-                company={currentUserData?.company}
-                firstName={currentUserData?.first_name}
-                userId={currentUserData?.id}
+                onClick={() => {
+                  setPlaceholderClicked(true);
+                }}
+                // onClick={warning}
+                // appName={projectData?.app_name}
+                // company={currentUserData?.company}
+                // firstName={currentUserData?.first_name}
+                // userId={currentUserData?.id}
                 text={"Right"}
-                fileName={"right"}
-                elementId={"select-right"}
+                // fileName={"right"}
+                // elementId={"select-right"}
               />
               <ARImagePlaceHolder
-                appName={projectData?.app_name}
-                company={currentUserData?.company}
-                firstName={currentUserData?.first_name}
-                userId={currentUserData?.id}
+                onClick={() => {
+                  setPlaceholderClicked(true);
+                }}
+                // onClick={warning}
+                // appName={projectData?.app_name}
+                // company={currentUserData?.company}
+                // firstName={currentUserData?.first_name}
+                // userId={currentUserData?.id}
                 text={"Left"}
-                fileName={"left"}
-                elementId={"select-left"}
+                // fileName={"left"}
+                // elementId={"select-left"}
               />
             </div>
 
@@ -127,10 +157,9 @@ const UploadARSidePanel = () => {
             </span>
             <div className="ml-[-5px] mt-2">
               <ARfbxUpload
-                appName={projectData?.app_name}
-                company={currentUserData?.company}
-                firstName={currentUserData?.first_name}
-                userId={currentUserData?.id}
+                onClick={() => {
+                  setPlaceholderClicked(true);
+                }}
               />
             </div>
           </div>
@@ -186,8 +215,8 @@ const UploadARSidePanel = () => {
               >
                 <option>USD</option>
                 <option>EUR</option>
-                <option>OMR</option>
-                <option>SAR</option>
+                <option>CAD</option>
+                {/* <option>SAR</option> */}
               </select>
             </div>
 
@@ -207,14 +236,19 @@ const UploadARSidePanel = () => {
             {/* Submit button */}
 
             <div className="mt-4">
-              <TextIconBlueButton onClick={() => {}} text={"Add Product"} />
-              {fieldError === true && (
+              <TextIconBlueButton
+                onClick={() => {
+                  setPlaceholderClicked(true);
+                }}
+                text={"Add Product"}
+              />
+              {/* {fieldError === true && (
                 <div className="mt-[12px] bg-[#ffeeee] w-[150px] rounded-lg dark:bg-[#ff3a3a]">
                   <span className=" text-red text-[14px] p-2 page-animation dark:text-white">
                     Please fill in all fields.
                   </span>
                 </div>
-              )}
+              )} */}
             </div>
           </div>
 

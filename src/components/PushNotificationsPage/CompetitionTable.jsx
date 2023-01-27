@@ -193,7 +193,7 @@ const CompetitionTable = () => {
               }
             }}
           >
-            <a class="block py-2 px-3 ml-0 leading-tight text-gray-500 bg-white rounded-l-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-button-dark dark:border-[#2C2C2C] dark:text-[#969696] dark:hover:bg-[#323232] dark:hover:text-white transition-all duration-200 cursor-pointer">
+            <button class="block py-2 px-3 ml-0 leading-tight text-gray-500 bg-white rounded-l-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-button-dark dark:border-[#2C2C2C] dark:text-[#969696] dark:hover:bg-[#323232] dark:hover:text-white transition-all duration-200 cursor-pointer">
               <span class="sr-only">Previous</span>
               <svg
                 aria-hidden="true"
@@ -208,7 +208,7 @@ const CompetitionTable = () => {
                   clip-rule="evenodd"
                 ></path>
               </svg>
-            </a>
+            </button>
           </li>
           <li
             onClick={() => {
@@ -222,7 +222,7 @@ const CompetitionTable = () => {
               //   console.log(lastLimit);
             }}
           >
-            <a class="block py-2 px-3 leading-tight text-gray-500 bg-white rounded-r-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-button-dark dark:border-[#2C2C2C] dark:text-[#969696] dark:hover:bg-[#323232] dark:hover:text-white transition-all duration-200 cursor-pointer">
+            <button class="block py-2 px-3 leading-tight text-gray-500 bg-white rounded-r-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-button-dark dark:border-[#2C2C2C] dark:text-[#969696] dark:hover:bg-[#323232] dark:hover:text-white transition-all duration-200 cursor-pointer">
               <span class="sr-only">Next</span>
               <svg
                 aria-hidden="true"
@@ -237,7 +237,7 @@ const CompetitionTable = () => {
                   clip-rule="evenodd"
                 ></path>
               </svg>
-            </a>
+            </button>
           </li>
         </ul>
       </nav>

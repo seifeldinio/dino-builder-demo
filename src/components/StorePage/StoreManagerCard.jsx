@@ -1,11 +1,11 @@
 // import EditSVG from "../../assets/Icons/Edit.svg";
-import IconButton from "../Buttons/IconButton";
+// import IconButton from "../Buttons/IconButton";
 // import LinkSVG from "../../assets/Icons/Link.svg";
-import { TooltipComponent } from "@syncfusion/ej2-react-popups";
-import { AiOutlineAppstoreAdd, AiOutlineEdit } from "react-icons/ai";
-import { FiExternalLink, FiUser } from "react-icons/fi";
-import { IoMdKey } from "react-icons/io";
-import { toast } from "react-toastify";
+// import { TooltipComponent } from "@syncfusion/ej2-react-popups";
+import { AiOutlineAppstoreAdd } from "react-icons/ai";
+// import { FiExternalLink, FiUser } from "react-icons/fi";
+// import { IoMdKey } from "react-icons/io";
+// import { toast } from "react-toastify";
 import TextIconBlueButton from "../Buttons/TextIconBlueButton";
 import { BsArrowRight } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";

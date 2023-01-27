@@ -4,7 +4,7 @@ import { BsCheck2 } from "react-icons/bs";
 // import GreeenCheckSVG from "../../assets/Icons/GreenCheck.svg";
 
 const MaintenanceCard = (props) => {
-  const { dateDifference } = props;
+  // const { dateDifference } = props;
 
   return (
     <div class="flex-1 p-4 rounded-lg border-2 border-[#F2F3F7] shadow-sm bg-white dark:bg-section-dark dark:border-[#202020] ">

@@ -1,8 +1,7 @@
-import { TooltipComponent } from "@syncfusion/ej2-react-popups";
-import { DatePicker, message, Modal, Popconfirm, Popover } from "antd";
+import { Popover } from "antd";
 import { useState } from "react";
 // import React, { useEffect } from "react";
-import { AiOutlineCalendar } from "react-icons/ai";
+// import { AiOutlineCalendar } from "react-icons/ai";
 import { MdOutlinedFlag, MdSend } from "react-icons/md";
 // import TextIconBlueButton from "../Buttons/TextIconBlueButton";
 // import { AiOutlineSmile } from "react-icons/ai";
@@ -22,7 +21,7 @@ const CommunicateCard = (props) => {
     // setPushNotificationBody,
   } = useStateContext();
 
-  const [schedule, setSchedule] = useState(false);
+  // const [schedule, setSchedule] = useState(false);
 
   // For date picker
   // const onChange = (date, dateString) => {
@@ -101,19 +100,19 @@ const CommunicateCard = (props) => {
         {oneSignalApiKey === null ? (
           <>
             {/* Disabled Button */}
-            <TooltipComponent
+            {/* <TooltipComponent
               className="tooltip-box"
               content="Integrating Roboot.io push notifications into your App."
               target="#tooltip"
-            >
+            > */}
               <button
-                id="tooltip"
+                // id="tooltip"
                 class="bg-[#ABABAB]  text-white  py-0.5 px-2.5 rounded-md inline-flex items-center transition-color duration-200 "
               >
                 <span className="text-[14px]">Send</span>
                 <MdSend className="ml-1 h-[15px] w-[15px]" />
               </button>
-            </TooltipComponent>
+            {/* </TooltipComponent> */}
           </>
         ) : (
           <>
@@ -149,9 +148,9 @@ const CommunicateCard = (props) => {
               content={
                 <div className="flex flex-col">
                   <span>Sends your notification to all your users. 🚀</span>
-                  <a onClick={hide} className="text-blue mt-1.5">
+                  <button onClick={hide} className="text-blue mt-1.5">
                     Ok
-                  </a>
+                  </button>
                 </div>
               }
               title="Demo"

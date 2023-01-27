@@ -1,6 +1,5 @@
 import React from "react";
 import { BsFillCheckCircleFill } from "react-icons/bs";
-import PaginationComponent from "../PushNotificationsPage/PaginationComponent";
 
 const CampaignsTable = () => {
   return (
@@ -173,7 +172,7 @@ const CampaignsTable = () => {
         </table>
       </div>
       {/* Pagination */}
-      <PaginationComponent />
+      {/* <PaginationComponent /> */}
     </>
   );
 };

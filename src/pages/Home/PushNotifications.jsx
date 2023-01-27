@@ -18,7 +18,6 @@ import {
 import { useState } from "react";
 import TabsNotifications from "../../components/PushNotificationsPage/TabsNotifications";
 import { useStateContext } from "../../contexts/ContextProvider";
-import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 // import { useStore } from "../../contexts/storeContext/StoreContext";
 import { projectData, storeData } from "../../data/DemoData";
 import { Dropdown, Space } from "antd";
@@ -52,11 +51,11 @@ const PushNotifications = () => {
   const items = [
     {
       key: "1",
-      label: <a onClick={() => setDevice("iOS")}>iOS</a>,
+      label: <button onClick={() => setDevice("iOS")}>iOS</button>,
     },
     {
       key: "2",
-      label: <a onClick={() => setDevice("Android")}>Android</a>,
+      label: <button onClick={() => setDevice("Android")}>Android</button>,
     },
   ];
 
@@ -90,11 +89,11 @@ const PushNotifications = () => {
             {storeData?.onesignal_api_key === null && (
               <>
                 {/* OneSignalAPI === null */}
-                <TooltipComponent
+                {/* <TooltipComponent
                   className="tooltip-box"
                   content="Integrating Roboot.io push notifications into your App."
                   target="#tooltip"
-                >
+                > */}
                   <div
                     id="tooltip"
                     className="border-1 rounded-lg ml-2 border-[#cccccc] dark:border-[#717171] cursor-default"
@@ -103,7 +102,7 @@ const PushNotifications = () => {
                       Integrating
                     </span>
                   </div>
-                </TooltipComponent>
+                {/* </TooltipComponent> */}
               </>
             )}
           </div>
@@ -140,7 +139,7 @@ const PushNotifications = () => {
                       items,
                     }}
                   >
-                    <a
+                    <button
                       className="text-gray-900 dark:text-white"
                       onClick={(e) => e.preventDefault()}
                     >
@@ -148,7 +147,7 @@ const PushNotifications = () => {
                         {device}
                         <MdOutlineKeyboardArrowDown />
                       </Space>
-                    </a>
+                    </button>
                   </Dropdown>
                 </div>
                 {/* <select

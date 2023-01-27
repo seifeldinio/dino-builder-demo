@@ -1,19 +1,6 @@
 import "../../_animations.scss";
-
-// import UploadARSidePanel from "../../components/StorePage/UploadARSidePanel";
-// import FigmaEmbed from "react-figma-embed";
-// import WhiteCheck from "../../assets/Icons/WhiteCheck.svg";
-// import { FiEdit2 } from "react-icons/fi";
-// import { useProjectByUserId } from "../../contexts/projectContext/ProjectByUserIdContext";
-// import { useEffect } from "react";
-// import PrototypeLottie from "../../assets/Lotties/PrototypeShort.json";
-// import Lottie from "lottie-react-web";
-// import StoresSVG from "../../assets/Icons/Stores.svg";
-// import { RiTestTubeLine } from "react-icons/ri";
-// import { useStateContext } from "../../contexts/ContextProvider";
-// import { GiEmptyChessboard } from "react-icons/gi";
 import { useState } from "react";
-import { Dropdown, Popover, Space } from "antd";
+import { Dropdown, Space } from "antd";
 
 import {
   MdOutlineKeyboardArrowDown,

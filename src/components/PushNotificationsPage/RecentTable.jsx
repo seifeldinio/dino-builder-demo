@@ -1,7 +1,7 @@
 import "../../_animations.scss";
 import React from "react";
-import PaginationComponent from "./PaginationComponent";
-import { Pagination } from "antd";
+// import PaginationComponent from "./PaginationComponent";
+// import { Pagination } from "antd";
 // import { BsArrowRight } from "react-icons/bs";
 // import { useNavigate } from "react-router-dom";
 // import Popup from "reactjs-popup";

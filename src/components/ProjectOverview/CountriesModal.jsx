@@ -4,6 +4,9 @@ import { BsCheckCircleFill } from "react-icons/bs";
 
 const CountriesModal = (props) => {
   const { countries } = props;
+
+  const { close } = props;
+
   return (
     <div className="h-auto ">
       <div className="flex  flex-row items-center pt-3 pr-5 pl-3 pb-2">
@@ -21,10 +24,8 @@ const CountriesModal = (props) => {
         <div className="flex flex-1">
           <div className="ml-auto">
             <GrClose
-              className="cursor-pointer hover:scale-110 transition-all duration-200"
-              onClick={() => {
-                window.location.reload();
-              }}
+              className="close cursor-pointer hover:scale-110 transition-all duration-200"
+              onClick={close}
             />
           </div>
         </div>

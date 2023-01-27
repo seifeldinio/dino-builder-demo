@@ -38,27 +38,6 @@ import {
   projectData,
 } from "../data/DemoData";
 const Profile = () => {
-  // TO CHECK HOW MANY TIMES THE PAGE HAS RENDERED
-  // const isFirstRender = useRef(true);
-
-  // GET CURRENT USER DATA
-  // const {
-  //   currentUser,
-  //   fetchCurrentUser,
-  //   notifications,
-  //   fetchNotifications,
-  //   sendNotificationToPM,
-  // } = useCurrentUser();
-
-  // // GET PROJECT THAT BELONGS TO USER DATA
-  // const {
-  //   project,
-  //   fetchProjectByUserId,
-  //   expectedFeedbacks,
-  //   fetchExpectedFeedbacks,
-  //   approveExpectedFeedback,
-  // } = useProjectByUserId();
-
   // for dark mode condition
   const { currentMode, firstName, lastName, profilePicture } =
     useStateContext();
@@ -82,46 +61,6 @@ const Profile = () => {
 
   // For navigation
   const navigate = useNavigate();
-
-  // USEEFFECT
-  // useEffect(() => {
-  //   fetchCurrentUser();
-  //   fetchProjectByUserId();
-  //   fetchExpectedFeedbacks();
-  //   fetchNotifications();
-
-  //   if (currentUser?.activated === false) {
-  //     navigate("/activate");
-  //   }
-
-  //   // LISTEN TO SOCKETS
-  //   // Listen to changes in event send_expected_feedback_to_user from webSocket
-  //   // Admin sent expected feedback to user
-  //   socket.on("expected_feedback_sent_to_client", (payload) => {
-  //     fetchExpectedFeedbacks();
-  //     // console.log("payload", payload);
-  //   });
-
-  //   // Admin added an app release (includes sending an expected feedback in the same event)
-  //   socket.on("app_release_sent_to_client", (payload) => {
-  //     fetchExpectedFeedbacks();
-  //     // console.log("payload", payload);
-  //   });
-
-  //   return () => {
-  //     // before the component is destroyed
-  //     // unbind all event handlers used in this component
-  //     socket.off("expected_feedback_sent_to_client", (payload) => {
-  //       fetchExpectedFeedbacks();
-  //       // console.log("payload", payload);
-  //     });
-
-  //     socket.off("app_release_sent_to_client", (payload) => {
-  //       fetchExpectedFeedbacks();
-  //       // console.log("payload", payload);
-  //     });
-  //   };
-  // }, [currentUser?.activated, socket]);
 
   // UNREAD NOTIFICATIONS
   // Unread notifications
@@ -163,22 +102,6 @@ const Profile = () => {
     new Date(current_date),
     new Date(oneYearFromNow)
   );
-
-  // console.log(dateDifference);
-
-  // console.log(expectedFeedbacks);
-
-  // Timer to refresh window after approving
-  // function sleeper(ms) {
-  //   return function (x) {
-  //     return new Promise((resolve) => setTimeout(() => resolve(x), ms));
-  //   };
-  // }
-
-  // 👇️ open link in new tab
-  const openInNewTab = (url) => {
-    window.open(url, "_blank", "noopener,noreferrer");
-  };
 
   // console.log("NOTIFICATIONS IN PROFILE PAGE", notifications);
 
@@ -316,7 +239,7 @@ const Profile = () => {
         </div>
         {/* Expected Feedback List */}
 
-        <div className="flex mt-[45px] mb-[50px]  h-[350px]  rounded-md outline outline-2 outline-[#ECECEC] dark:outline-[#2C2C2C] overflow-y-scroll overflow-x-clip">
+        <div className="md:flex hidden mt-[45px] mb-[50px]  h-[350px]  rounded-md outline outline-2 outline-[#ECECEC] dark:outline-[#2C2C2C] overflow-y-scroll overflow-x-clip">
           <div data-tour="28" className="relative w-full ">
             <div className="fixed backdrop-blur-md bg-white/90 dark:backdrop-blur-2xl dark:bg-black/80 md:left-[40px] md:right-[46px] left-[20px] right-[26px] rounded-md h-[60px]">
               <div className="flex flex-col">

@@ -2,7 +2,7 @@ import "../../_animations.scss";
 import { BsApple } from "react-icons/bs";
 import { MdAndroid } from "react-icons/md";
 import TextIconBlueButton from "../Buttons/TextIconBlueButton";
-import PaginationComponent from "./PaginationComponent";
+// import PaginationComponent from "./PaginationComponent";
 import { useState } from "react";
 import { Popover } from "antd";
 

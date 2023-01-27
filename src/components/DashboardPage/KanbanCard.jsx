@@ -1,7 +1,5 @@
 // import DevTeamSVG from "../../assets/Illustrations/DevTeam.svg";
-import { Avatar, Tooltip } from "antd";
-import moment from "moment";
-import Spacer from "react-spacer";
+import { Avatar } from "antd";
 import { useStateContext } from "../../contexts/ContextProvider";
 import useSound from "use-sound";
 import clickA from "../../assets/sfx/clickA.mp3";
@@ -9,7 +7,7 @@ import clickA from "../../assets/sfx/clickA.mp3";
 const KanbanCard = (props) => {
   const { icon } = props;
   const { title } = props;
-  const { date } = props;
+  // const { date } = props;
   const { data } = props;
 
   const { setViewTaskSidePanel, setTaskData, tourStarted } = useStateContext();

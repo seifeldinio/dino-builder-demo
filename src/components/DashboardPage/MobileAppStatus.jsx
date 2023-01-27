@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import CircularProgress from "./CircularProgress";
 
 const MobileAppStatus = (props) => {

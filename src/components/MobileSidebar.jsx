@@ -3,8 +3,8 @@ import { BiMenuAltLeft } from "react-icons/bi";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { useStateContext } from "../contexts/ContextProvider";
 // import { useCurrentUser } from "../contexts/userContext/UserContext";
-import { currentUserData, notificationsData } from "../data/DemoData";
-import { links, mobileLinks } from "../utils/Constants";
+import {  notificationsData } from "../data/DemoData";
+import { mobileLinks } from "../utils/Constants";
 // import RobootLogo from "../assets/roboot-siteheader.svg";
 // import RobootLogoDark from "../assets/roboot-siteheader-dark.svg";
 // import BottomProfile from "./BottomProfile";
@@ -17,12 +17,12 @@ const MobileSidebar = () => {
     // mobileSidebar,
     setMobileSidebar,
     currentMode,
+    profilePicture,
   } = useStateContext();
 
   // const [hasNotif, setHasNotif] = useState(true);
 
   // GET CURRENT USER DATA and Notifications data
-
 
   // Unread notifications
   const unReadNotifications = notificationsData?.filter(
@@ -82,7 +82,7 @@ const MobileSidebar = () => {
                         {pathname === "/profile" ? (
                           <>
                             <img
-                              src={currentUserData?.avatar_url}
+                              src={profilePicture}
                               className="rounded-full object-cover outline outline-4 outline-lemon w-[40px] h-[40px] transition-color duration-200"
                               alt=""
                             />
@@ -90,7 +90,7 @@ const MobileSidebar = () => {
                         ) : (
                           <>
                             <img
-                              src={currentUserData?.avatar_url}
+                              src={profilePicture}
                               className="rounded-full object-cover w-[40px] h-[40px] transition-color duration-200"
                               alt=""
                             />

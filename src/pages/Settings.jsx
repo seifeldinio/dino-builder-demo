@@ -22,9 +22,9 @@ import { pagesSearch } from "../utils/Constants";
 // import { CgSearch } from "react-icons/cg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { GrRobot } from "react-icons/gr";
-import { paymentMethodsData, projectData, storeData } from "../data/DemoData";
+import { projectData, storeData } from "../data/DemoData";
 import { Popover } from "antd";
-import { useStateContext } from "../contexts/ContextProvider";
+// import { useStateContext } from "../contexts/ContextProvider";
 
 const Settings = () => {
   // GET CURRENT USER DATA
@@ -60,7 +60,7 @@ const Settings = () => {
     setOpen(newOpen);
   };
 
-  const { tourStarted } = useStateContext();
+  // const { tourStarted } = useStateContext();
 
   return (
     <div className="page-animation">
@@ -179,9 +179,9 @@ const Settings = () => {
                         Book a free call to determine the plan that best suits
                         your business.
                       </span>
-                      <a onClick={hide} className="text-blue mt-1.5">
+                      <button onClick={hide} className="text-blue mt-1.5">
                         Ok
-                      </a>
+                      </button>
                     </div>
                   }
                   title="Custom Plans 🤝"

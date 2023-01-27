@@ -1,5 +1,3 @@
-import React from "react";
-
 const SmallGreyButton = (props) => {
   const { text } = props;
   const { onClick } = props;

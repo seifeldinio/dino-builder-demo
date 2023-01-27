@@ -3,32 +3,18 @@ import "react-circular-progressbar/dist/styles.css";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import "reactjs-popup/dist/index.css";
 import "react-toastify/dist/ReactToastify.css";
-import "lion-player/dist/lion-skin.min.css";
+// import "lion-player/dist/lion-skin.min.css";
 import "react-loading-skeleton/dist/skeleton.css";
-// import "intro.js/introjs.css";
-// import "react-user-onboarding/dist/index.css";
-// import "./custom-tree.css";
-// import io from "socket.io-client";
 import React, { useEffect, lazy, Suspense, useState } from "react";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  // useLocation,
-  Navigate,
-} from "react-router-dom";
-// import { RiSettings3Line } from "react-icons/ri";
-// import { TooltipComponent } from "@syncfusion/ej2-react-popups";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 import {
   DemoLabel,
   LoadingSkeleton,
-  // ExpandedARView,
   MobileHeader,
   MobileSidebar,
   MobileStartModal,
-  // NotConnectedBanner,
   Sidebar,
   StartTourModal,
   UploadARSidePanel,
@@ -36,41 +22,9 @@ import {
   ViewBugSidePanel,
   ViewTaskSidePanel,
 } from "./components";
-// import {
-//   // Signup,
-//   // Connect,
-//   // Documents,
-//   // Prototype,
-//   // Billing,
-//   // Dashboard,
-//   // Store,
-//   // Guides,
-//   // ProjectOverview,
-//   // Profile,
-//   // Login,
-//   // Notifications,
-//   // ForgotPassword,
-//   OTP,
-//   Reset,
-//   // PushNotifications,
-//   // PaymentRecovery,
-//   // Settings,
-//   // EditProfile,
-// } from "./pages";
 
 import { useStateContext } from "./contexts/ContextProvider";
-// import { BsLaptop } from "react-icons/bs";
-// import WelcomeModal from "./components/DashboardPage/WelcomeModal";
-// import useSound from "use-sound";
-// import startUp from "./assets/sfx/startUp.mp3";
 
-// import NotActivated from "./pages/Auth/Activate";
-// import Activate from "./pages/Auth/Activate";
-// import jwt_decode from "jwt-decode";
-// import OneSignal from "react-onesignal";
-// import runOneSignalLocal from "./utils/OneSignalLocalHostSetup";
-
-// const Signup = lazy(() => import("./pages/Auth/Signup"));
 const Connect = lazy(() => import("./pages/Connect/Connect"));
 const Documents = lazy(() => import("./pages/Connect/Documents"));
 const Prototype = lazy(() => import("./pages/Connect/Prototype"));
@@ -80,9 +34,7 @@ const Store = lazy(() => import("./pages/Home/Store"));
 const Guides = lazy(() => import("./pages/Info/Guides"));
 const ProjectOverview = lazy(() => import("./pages/Info/ProjectOverview"));
 const Profile = lazy(() => import("./pages/Profile"));
-// const Login = lazy(() => import("./pages/Auth/Login"));
 const Notifications = lazy(() => import("./pages/Notifications"));
-// const ForgotPassword = lazy(() => import("./pages/Auth/ForgotPassword"));
 const PushNotifications = lazy(() => import("./pages/Home/PushNotifications"));
 const PaymentRecovery = lazy(() => import("./pages/Home/PaymentRecovery"));
 const Settings = lazy(() => import("./pages/Settings"));
@@ -95,11 +47,8 @@ const App = () => {
   // useSocketSetup();
 
   const {
-    // activeMenu,
     uploadARSidePanel,
     viewARSidePanel,
-    // expandedARView,
-    // errorConnectingToSocket,
     mobileSidebar,
     viewBugSidePanel,
     viewTaskSidePanel,
@@ -119,23 +68,6 @@ const App = () => {
     goToSettings,
   } = useStateContext();
 
-  // Fetch current user to see if the account is activated or not
-  // const { currentUser } = useCurrentUser();
-
-  // Get user_id from token
-  // var decoded = jwt_decode(token);
-
-  // useEffect(() => {}, []);
-
-  // const activated = currentUser?.activated;
-
-  // console.log(activated);
-
-  // const {  } = useStateContext;
-  // useEffect(() => {
-  //   setTimeout(() => setShowStartTourModal(true), 1000);
-  // }, []);
-
   // To check if it's opened on a phone or not
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -149,13 +81,6 @@ const App = () => {
   const mobileModalPopped = localStorage.getItem("mobile-modal-popped");
 
   useEffect(() => {
-    // Use OneSignal to recieve & send notifications
-    // const runOneSignal = async () => {
-    //   await OneSignal.init({ appId: "23986baf-6455-4a72-b1eb-26778cf4ae6f" });
-    // };
-    // runOneSignal();
-    // runOneSignalLocal();
-
     // Start the tour
     // Show start tour modal
     window.addEventListener("resize", handleWindowSizeChange);
@@ -166,8 +91,6 @@ const App = () => {
       // Mobile pop up
       setTimeout(() => setShowMobileStart(true), 300);
     }
-
-    // setIsOpen(true);
 
     // Get saved theme and set it and if there's none then make it light mode by default in localstorage
     if (localStorage.getItem("robootThemeMode") === null) {
@@ -202,10 +125,6 @@ const App = () => {
               {viewBugSidePanel && <ViewBugSidePanel />}
               {/* View Task Details Side Panel */}
               {viewTaskSidePanel && <ViewTaskSidePanel />}
-              {/* Expanded AR 3D Model View */}
-              {/* {expandedARView && <ExpandedARView />} */}
-              {/* If there's an error connecting to Websocket display banner that user isn't connected */}
-              {/* {errorConnectingToSocket && <NotConnectedBanner />} */}
               {/* Mobile sidebar opened */}
               {mobileSidebar && <MobileSidebar />}
               {showStartTourModal && <StartTourModal />}

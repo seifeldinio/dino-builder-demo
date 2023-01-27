@@ -1,25 +1,19 @@
-// import GreenCheckSVG from "../../assets/Icons/GreenCheck.svg";
-// import TextIconBlueButton from "../Buttons/TextIconBlueButton";
-// import LinkSVG from "../../assets/Icons/Link.svg";
 import { FiExternalLink } from "react-icons/fi";
-import { Menu, Transition } from "@headlessui/react";
-import { BsThreeDotsVertical } from "react-icons/bs";
-import { Fragment } from "react/cjs/react.development";
 import { Popover } from "antd";
 import { useState } from "react";
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+// function classNames(...classes) {
+//   return classes.filter(Boolean).join(" ");
+// }
 
 const AppReleases = (props) => {
   const { appReleases } = props;
   const { releaseDate } = props;
 
   // 👇️ open link in new tab
-  const openInNewTab = (url) => {
-    window.open(url, "_blank", "noopener,noreferrer");
-  };
+  // const openInNewTab = (url) => {
+  //   window.open(url, "_blank", "noopener,noreferrer");
+  // };
 
   // For pop over
   const [iosOpen, setIOSOpen] = useState(false);

@@ -4,11 +4,11 @@ import { CircularProgress } from "../index";
 // import Greencheck from "../../assets/Illustrations/Greencheck.svg";
 // import Greybar from "../../assets/Illustrations/Greybar.svg";
 import Spacer from "react-spacer";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 const AppStatus = (props) => {
   const { progress } = props;
-  const { releaseDate } = props;
+  // const { releaseDate } = props;
   const { onClick } = props;
 
   // const [projectProgress, setProjectProgress] = useState(progress);

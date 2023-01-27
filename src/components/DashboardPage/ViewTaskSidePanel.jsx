@@ -2,7 +2,7 @@ import { BsCalendar } from "react-icons/bs";
 import React from "react";
 import { useStateContext } from "../../contexts/ContextProvider";
 import BackButton from "../Buttons/BackButton";
-import { Avatar, Tooltip } from "antd";
+import { Avatar } from "antd";
 import clickB from "../../assets/sfx/clickB.mp3";
 import useSound from "use-sound";
 

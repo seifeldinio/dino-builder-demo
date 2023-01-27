@@ -1,5 +1,3 @@
-import React from "react";
-
 const IconTextButton = (props) => {
   const { text } = props;
   const { icon } = props;

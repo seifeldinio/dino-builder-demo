@@ -65,9 +65,9 @@ const Connect = () => {
               content={
                 <div className="flex flex-col">
                   <span>You get direct access to your project manager.</span>
-                  <a onClick={hide} className="text-blue mt-1.5">
+                  <button onClick={hide} className="text-blue mt-1.5">
                     Ok
-                  </a>
+                  </button>
                 </div>
               }
               title="Unlimited 1:1 Support 👩‍💻"

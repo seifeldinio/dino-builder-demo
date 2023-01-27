@@ -25,22 +25,7 @@ export const ContextProvider = ({ children }) => {
   const [expandedARView, setExpandedARView] = useState(false);
   // Mobile sidebard state panel
   const [mobileSidebar, setMobileSidebar] = useState(false);
-  //   Screenshots url of bug report
-  const [bugURLs, setBugURLs] = useState([]);
-  // State is the bug report sent or not to switch the modal UI accrodingly
-  const [bugSent, setBugSent] = useState(false);
-  // Product and Regions csv uploaded state
-  // const [csvFiles, setCsvFiles] = useState([]);
-  // AR Product Front Image
-  // const [arFrontImg, setArFrontImg] = useState(null);
-  // AR Product Back Image
-  // const [arBackImg, setArBackImg] = useState(null);
-  // AR Product Right Image
-  // const [arRightImg, setArRightImg] = useState(null);
-  // AR Product Left Image
-  // const [arLeftImg, setArLeftImg] = useState(null);
-  // AR 3d file upload
-  // const [arFile, setArFile] = useState(null);
+  const [requestedFeature, setRequestedFeature] = useState(false);
   // FOR ABANDOMENT CART NOTIFICATIONS
   const [cartNotifEnabled, setCartNotifEnabled] = useState(true);
   // Project Progress (State in demo to change its state in the walkthrough)
@@ -102,28 +87,12 @@ export const ContextProvider = ({ children }) => {
         setTaskData,
         expandedARView,
         setExpandedARView,
-        bugURLs,
-        setBugURLs,
-        bugSent,
-        setBugSent,
-        // csvFiles,
-        // setCsvFiles,
-        // arFrontImg,
-        // setArFrontImg,
-        // arBackImg,
-        // setArBackImg,
-        // arRightImg,
-        // setArRightImg,
-        // arLeftImg,
-        // setArLeftImg,
-        // arFile,
-        // setArFile,
+        requestedFeature,
+        setRequestedFeature,
         pushNotificationTitle,
         setPushNotificationTitle,
         pushNotificationBody,
         setPushNotificationBody,
-        // errorConnectingToSocket,
-        // setErrorConnectingToSocket,
         mobileSidebar,
         setMobileSidebar,
         currentMode,

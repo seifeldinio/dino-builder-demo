@@ -19,7 +19,7 @@ import ExpandButton from "../Buttons/ExpandButton";
 import ExpandedARView from "./ExpandedARView";
 import { arProductData } from "../../data/DemoData";
 import useSound from "use-sound";
-import clickA from "../../assets/sfx/clickA.mp3";
+// import clickA from "../../assets/sfx/clickA.mp3";
 import clickB from "../../assets/sfx/clickB.mp3";
 
 const ViewARSidePanel = () => {

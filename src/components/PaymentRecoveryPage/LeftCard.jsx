@@ -1,4 +1,3 @@
-import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { RiInformationFill } from "react-icons/ri";
 
 const LeftCard = () => {
@@ -10,15 +9,15 @@ const LeftCard = () => {
       {/* Failed charges  */}
       <div className="flex flex-row items-center text-gray-500">
         <span className="mr-1.5 dark:text-[#cdcdcd]">Failed charges</span>
-        <TooltipComponent
+        {/* <TooltipComponent
           className="tooltip-box"
           content="The total amount of money your payment gateways couldn't process."
           target="#tooltip"
-        >
+        > */}
           <div className="scale-125" id="tooltip">
             <RiInformationFill className="dark:text-[#cdcdcd]" />
           </div>
-        </TooltipComponent>
+        {/* </TooltipComponent> */}
       </div>
       <span className="text-[18px] mt-1.5 font-medium text-purple">
         $902,295.46
@@ -27,15 +26,15 @@ const LeftCard = () => {
       {/* Recovered charges */}
       <div className="flex flex-row items-center text-gray-500">
         <span className="mr-1.5 dark:text-[#cdcdcd]">Recovered charges</span>
-        <TooltipComponent
+        {/* <TooltipComponent
           className="tooltip-box"
           content="The total amount of failing charges Roboot.io has recovered for you"
           target="#tooltip"
-        >
+        > */}
           <div className="scale-125" id="tooltip">
             <RiInformationFill className="dark:text-[#cdcdcd]" />
           </div>
-        </TooltipComponent>
+        {/* </TooltipComponent> */}
       </div>
       <span className="text-[18px] mt-1.5 font-medium text-green">
         $417,571.63
@@ -44,15 +43,15 @@ const LeftCard = () => {
       {/* Recovered charges */}
       <div className="flex flex-row items-center text-gray-500">
         <span className="mr-1.5 dark:text-[#cdcdcd]">Recovery rate</span>
-        <TooltipComponent
+        {/* <TooltipComponent
           className="tooltip-box"
           content="The percent of your failing charges that we've been able to recover for you."
           target="#tooltip"
-        >
+        > */}
           <div className="scale-125" id="tooltip">
             <RiInformationFill className="dark:text-[#cdcdcd]" />
           </div>
-        </TooltipComponent>
+        {/* </TooltipComponent> */}
       </div>
       <span className="text-[18px] mt-1.5 font-medium text-black dark:text-white">
         46.28%
@@ -61,15 +60,15 @@ const LeftCard = () => {
       {/* Recovery prediction */}
       <div className="flex flex-row items-center text-gray-500">
         <span className="mr-1.5 dark:text-[#cdcdcd]">Recovery prediction</span>
-        <TooltipComponent
+        {/* <TooltipComponent
           className="tooltip-box "
           content="Based on our historical recovery rate, this is how much we believe we'll be able to recover for you."
           target="#tooltip"
-        >
+        > */}
           <div className="scale-125" id="tooltip">
             <RiInformationFill className="dark:text-[#cdcdcd]" />
           </div>
-        </TooltipComponent>
+        {/* </TooltipComponent> */}
       </div>
       <span className="text-[18px] mt-1.5 font-medium text-black dark:text-white">
         $230.64

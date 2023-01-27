@@ -1,42 +1,12 @@
 import "../../_animations.scss";
-
-// import File from "../../assets/Icons/File.svg";
 import {
-  DocUpload,
   SignedCard,
   SquarishCard,
-  // TextIconBlueButton,
   UploadedBranding,
 } from "../../components/index";
-// import ContractSVG from "../../assets/Icons/Contract.svg";
-// import UploadSVG from "../../assets/Icons/Upload.svg";
-// import Lottie from "lottie-react-web";
-// import { useProjectByUserId } from "../../contexts/projectContext/ProjectByUserIdContext";
-// import { useEffect } from "react";
-// import { useCurrentUser } from "../../contexts/userContext/UserContext";
-import BrandingUpload from "../../components/DocumentsPage/BrandingUpload";
-// import { useNavigate } from "react-router-dom";
-import { currentUserData, projectData } from "../../data/DemoData";
+import { projectData } from "../../data/DemoData";
 
 const Documents = () => {
-  // GET CURRENT USER DATA
-  // const { currentUser, fetchCurrentUser } = useCurrentUser();
-
-  // GET PROJECT THAT BELONGS TO USER DATA
-  // const { project, fetchProjectByUserId } = useProjectByUserId();
-
-  // For navigation
-  // const navigate = useNavigate();
-
-  // useEffect(() => {
-  //   fetchCurrentUser();
-  //   fetchProjectByUserId();
-
-  //   if (currentUser?.activated === false) {
-  //     navigate("/activate");
-  //   }
-  // }, [currentUser?.activated]);
-
   return (
     <div className="page-animation">
       <div className="md:mt-10 md:ml-10 md:mr-10 mt-20 ml-5 mr-5">
@@ -67,23 +37,9 @@ const Documents = () => {
                 contractFileDownload={projectData?.contract}
               />
 
-              {/* Upload Card*/}
-              {projectData?.signed_contract === null ? (
-                <DocUpload
-                  title={"Upload your signed contract"}
-                  loop={true}
-                  appName={projectData?.app_name}
-                  company={currentUserData?.company}
-                  firstName={currentUserData?.first_name}
-                  userId={currentUserData?.id}
-                />
-              ) : (
-                <>
-                  <SignedCard
-                    uploadedOnDate={projectData?.signed_contract_upload_date}
-                  />
-                </>
-              )}
+              <SignedCard
+                uploadedOnDate={projectData?.signed_contract_upload_date}
+              />
             </div>
           </div>
         </div>
@@ -103,23 +59,7 @@ const Documents = () => {
           <div className="flex h-[280px] mt-5 bg-greyelement rounded-md mb-[50px] dark:bg-section-dark">
             <div className="flex flex-row space-x-7 m-5">
               {/* Upload Card*/}
-              {projectData?.brand_docs === null ? (
-                <BrandingUpload
-                  signedContractUploaded={
-                    projectData?.signed_contract === null ? false : true
-                  }
-                  appName={projectData?.app_name}
-                  company={currentUserData?.company}
-                  firstName={currentUserData?.first_name}
-                  userId={currentUserData?.id}
-                  title={"Upload your branding files"}
-                  loop={false}
-                />
-              ) : (
-                <>
-                  <UploadedBranding />
-                </>
-              )}
+              <UploadedBranding />
             </div>
           </div>
         </div>

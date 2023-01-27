@@ -7,7 +7,7 @@ import { AvatarUploadRemove } from "../components";
 import { useStateContext } from "../contexts/ContextProvider";
 // import { useProjectByUserId } from "../contexts/projectContext/ProjectByUserIdContext";
 // import { useCurrentUser } from "../contexts/userContext/UserContext";
-import { currentUserData, projectData } from "../data/DemoData";
+import { currentUserData } from "../data/DemoData";
 
 const EditProfile = () => {
   // for navigation

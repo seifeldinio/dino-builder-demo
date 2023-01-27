@@ -1,5 +1,5 @@
 import React from "react";
-import { BsHeart } from "react-icons/bs";
+// import { BsHeart } from "react-icons/bs";
 
 const ModelViewer = (props) => {
   const { glb } = props;

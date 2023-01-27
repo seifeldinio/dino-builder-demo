@@ -3,39 +3,13 @@ import { RiAddFill } from "react-icons/ri";
 // import GreenCheckSVG from "../../assets/Icons/GreenCheck.svg";
 import { BsCheck2 } from "react-icons/bs";
 import { featuresData } from "../../data/DemoData";
+import { useStateContext } from "../../contexts/ContextProvider";
 // import { useStateContext } from "../../contexts/ContextProvider";
 
-const AddFeatureModal = () => {
-  // const { robootFeatures, fetchRobootFeatures } = useRobootLists();
-  // const {
-  //   project,
-  //   fetchProjectByUserId,
-  //   fetchFeatures,
-  //   features,
-  //   requestFeatureMethod,
-  // } = useProjectByUserId();
+const AddFeatureModal = (props) => {
+  const { close } = props;
 
-  // const { sendNotificationToPM } = useCurrentUser();
-
-  // useEffect(() => {
-  //   fetchRobootFeatures();
-  //   fetchProjectByUserId();
-  //   fetchFeatures(project?.id);
-  // }, [project?.id]);
-
-  // const [requestedState, setRequestedState] = useState([]);
-
-  // console.log(
-  //   "HERE",
-  //   features?.filter((feature) => feature?.feature_id === 1).length > 0
-  // );
-
-  // Timer
-  // function sleeper(ms) {
-  //   return function (x) {
-  //     return new Promise((resolve) => setTimeout(() => resolve(x), ms));
-  //   };
-  // }
+  const { requestedFeature, setRequestedFeature } = useStateContext();
 
   return (
     <div className="h-auto dark:bg-black">
@@ -54,10 +28,8 @@ const AddFeatureModal = () => {
         <div className="flex flex-1">
           <div className="ml-auto">
             <GrClose
-              className="cursor-pointer hover:scale-110 transition-all duration-200"
-              onClick={() => {
-                window.location.reload();
-              }}
+              className="close cursor-pointer hover:scale-110 transition-all duration-200"
+              onClick={close}
             />
           </div>
         </div>
@@ -94,12 +66,29 @@ const AddFeatureModal = () => {
               ) : (
                 <button
                   onClick={() => {
+                    if (requestedFeature === false) {
+                      setRequestedFeature(true);
+                    } else {
+                    }
                     // Request feature then Add task backed in that method
                   }}
-                  class="ml-auto mr-[2px] outline outline-1 outline-blue hover:bg-darkblue hover:text-white text-blue  py-0.5 px-2.5 rounded-md inline-flex items-center transition-color duration-200"
+                  class={
+                    requestedFeature === false
+                      ? "ml-auto mr-[2px] outline outline-1 outline-blue hover:bg-darkblue hover:text-white text-blue  py-0.5 px-2.5 rounded-md inline-flex items-center transition-color duration-200"
+                      : "ml-auto mr-[2px] outline outline-1 outline-green  text-green  py-0.5 px-2.5 rounded-md inline-flex items-center transition-color duration-200"
+                  }
                 >
-                  <span className="text-[14px]">Request feature</span>
-                  <RiAddFill className="ml-[4px]" />
+                  {requestedFeature ? (
+                    <>
+                      <span className="text-[14px]">Requested</span>
+                      <BsCheck2 className="ml-[4px]" />
+                    </>
+                  ) : (
+                    <>
+                      <span className="text-[14px]">Request feature</span>
+                      <RiAddFill className="ml-[4px]" />
+                    </>
+                  )}
                 </button>
               )}
             </div>

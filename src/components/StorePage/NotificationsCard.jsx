@@ -11,7 +11,7 @@ import { BiNotification } from "react-icons/bi";
 import clickA from "../../assets/sfx/clickA.mp3";
 import useSound from "use-sound";
 
-const NotificationsCard = (props) => {
+const NotificationsCard = () => {
   // const { appStatus } = props;
 
   const { currentMode, tourStarted } = useStateContext();

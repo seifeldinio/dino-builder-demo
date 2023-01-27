@@ -209,7 +209,7 @@ const steps = [
     content: (
       <div className="flex flex-col">
         <span className="font-normal mr-1">
-          A list of expected feedbacks sent by your project manager{" "}
+          A list of expected feedbacks sent by your project manager
           <span> </span>
           <span className="font-normal text-[#8d8d8d]">
             to get your approval on the latest app release. 👍

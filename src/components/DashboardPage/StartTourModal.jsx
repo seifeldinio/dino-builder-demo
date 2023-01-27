@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
-import { GrClose } from "react-icons/gr";
+// import { GrClose } from "react-icons/gr";
 import { MdClose } from "react-icons/md";
 import { useStateContext } from "../../contexts/ContextProvider";
-import TextIconBlueButton from "../Buttons/TextIconBlueButton";
+// import TextIconBlueButton from "../Buttons/TextIconBlueButton";
 import { useTour } from "@reactour/tour";
 import useSound from "use-sound";
 import startUp from "../../assets/sfx/startUp.mp3";
@@ -13,9 +13,9 @@ import { useNavigate } from "react-router-dom";
 
 const StartTourModal = () => {
   const {
-    showStartTourModal,
+    // showStartTourModal,
     setShowStartTourModal,
-    tourStarted,
+    // tourStarted,
     setTourStarted,
   } = useStateContext();
   const [soundPlayed, setSoundPlayed] = useState(false);

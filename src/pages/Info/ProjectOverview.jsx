@@ -4,7 +4,6 @@ import Lottie from "lottie-react-web";
 import {
   AddFeatureModal,
   CountriesModal,
-  DisabledButton,
   FeaturesTable,
   TextIconBlueButton,
 } from "../../components";
@@ -18,8 +17,8 @@ import { BsApple } from "react-icons/bs";
 // import { useEffect } from "react";
 import Popup from "reactjs-popup";
 import { MdAndroid } from "react-icons/md";
-import { useNavigate } from "react-router-dom";
-import { TooltipComponent } from "@syncfusion/ej2-react-popups";
+// import { useNavigate } from "react-router-dom";
+// import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { useStateContext } from "../../contexts/ContextProvider";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -44,12 +43,12 @@ const ProjectOverview = () => {
   const { currentMode } = useStateContext();
 
   // For navigation
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   // 👇️ open link in new tab
-  const openInNewTab = (url) => {
-    window.open(url, "_blank", "noopener,noreferrer");
-  };
+  // const openInNewTab = (url) => {
+  //   window.open(url, "_blank", "noopener,noreferrer");
+  // };
 
   // For pop over
   const [supportOpen, setSupportOpen] = useState(false);
@@ -218,8 +217,15 @@ const ProjectOverview = () => {
                             nested={false}
                             modal
                           >
-                            {/* Add a new feature modal */}
-                            <CountriesModal countries={countriesData} />
+                            {(close) => (
+                              <>
+                                {/* Add a new feature modal */}
+                                <CountriesModal
+                                  countries={countriesData}
+                                  close={close}
+                                />
+                              </>
+                            )}
                           </Popup>
                         </div>
                       </div>
@@ -299,44 +305,29 @@ const ProjectOverview = () => {
           {/* Features table */}
           <FeaturesTable />
           {/* Add a new feature button */}
-          <div className="flex flex-wrap">
+          <div className="md:flex hidden flex-wrap">
             <div className="ml-auto mt-[15px]">
-              {projectData?.project_progress === 4 ? (
-                <>
-                  <Popup
-                    trigger={
-                      <TextIconBlueButton
-                        text={"Add a new feature"}
-                        icon={<AiOutlinePlus className="ml-1.5" />}
-                        ml={"ml-1.5"}
-                      />
-                    }
-                    closeOnDocumentClick={false}
-                    nested={false}
-                    modal
-                  >
-                    {/* Add a new feature modal */}
-                    <AddFeatureModal />
-                  </Popup>
-                </>
-              ) : (
-                <>
-                  {/* Disabled button because the project isn't done yet to add more features */}
-                  <TooltipComponent
-                    className="tooltip-box"
-                    content="You can add additional features once your app is live."
-                    target="#tooltip"
-                  >
-                    <div id="tooltip">
-                      <DisabledButton
-                        text={"Add a new feature"}
-                        icon={<AiOutlinePlus className="ml-1.5" />}
-                        ml={"ml-1.5"}
-                      />
-                    </div>
-                  </TooltipComponent>
-                </>
-              )}
+              <>
+                <Popup
+                  trigger={
+                    <TextIconBlueButton
+                      text={"Add a new feature"}
+                      icon={<AiOutlinePlus className="ml-1.5" />}
+                      ml={"ml-1.5"}
+                    />
+                  }
+                  closeOnDocumentClick={false}
+                  nested={false}
+                  modal
+                >
+                  {(close) => (
+                    <>
+                      {/* Add a new feature modal */}
+                      <AddFeatureModal close={close} />
+                    </>
+                  )}
+                </Popup>
+              </>
             </div>
           </div>
           {/* Available on */}

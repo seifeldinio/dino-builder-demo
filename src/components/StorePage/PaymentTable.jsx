@@ -9,14 +9,14 @@
 // import PaymentItem from "./PaymentItem";
 // import { useStore } from "../../contexts/storeContext/StoreContext";
 // import { useEffect } from "react";
-import { TooltipComponent } from "@syncfusion/ej2-react-popups";
+// import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { BsCheck2 } from "react-icons/bs";
 // import { useNavigate } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useStateContext } from "../../contexts/ContextProvider";
 import { paymentMethodsData } from "../../data/DemoData";
 
-const PaymentTable = (props) => {
+const PaymentTable = () => {
   // const { projectId } = props;
 
   // const { paymentRecoveryBool } = props;

@@ -15,11 +15,11 @@ const AvatarUploadRemove = (props) => {
   // const { updateProfilePic, fetchCurrentUser } = useCurrentUser();
 
   //   const { avatarUrl } = props;
-  const { userId } = props;
-  const { email } = props;
-  const { firstName } = props;
-  const { appName } = props;
-  const { company } = props;
+  // const { userId } = props;
+  // const { email } = props;
+  // const { firstName } = props;
+  // const { appName } = props;
+  // const { company } = props;
   const currentDate = moment().format("DD-MM-YYYY hh:mm:ss");
   // FIle
   const [file, setFile] = useState();

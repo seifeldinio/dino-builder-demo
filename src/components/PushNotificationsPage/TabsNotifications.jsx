@@ -29,7 +29,7 @@ const TabsNotifications = () => {
               class={
                 recentsTab === true
                   ? "md:inline-block hidden p-4 rounded-t-lg border-b-2 border-blue transition-all duration-200 dark:text-white "
-                  : "md:inline-block hidden inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 hover:dark:text-white hover:dark:border-[#424242] dark:text-[#bdbdbd]  transition-all duration-200"
+                  : "md:inline-block hidden  p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 hover:dark:text-white hover:dark:border-[#424242] dark:text-[#bdbdbd]  transition-all duration-200"
               }
               onClick={() => {
                 setRecentsTab(true);

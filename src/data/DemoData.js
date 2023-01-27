@@ -1,5 +1,3 @@
-import React from "react";
-
 // BLOXAT BUILT'S DEMO DATA
 // User Data
 export const currentUserData = {
@@ -91,34 +89,6 @@ export const projectData = {
     },
   ],
   bugs: [
-    // {
-    //   bug_id: 27,
-    //   id: 27,
-    //   project_id: 1,
-    //   bug_title: "First bug to report here",
-    //   brief_description: "Issue is 1 2 3 4 5 ",
-    //   due_date: "1/1/1111",
-    //   assigned_team: "https://media.publit.io/file/StockPics/DevTeam.svg",
-    //   request_approved: true,
-    //   progress: 0,
-    //   priority: "Urgent",
-    //   screenshots:
-    //     '["https://firebasestorage.googleapis.com/v0/b/roboot-admin.appspot.com/o/App%20test_Orascom_Naguib_userId%3A1%2Fbug_fix_screenshots%2FFirst%20bug%20to%20report%20here_Fix1_02-11-2022%2008%3A37%3A25?alt=media&token=52b30afd-585d-4037-804c-cc705fba1172","https://firebasestorage.googleapis.com/v0/b/roboot-admin.appspot.com/o/App%20test_Orascom_Naguib_userId%3A1%2Fbug_fix_screenshots%2FFirst%20bug%20to%20report%20here_Fix2_02-11-2022%2008%3A37%3A31?alt=media&token=db37091f-7fd8-49cc-b7ad-49313856e628","https://firebasestorage.googleapis.com/v0/b/roboot-admin.appspot.com/o/App%20test_Orascom_Naguib_userId%3A1%2Fbug_fix_screenshots%2FFirst%20bug%20to%20report%20here_Fix3_02-11-2022%2008%3A37%3A35?alt=media&token=49cddded-05a0-40df-ad59-96c89209c3ce","https://firebasestorage.googleapis.com/v0/b/roboot-admin.appspot.com/o/App%20test_Orascom_Naguib_userId%3A1%2Fbug_fix_screenshots%2FFirst%20bug%20to%20report%20here_Fix4_02-11-2022%2008%3A37%3A38?alt=media&token=38c359f1-5243-4660-bcae-cb5fcbd1a87f"]',
-    // },
-    // {
-    //   bug_id: 19,
-    //   id: 19,
-    //   project_id: 1,
-    //   bug_title: "Test",
-    //   brief_description: "testestest",
-    //   due_date: "1/1/1",
-    //   assigned_team: "https://media.publit.io/file/StockPics/DevTeam.svg",
-    //   request_approved: true,
-    //   progress: 2,
-    //   priority: "Medium",
-    //   screenshots:
-    //     '["https://firebasestorage.googleapis.com/v0/b/roboot-a1329.appspot.com/o/App%20test_Orascom_Naguib_userId%3A1%2Fbugs_screenshots%2FTest_bug_11-10-2022%2009%3A08%3A32?alt=media&token=b993d060-5d7f-4b83-932b-cc39f175fe4e","https://firebasestorage.googleapis.com/v0/b/roboot-a1329.appspot.com/o/App%20test_Orascom_Naguib_userId%3A1%2Fbugs_screenshots%2FTest_bug_11-10-2022%2009%3A08%3A33?alt=media&token=1dd54e1a-f82b-4be4-92a4-05f7230165f9","https://firebasestorage.googleapis.com/v0/b/roboot-a1329.appspot.com/o/App%20test_Orascom_Naguib_userId%3A1%2Fbugs_screenshots%2FTest_bug_11-10-2022%2009%3A08%3A35?alt=media&token=f7ade62f-8ba3-4d0d-83f0-14d21b9530e5","https://firebasestorage.googleapis.com/v0/b/roboot-a1329.appspot.com/o/App%20test_Orascom_Naguib_userId%3A1%2Fbugs_screenshots%2FTest_bug_11-10-2022%2009%3A08%3A36?alt=media&token=bdc4932f-10b4-48c9-81fe-704fe648c8fe"]',
-    // },
     {
       bug_id: 24,
       id: 24,
@@ -134,41 +104,7 @@ export const projectData = {
         '["https://media.publit.io/file/StockPics/app-screenshot-1.webp","https://media.publit.io/file/StockPics/app-screenshot-2.webp","https://media.publit.io/file/StockPics/app-screenshot-3.webp","https://media.publit.io/file/StockPics/app-screenshot-4.webp"]',
     },
   ],
-  // features: [
-  //   {
-  //     feature_id: 1,
-  //     feature_title: "Intuitive UX Flow",
-  //     description: "blablablablablablablabla",
-  //     screenshots: null,
-  //     due_date: "20/9/2022",
-  //     request_approved: true,
-  //     status: "Added",
-  //     enabled: true,
-  //     cost: 200,
-  //   },
-  //   {
-  //     feature_id: 19,
-  //     feature_title: "Great 2",
-  //     description: "okokokok",
-  //     screenshots: null,
-  //     due_date: "20/9/2022",
-  //     request_approved: true,
-  //     status: "Added",
-  //     enabled: true,
-  //     cost: 200,
-  //   },
-  //   {
-  //     feature_id: 10,
-  //     feature_title: "Intuitive UI/UX 7777777777",
-  //     description: "okokokok",
-  //     screenshots: null,
-  //     due_date: "1/1/2022",
-  //     request_approved: true,
-  //     status: "Added",
-  //     enabled: true,
-  //     cost: 200,
-  //   },
-  // ],
+
   app_releases: [
     {
       id: 8,
@@ -194,18 +130,6 @@ export const projectData = {
       createdAt: "2022-11-02T16:36:04.000Z",
       updatedAt: "2022-11-02T16:36:04.000Z",
     },
-    // {
-    //   id: 5,
-    //   project_id: 1,
-    //   version: "4.0.0",
-    //   type: "Beta",
-    //   expected_feedback_date: "2/11/2023",
-    //   status: "Accepted",
-    //   app_store_link: "google.com",
-    //   play_store_link: "google.com",
-    //   createdAt: "2022-11-02T16:34:04.000Z",
-    //   updatedAt: "2022-11-02T16:34:04.000Z",
-    // },
   ],
 };
 
@@ -226,19 +150,6 @@ export const storeData = {
   third_party_store: false,
   createdAt: "2022-10-04T09:40:23.000Z",
   updatedAt: "2022-11-01T06:48:05.000Z",
-  // ar_products: [
-  //   {
-  //     user_id: 1,
-  //     uploaded_3d_file: null,
-  //     glb: "https://firebasestorage.googleapis.com/v0/b/roboot-a1329.appspot.com/o/App%20test_Orascom_Naguib_userId%3A1%2Far_products%2Fglb%2Fnike.glb?alt=media&token=629fedc2-84fc-4fe7-8795-621e8722b2f5",
-  //     measurements: "5 cm x 5 cm ",
-  //     product_name: "Shakoosh",
-  //     product_price: "300",
-  //     currency: "EUR",
-  //     sku: "skfsdjlffjsdklafjlkdsjfkdfsdf3432423erfd",
-  //     live: true,
-  //   },
-  // ],
 };
 
 // AR PRODUCTS DATA
@@ -512,41 +423,10 @@ export const countriesData = [
     createdAt: "2022-10-08T04:21:36.000Z",
     updatedAt: "2022-10-08T04:31:58.000Z",
   },
-  // {
-  //   id: 7,
-  //   country_id: 0,
-  //   project_id: 1,
-  //   name: "Belgium",
-  //   country_alpha_code: "BG",
-  //   currency: "EUR",
-  //   language: "German",
-  //   status: "Requested",
-  //   request_approved: true,
-  //   due_date: null,
-  //   enabled: true,
-  //   cost: 0,
-  //   createdAt: "2022-10-31T07:40:22.000Z",
-  //   updatedAt: "2022-10-31T07:40:28.000Z",
-  // },
 ];
 
 // NOTIFICATIONS DATA
-export const notificationsData = [
-  // {
-  //   id: 97,
-  //   user_id: 1,
-  //   title: "Design edited!",
-  //   body: "Click to check it out!",
-  //   type: "app",
-  //   read: false,
-  //   route: "app",
-  //   from_name: "Seif",
-  //   from_profile_pic:
-  //     "https://media.publit.io/file/StockPics/DefaultProfilePic-h.webp",
-  //   createdAt: "2022-11-23T06:17:10.000Z",
-  //   updatedAt: "2022-11-23T06:17:17.000Z",
-  // },
-];
+export const notificationsData = [];
 
 // EXPECTED FEEDBACKS DATA
 export const expectedFeedbacksData = [
@@ -572,94 +452,6 @@ export const expectedFeedbacksData = [
     createdAt: "2022-11-23T06:21:33.000Z",
     updatedAt: "2022-11-23T06:22:15.000Z",
   },
-  // {
-  //   id: 20,
-  //   user_id: 1,
-  //   title: "Feedback for Official release v.5.0.0",
-  //   expected_feedback_date: "29/1/2022",
-  //   approved: true,
-  //   type: "Live",
-  //   route: "/prototype",
-  //   createdAt: "2022-11-02T16:36:04.000Z",
-  //   updatedAt: "2022-11-23T06:22:11.000Z",
-  // },
-  // {
-  //   id: 19,
-  //   user_id: 1,
-  //   title: "Feedback for Beta release v.4.0.0",
-  //   expected_feedback_date: "2/11/2023",
-  //   approved: true,
-  //   type: "Beta",
-  //   route: "/prototype",
-  //   createdAt: "2022-11-02T16:34:04.000Z",
-  //   updatedAt: "2022-11-02T16:35:18.000Z",
-  // },
-  // {
-  //   id: 18,
-  //   user_id: 1,
-  //   title: "Feedback for Official release v.3.0.0",
-  //   expected_feedback_date: "2/11/2022",
-  //   approved: true,
-  //   type: "Live",
-  //   route: "/prototype",
-  //   createdAt: "2022-11-02T16:33:08.000Z",
-  //   updatedAt: "2022-11-02T16:33:20.000Z",
-  // },
-  // {
-  //   id: 17,
-  //   user_id: 1,
-  //   title: "Feedback for Official release v.3.0.0",
-  //   expected_feedback_date: "2/11/2022",
-  //   approved: true,
-  //   type: "Live",
-  //   route: "/prototype",
-  //   createdAt: "2022-11-02T16:32:00.000Z",
-  //   updatedAt: "2022-11-02T16:33:18.000Z",
-  // },
-  // {
-  //   id: 16,
-  //   user_id: 1,
-  //   title: "Feedback for Official release v.3.0.0",
-  //   expected_feedback_date: "2/11/2022",
-  //   approved: true,
-  //   type: "Live",
-  //   route: "/prototype",
-  //   createdAt: "2022-11-02T16:29:34.000Z",
-  //   updatedAt: "2022-11-02T16:30:53.000Z",
-  // },
-  // {
-  //   id: 15,
-  //   user_id: 1,
-  //   title: "Feedback for Official release v.3.0.0",
-  //   expected_feedback_date: "2/11/1999",
-  //   approved: true,
-  //   type: "Live",
-  //   route: "/prototype",
-  //   createdAt: "2022-11-02T16:28:25.000Z",
-  //   updatedAt: "2022-11-02T16:30:56.000Z",
-  // },
-  // {
-  //   id: 14,
-  //   user_id: 1,
-  //   title: "Feedback for Beta release v.3.0.0",
-  //   expected_feedback_date: "29/10/2022",
-  //   approved: true,
-  //   type: "Beta",
-  //   route: "/prototype",
-  //   createdAt: "2022-11-02T16:26:21.000Z",
-  //   updatedAt: "2022-11-02T16:30:58.000Z",
-  // },
-  // {
-  //   id: 13,
-  //   user_id: 1,
-  //   title: "Feedback for test",
-  //   expected_feedback_date: "9/9/2022",
-  //   approved: true,
-  //   type: "Beta",
-  //   route: "/prototype",
-  //   createdAt: "2022-11-01T05:58:28.000Z",
-  //   updatedAt: "2022-11-01T05:59:23.000Z",
-  // },
 ];
 
 // PAYMENT METHODS DATA
@@ -713,12 +505,6 @@ export const paymentMethodsData = [
 
 // FEATURES DATA
 export const featuresData = [
-  // {
-  //   id: 10,
-  //   feature_title: "Intuitive UX Flow",
-  //   description: "blablablablablablablabla",
-  //   added: true,
-  // },
   {
     id: 9,
     feature_title: "Easy login & registration",
@@ -791,14 +577,10 @@ export const approvedFeaturesData = [
     feature_title: "Intuitive UI/UX",
     description:
       "Users understand its behavior and effect without the use of reason, experimentation, or assistance.",
-    // screenshots: null,
-    // due_date: "20/9/2022",
+
     request_approved: true,
     status: "Added",
     enabled: true,
-    // cost: 200,
-    // createdAt: "2022-11-04T11:16:36.000Z",
-    // updatedAt: "2022-11-04T11:16:36.000Z",
   },
   {
     id: 7,
@@ -807,14 +589,9 @@ export const approvedFeaturesData = [
     feature_title: "Data Privacy and Security",
     description:
       "The privacy and security feature your app offers can make users feel more comfortable interacting with it.",
-    // screenshots: null,
-    // due_date: "20/9/2022",
     request_approved: true,
     status: "Added",
     enabled: true,
-    // cost: 200,
-    // createdAt: "2022-10-27T15:50:20.000Z",
-    // updatedAt: "2022-10-27T15:53:27.000Z",
   },
   {
     id: 6,
@@ -823,14 +600,9 @@ export const approvedFeaturesData = [
     feature_title: "Push Notifications",
     description:
       "Send push notifications to your users, promote your offers and communicate directly with them.",
-    // screenshots: null,
-    // due_date: "1/1/2022",
     request_approved: true,
     status: "Added",
     enabled: true,
-    // cost: 200,
-    // createdAt: "2022-10-10T06:49:35.000Z",
-    // updatedAt: "2022-10-27T15:47:14.000Z",
   },
   {
     id: 5,
@@ -838,14 +610,9 @@ export const approvedFeaturesData = [
     project_id: 1,
     feature_title: "20 AR Products",
     description: "AR uses a real-world setting to display your products.",
-    // screenshots: null,
-    // due_date: "20/9/2022",
     request_approved: true,
     status: "Added",
     enabled: true,
-    // cost: 200,
-    // createdAt: "2022-10-10T06:40:01.000Z",
-    // updatedAt: "2022-10-10T06:42:02.000Z",
   },
   {
     id: 4,
@@ -854,14 +621,10 @@ export const approvedFeaturesData = [
     feature_title: "Battery Preservation",
     description:
       "Ensures a prolonged experience and sustained battery life for the end-user.",
-    // screenshots: null,
-    // due_date: "20/9/2022",
+
     request_approved: true,
     status: "Added",
     enabled: true,
-    // cost: 200,
-    // createdAt: "2022-10-08T04:46:14.000Z",
-    // updatedAt: "2022-10-08T04:46:49.000Z",
   },
   {
     id: 3,
@@ -870,14 +633,10 @@ export const approvedFeaturesData = [
     feature_title: "Dark mode",
     description:
       "Screen setting designed to make the best use of dim light situations, particularly at night.",
-    // screenshots: null,
-    // due_date: "20/9/2022",
+
     request_approved: true,
     status: "Added",
     enabled: true,
-    // cost: 200,
-    // createdAt: "2022-10-08T04:45:57.000Z",
-    // updatedAt: "2022-10-08T04:46:48.000Z",
   },
   {
     id: 2,
@@ -886,14 +645,10 @@ export const approvedFeaturesData = [
     feature_title: "Filtered search",
     description:
       "A search tool that lets users to restrict their search to a certain section of your app.",
-    // screenshots: null,
-    // due_date: "20/9/2022",
+
     request_approved: true,
     status: "Added",
     enabled: true,
-    // cost: 200,
-    // createdAt: "2022-10-08T04:45:42.000Z",
-    // updatedAt: "2022-10-08T04:46:46.000Z",
   },
   {
     id: 1,
@@ -902,28 +657,9 @@ export const approvedFeaturesData = [
     feature_title: "Geolocation",
     description:
       "The identification of the geographic location of a user or computing device via a variety of data collection mechanisms.",
-    // screenshots: null,
-    // due_date: "20/9/2022",
+
     request_approved: true,
     status: "Added",
     enabled: true,
-    // cost: 200,
-    // createdAt: "2022-10-08T04:45:33.000Z",
-    // updatedAt: "2022-10-08T04:46:45.000Z",
   },
-  // {
-  //   id: 4,
-  //   feature_id: 7,
-  //   project_id: 1,
-  //   feature_title: "Geolocation",
-  //   description: "desc blablablablablablablabla",
-  //   screenshots: null,
-  //   due_date: "20/9/2022",
-  //   request_approved: true,
-  //   status: "Added",
-  //   enabled: true,
-  //   cost: 200,
-  //   createdAt: "2022-10-08T04:45:28.000Z",
-  //   updatedAt: "2022-10-08T04:46:44.000Z",
-  // },
 ];

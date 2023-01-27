@@ -1,8 +1,3 @@
-export { default as ForgotPassword } from "./Auth/ForgotPassword";
-export { default as Login } from "./Auth/Login";
-export { default as OTP } from "./Auth/OTP";
-export { default as Reset } from "./Auth/Reset";
-export { default as Signup } from "./Auth/Signup";
 export { default as Connect } from "./Connect/Connect";
 export { default as Documents } from "./Connect/Documents";
 export { default as Prototype } from "./Connect/Prototype";

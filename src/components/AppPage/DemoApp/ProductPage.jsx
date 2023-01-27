@@ -10,7 +10,7 @@ import clickA from "../../../assets/sfx/clickA.mp3";
 import useSound from "use-sound";
 
 const ProductPage = (props) => {
-  const { demoAppPage, setDemoAppPage } = useStateContext();
+  const {  setDemoAppPage } = useStateContext();
 
   const { demoAppProudctId, setDemoAppProudctId } = useStateContext();
   const [product, setProduct] = useState({});

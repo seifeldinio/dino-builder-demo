@@ -1,53 +1,24 @@
 import "../../_animations.scss";
-import React, { useEffect } from "react";
 import AppStatus from "../../components/DashboardPage/AppStatus";
 import { useStateContext } from "../../contexts/ContextProvider";
 import { BsArrowRight } from "react-icons/bs";
-// import GreenCheckSVG from "../../assets/Icons/GreenCheck.svg";
 import {
-  // KanbanCard,
-  // EmptyKanbanCard,
-  // TextIconBlueButton,
-  // DoneKanbanCard,
   UpdateStatus,
   BugFixesStatus,
   AppReleases,
-  // AppStatusDuplicate,
-  // SyncButton,
   MobileAppStatus,
   MobileUpdateStatus,
   MobileBugFixesStatus,
-  // BackButton,
   ExpandedBugCarousel,
-  StartTourModal,
 } from "../../components/index";
-// import BugSVG from "../../assets/Icons/Bug.svg";
-// import ReportSVG from "../../assets/Icons/Report.svg";
-// import { useCurrentUser } from "../../contexts/userContext/UserContext";
 import { useState } from "react";
-// import NotActivated from "../Auth/Activate";
-// import { useProjectByUserId } from "../../contexts/projectContext/ProjectByUserIdContext";
 import { useNavigate } from "react-router-dom";
-// import useSocketSetup from "../../socket/UseSocketSetup";
-// import socket from "../../socket/Socket";
-// import { AiOutlineSync } from "react-icons/ai";
 import { pagesSearch } from "../../utils/Constants";
-import { currentUserData, projectData } from "../../data/DemoData";
+import { projectData } from "../../data/DemoData";
 import useSound from "use-sound";
 import progressSFX from "../../assets/sfx/progress.mp3";
-// import Tour from "reactour";
-
-// const AppStatus = React.lazy(() =>
-//   import("../../components/DashboardPage/AppStatus")
-// );
 
 const Dashboard = () => {
-  // GET CURRENT USER DATA
-  // const { currentUser, fetchCurrentUser } = useCurrentUser();
-
-  // GET PROJECT THAT BELONGS TO USER DATA
-  // const { project, fetchProjectByUserId } = useProjectByUserId();
-
   const {
     expandedBugCarousel,
     projectProgress,
@@ -89,56 +60,6 @@ const Dashboard = () => {
   const searchFiltered = pagesSearch?.filter((item) =>
     item?.keywords.includes(searchSettings.toLowerCase())
   );
-
-  // const steps = [
-  //   {
-  //     selector: "button#draw-button",
-  //     content: "Let's get started. Click to draw a round of cards.",
-  //     stepInteraction: true,
-  //   },
-  //   {
-  //     selector: "#cards-view",
-  //     content: "Here is your draw. Now, KING is higher than JACK.",
-  //   },
-  //   {
-  //     selector: "table.my-table",
-  //     content:
-  //       "Here you find all the rules, the actions you'll take or have others take when you win.",
-  //   },
-  //   {
-  //     selector: "table.my-table tr#table-row3",
-  //     content:
-  //       "The KING is the higher card here. Now, now you do whatever the rule says.",
-  //   },
-  //   {
-  //     selector: "button#draw-button",
-  //     content: "Draw another round.",
-  //     stepInteraction: true,
-  //   },
-  //   {
-  //     selector: "#add-rule-modal",
-  //     content:
-  //       "A special card has been played. Whoever played the ACE must now assign a new rule to the lowest value card played that round.",
-  //   },
-  //   {
-  //     selector: "#add-rule-input",
-  //     content: "Set a new rule for the 9. Try: 'What are the odds?'",
-  //   },
-  //   {
-  //     selector: "#add-rule-submit",
-  //     content: "Alright, submit the rule.",
-  //   },
-  //   {
-  //     selector: "html",
-  //     content: "Okay, you got the hang of it. Have fun.",
-  //     actionAfter: () => {
-  //       window.location.href = "";
-  //       window.location.pathname =
-  //         "/redirect?to=/v1&title=Walkthrough%20completed!&description=Now%20off%20to%20the%20real%20thing&duration=3000";
-  //     },
-  //   },
-  //   // ...
-  // ];
 
   const [playbackRate, setPlaybackRate] = useState(2);
   const [play] = useSound(progressSFX, {

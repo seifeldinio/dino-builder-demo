@@ -1,8 +1,8 @@
-import { Alert, message } from "antd";
+import { Alert } from "antd";
 import React, { useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { HiOutlineArrowLeft } from "react-icons/hi";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
 import useSound from "use-sound";
 import { useStateContext } from "../../../contexts/ContextProvider";
 import PaymentListTile from "./widgets/PaymentListTile";
@@ -10,7 +10,7 @@ import PaymentListTile from "./widgets/PaymentListTile";
 import clickB from "../../../assets/sfx/clickB.mp3";
 
 const CreditCardPage = () => {
-  const { demoAppPage, setDemoAppPage } = useStateContext();
+  const {  setDemoAppPage } = useStateContext();
   const [selectedTile, setSelectedTile] = useState("Visa");
   const [alertVisible, setAlertVisible] = useState(false);
 

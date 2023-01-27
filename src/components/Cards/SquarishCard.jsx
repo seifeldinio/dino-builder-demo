@@ -3,7 +3,7 @@ import { TextIconBlueButton } from "../";
 // import Download from "../../assets/Icons/Download.svg";
 import { DisabledButton } from "../";
 // import WhiteCheckSVG from "../../assets/Icons/WhiteCheck.svg";
-import { TooltipComponent } from "@syncfusion/ej2-react-popups";
+// import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 // import { MdOutlineFileDownload } from "react-icons/md";
 import { HiDownload } from "react-icons/hi";
 import { BsCheck2 } from "react-icons/bs";

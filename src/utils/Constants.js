@@ -4,7 +4,7 @@ import { BiNotification, BiStoreAlt } from "react-icons/bi";
 import { BsGearFill } from "react-icons/bs";
 import { RiChat3Fill } from "react-icons/ri";
 import { HiOutlineDocument } from "react-icons/hi";
-import { IoIosList, IoMdCard } from "react-icons/io";
+import { IoIosList } from "react-icons/io";
 
 // Sidebar Links
 export const links = [
@@ -174,7 +174,7 @@ export const pagesSearch = [
     name: "App",
     slug: "/app",
     icon: <MdDesignServices className="dark:text-white text-black" />,
-    keywords: "app prototype beta design live release launch",
+    keywords: "app prototype beta design live release launch simulator simulation simple app example",
   },
   {
     name: "Documents",

@@ -1,13 +1,13 @@
 // import BellSVG from "../assets/Icons/Bell.svg";
 // import Spacer from "react-spacer";
-import { Link, useLocation } from "react-router-dom";
+// import { Link, useLocation } from "react-router-dom";
 // import { useEffect, useState } from "react";
 // import { BiBell } from "react-icons/bi";
 // import { useStateContext } from "../contexts/ContextProvider";
 // import socket from "../socket/Socket";
-import { BsGear, BsGearFill } from "react-icons/bs";
+import { BsGear } from "react-icons/bs";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { Tooltip } from "antd";
+// import { Tooltip } from "antd";
 import { useStateContext } from "../contexts/ContextProvider";
 
 const BottomProfile = (props) => {

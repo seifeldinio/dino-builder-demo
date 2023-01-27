@@ -11,7 +11,7 @@ import Popup from "reactjs-popup";
 
 // import PaymentItem from "../StorePage/PaymentItem";
 import AddFeatureModal from "./AddFeatureModal";
-import { TooltipComponent } from "@syncfusion/ej2-react-popups";
+// import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { AiOutlinePlus } from "react-icons/ai";
 import { useStateContext } from "../../contexts/ContextProvider";
 
@@ -21,7 +21,7 @@ const UpdateStatus = (props) => {
   const { doneFeatures } = props;
   const { progress } = props;
 
-  const { tourStarted, setTourStarted } = useStateContext();
+  const { tourStarted } = useStateContext();
 
   return (
     <div
@@ -132,9 +132,13 @@ const UpdateStatus = (props) => {
                   nested={false}
                   modal
                 >
-                  {/* Add a new feature modal */}
-                  <AddFeatureModal />
-                </Popup>{" "}
+                  {(close) => (
+                    <>
+                      {/* Add a new feature modal */}
+                      <AddFeatureModal close={close} />
+                    </>
+                  )}
+                </Popup>
               </>
             ) : (
               <>

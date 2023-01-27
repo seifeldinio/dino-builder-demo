@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { BsThreeDotsVertical } from "react-icons/bs";
 // import { BiStore } from "react-icons/bi";
@@ -9,7 +9,7 @@ import { MdLogout } from "react-icons/md";
 // import { logout } from "../../contexts/authContext/AuthActions";
 import { useNavigate } from "react-router-dom";
 import { BsGearFill } from "react-icons/bs";
-import { Popover, Tooltip } from "antd";
+import { Tooltip } from "antd";
 import { useStateContext } from "../../contexts/ContextProvider";
 
 function classNames(...classes) {
@@ -56,7 +56,7 @@ export default function DropdownComponent() {
                 <Menu.Item>
                   {({ active }) => (
                     <a
-                      href="#"
+                      href="#/"
                       className={classNames(
                         active
                           ? "bg-gray-100 text-gray-900 dark:bg-[#383838] dark:text-white"
@@ -75,7 +75,7 @@ export default function DropdownComponent() {
                 <Menu.Item>
                   {({ active }) => (
                     <a
-                      href="#"
+                      href="#/"
                       className={classNames(
                         active
                           ? "bg-gray-100 dark:bg-[#383838] dark:text-white text-gray-900"

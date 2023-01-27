@@ -1,11 +1,11 @@
-import { Tooltip } from "antd";
-import React from "react";
-import { useStateContext } from "../../contexts/ContextProvider";
+// import { Tooltip } from "antd";
+// import React from "react";
+// import { useStateContext } from "../../contexts/ContextProvider";
 
 const SearchBar = (props) => {
   const { onChange } = props;
 
-  const { tourStarted } = useStateContext();
+  // const { tourStarted } = useStateContext();
 
   return (
     <>

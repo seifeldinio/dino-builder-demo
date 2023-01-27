@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { demoAppProducts } from "../../../../data/DemoData";
+// import React, { useEffect, useState } from "react";
+// import { demoAppProducts } from "../../../../data/DemoData";
 
 const ProductCard = (props) => {
   const { name } = props;
