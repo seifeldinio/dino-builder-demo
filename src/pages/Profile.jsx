@@ -228,7 +228,7 @@ const Profile = () => {
             </span>
           </div>
           {/* App status */}
-          <div className="flex flex-row mt-[25px]">
+          <div className="flex flex-row mt-[25px] md:mb-0 mb-[50px]">
             <span className="text-[#7A7A7A] font-normal mr-[38px]">
               App status
             </span>
