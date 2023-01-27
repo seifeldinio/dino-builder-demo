@@ -98,12 +98,21 @@ const App = () => {
     } else if (localStorage.getItem("robootThemeMode") === "Dark" || "Light") {
       setCurrentMode(localStorage.getItem("robootThemeMode"));
     }
+
+    // Disable Right click
+    // const handleContextmenu = (e) => {
+    //   e.preventDefault();
+    // };
+    // document.addEventListener("contextmenu", handleContextmenu);
+    // return function cleanup() {
+    //   document.removeEventListener("contextmenu", handleContextmenu);
+    // };
   }, []);
 
   return (
     <div className={currentMode === "Dark" ? "dark" : ""}>
       <BrowserRouter>
-        <div className="flex relative select-none dark:bg-main-dark">
+        <div className="flex relative select-none dark:bg-main-dark overflow-x-hidden">
           {/* Demo Label */}
           <DemoLabel />
           {/* Left menu */}
