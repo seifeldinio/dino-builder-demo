@@ -241,7 +241,7 @@ const Settings = () => {
                 />
                 <AddOnCard
                   title={"Payment recovery"}
-                  description={"Automatically recover failed payments"}
+                  description={"Recover failed payments"}
                   // connected={storeData?.payment_recovery === true ? true : false}
                   connected={true}
                   icon={<IoMdHelpBuoy className="h-[25px] w-[25px]" />}
@@ -250,7 +250,7 @@ const Settings = () => {
                 <AddOnCard
                   title={"Abandoned cart"}
                   description={
-                    "Sends notifications to people who didn't check out."
+                    "Notifications to check out."
                   }
                   connected={
                     storeData?.cart_notifications === true ? true : false
@@ -261,7 +261,7 @@ const Settings = () => {
                 <AddOnCard
                   title={"Competition analysis"}
                   description={
-                    "AI Analysis of your competitors' notifications."
+                    "AI Analysis of your competitors."
                   }
                   connected={true}
                   icon={<GrRobot className="h-[23px] w-[23px]" />}
