@@ -15,8 +15,8 @@ const AddFeatureModal = (props) => {
     <div className="h-auto dark:bg-black">
       <div className="flex  flex-row items-center pt-3 pr-3.5 pl-3 pb-2">
         <div className="flex  flex-col ">
-          <span className="text-[20px] text-[#25272E]">
-            Add a new feature 🛠️
+          <span className="text-[20px] font-bold text-[#25272E]">
+            Add feature
           </span>
           <div className="mt-1 ">
             <span className=" text-[14px] text-[#767676] font-normal ">

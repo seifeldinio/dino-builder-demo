@@ -11,7 +11,7 @@ const TextIconBlueButton = (props) => {
 
     <button
       onClick={onClick}
-      class="bg-blue hover:bg-darkblue text-white  py-0.5 px-2.5 rounded-md inline-flex items-center transition-color duration-200 "
+      class="bg-blue hover:bg-darkblue text-white  py-1 px-2.5 rounded-md inline-flex items-center transition-color duration-200 "
     >
       <span className="text-[14px] select-none">{text}</span>
       {icon}

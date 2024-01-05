@@ -10,11 +10,11 @@ const SearchBar = (props) => {
   return (
     <>
       <form class="flex items-center ml-auto">
-        <div class="relative md:w-[280px] invisible md:visible">
+        <div class="relative md:w-[240px] invisible md:visible">
           <input
             type="text"
             id="voice-search"
-            class="bg-white border border-gray-300  text-gray-900 text-sm rounded-full hover:bg-[#f9f9f9] dark:bg-[#2C2C2C] dark:border-[#323232] dark:text-white block w-full pl-10 p-2.5  transition-all duration-200"
+            class="bg-white border border-gray-300  text-gray-900 text-sm rounded-lg hover:bg-[#f9f9f9] dark:bg-[#2C2C2C] dark:border-[#323232] dark:text-white block w-full pl-10 p-2.5  transition-all duration-200"
             placeholder="Search"
             required
             autocomplete="off"

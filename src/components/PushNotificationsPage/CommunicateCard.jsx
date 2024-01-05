@@ -51,8 +51,7 @@ const CommunicateCard = (props) => {
       {/* Card title */}
       <span className="text-[18px] dark:text-white">Communicate</span>
       <span className="text-[#9A9A9A]">
-        Send push notifications to your users, promote your offers and
-        communicate directly with them.
+        Send push notifications to your users & promote your offers.
       </span>
       <hr className="mt-2 mb-2 dark:border-[#2C2C2C]" />
       {/* Title */}
@@ -85,106 +84,43 @@ const CommunicateCard = (props) => {
         <span className="dark:text-white">Priority</span>
         <select
           id="countries"
-          class="ml-2 h-[25px] w-[85px] pl-2  bg-gray-50 border border-gray-300 dark:bg-[#303030] text-gray-900 text-sm rounded-lg focus:ring-blue focus:border-blue block    dark:border-[#272727] dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue dark:focus:border-blue"
+          className="ml-2 h-[25px] w-[85px] pl-2  bg-gray-50 border border-gray-300 dark:bg-[#303030] text-gray-900 text-sm rounded-lg focus:ring-blue focus:border-blue block    dark:border-[#272727] dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue dark:focus:border-blue"
         >
-          <option class="block w-full">High</option>
-          <option class="block w-full">Medium</option>
+          <option className="block w-full">High</option>
+          <option className="block w-full">Medium</option>
         </select>
       </div>
 
-      <hr className="mt-7 mb-5 w-[400px] dark:border-[#2C2C2C]" />
+      {/* <hr className="mt-7 mb-5 w-[400px] dark:border-[#2C2C2C]" /> */}
 
       {/* Delivery */}
-      <span className="text-[18px] mb-4 dark:text-white">Delivery</span>
-      <div className="flex flex-row items-center">
-        {oneSignalApiKey === null ? (
-          <>
-            {/* Disabled Button */}
-            {/* <TooltipComponent
-              className="tooltip-box"
-              content="Integrating Roboot.io push notifications into your App."
-              target="#tooltip"
-            > */}
-              <button
-                // id="tooltip"
-                class="bg-[#ABABAB]  text-white  py-0.5 px-2.5 rounded-md inline-flex items-center transition-color duration-200 "
-              >
-                <span className="text-[14px]">Send</span>
-                <MdSend className="ml-1 h-[15px] w-[15px]" />
+      {/* <span className="text-[18px] mb-4 dark:text-white">Delivery</span> */}
+      <div className="flex flex-row items-center mt-[68px] ml-auto">
+        <Popover
+          content={
+            <div className="flex flex-col">
+              <span>Sends your notification to all your users. 🚀</span>
+              <button onClick={hide} className="text-blue mt-1.5">
+                Ok
               </button>
-            {/* </TooltipComponent> */}
-          </>
-        ) : (
-          <>
-            {/* Active buttons */}
-            {/* Schedule button */}
-            {/* {schedule === true ? (
-              <div className="flex flex-row items-center space-x-2.5">
-                <DatePicker
-                // onChange={onChange}
-                />
-                <DatePicker
-                  // onChange={onChange}
-                  picker="time"
-                />
-              </div>
-            ) : (
-              <>
-                <button
-                  onClick={() => {
-                    setSchedule(true);
-                  }}
-                  class="bg-blue hover:bg-darkblue text-white  py-0.5 px-2.5 rounded-md inline-flex items-center transition-color duration-200 "
-                >
-                  <span className="text-[14px]">Schedule</span>
-                  <AiOutlineCalendar className="ml-1 h-[15px] w-[15px]" />
-                </button>
-              </>
-            )} */}
-
-            {/* <div className="ml-3" /> */}
-            {/* Send button */}
-            <Popover
-              content={
-                <div className="flex flex-col">
-                  <span>Sends your notification to all your users. 🚀</span>
-                  <button onClick={hide} className="text-blue mt-1.5">
-                    Ok
-                  </button>
-                </div>
-              }
-              title="Demo"
-              trigger="click"
-              open={open}
-              onOpenChange={handleOpenChange}
-              placement="right"
+            </div>
+          }
+          title="Demo"
+          trigger="click"
+          open={open}
+          onOpenChange={handleOpenChange}
+          placement="right"
+        >
+          <div>
+            <button
+              onClick={() => {}}
+              class="bg-blue hover:bg-darkblue text-white  py-1 px-2.5 rounded-md inline-flex items-center transition-color duration-200 "
             >
-              <div>
-                <button
-                  onClick={() => {}}
-                  class="bg-blue hover:bg-darkblue text-white  py-0.5 px-2.5 rounded-md inline-flex items-center transition-color duration-200 "
-                >
-                  <span className="text-[14px]">Send</span>
-                  <MdSend className="ml-1 h-[15px] w-[15px]" />
-                </button>
-              </div>
-            </Popover>
-
-            {/* Modal appears when send is clicked */}
-            {/* <Modal
-              title="Bloxat Built Demo"
-              centered
-              open={open}
-              onCancel={() => setOpen(false)}
-              okButtonProps={{
-                disabled: true,
-              }}
-              width={1000}
-            >
-              <span>This sends your notification to all your users.</span>
-            </Modal> */}
-          </>
-        )}
+              <span className="text-[14px]">Send</span>
+              <MdSend className="ml-1 h-[15px] w-[15px]" />
+            </button>
+          </div>
+        </Popover>
       </div>
       {/* <div className="mb-[7px]" /> */}
     </div>

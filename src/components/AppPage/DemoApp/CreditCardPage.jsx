@@ -10,7 +10,7 @@ import PaymentListTile from "./widgets/PaymentListTile";
 import clickB from "../../../assets/sfx/clickB.mp3";
 
 const CreditCardPage = () => {
-  const {  setDemoAppPage } = useStateContext();
+  const { setDemoAppPage } = useStateContext();
   const [selectedTile, setSelectedTile] = useState("Visa");
   const [alertVisible, setAlertVisible] = useState(false);
 
@@ -100,7 +100,7 @@ const CreditCardPage = () => {
         {alertVisible && (
           <div className="fade-down">
             <Alert
-              message="Bloxat Simulator: No need to enter your payment details, due to it being just a simple demo app."
+              message="Palm Builder Simulator: No need to enter your payment details, due to it being just a simple demo app."
               banner
               closable
             />

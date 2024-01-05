@@ -9,6 +9,8 @@ import { AiOutlineAppstoreAdd } from "react-icons/ai";
 import TextIconBlueButton from "../Buttons/TextIconBlueButton";
 import { BsArrowRight } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
+import wooCommerceLogo from "../../assets/images/woocommerce.webp";
+import { IoMdCheckmark } from "react-icons/io";
 
 const StoreManagerCard = (props) => {
   // const { storeManagerLink } = props;
@@ -31,12 +33,17 @@ const StoreManagerCard = (props) => {
   const navigate = useNavigate();
 
   return (
-    <div className="md:flex hidden h-auto flex-1 rounded-lg shadow-md outline outline-1.5 outline-greyelement bg-white dark:bg-section-dark dark:outline-[#202020]">
-      <div className="p-3">
-        <div className="flex flex-col">
-          <div className="flex flex-row items-center">
-            <span className="text-[20px] dark:text-white">App manager</span>
-            <AiOutlineAppstoreAdd className="dark:text-white w-[22px] h-auto ml-1.5" />
+    <div className="md:flex hidden h-full w-full flex-1 rounded-lg outline outline-1.5 outline-greyelement bg-white dark:bg-section-dark dark:outline-[#202020] hover:shadow-md transition-all duration-200">
+      <div className="p-3 w-full">
+        <div className="flex flex-col ">
+          <div className="flex flex-row items-center ">
+            <span className="text-[20px] dark:text-white">Store data</span>
+            <img
+              src={wooCommerceLogo}
+              alt="WooCommerce Logo"
+              className="w-auto h-5 ml-1.5"
+            />
+            {/* <AiOutlineAppstoreAdd className="dark:text-white w-[22px] h-auto ml-1.5" /> */}
             {/* <img
                     src={EditSVG}
                     className="h-[22px] w-[22px] ml-2.5"
@@ -44,17 +51,17 @@ const StoreManagerCard = (props) => {
                   /> */}
           </div>
           <span className="text-[14px] text-[#9A9A9A] mt-1">
-            Go to your app manager to check your Bloxat Built app's health and
-            performance status.
+            WooCommerce integrated with your app.
           </span>
-          <div className="flex flex-wrap ">
+          <div className="flex flex-wrap mt-3">
             <div className="ml-auto flex flex-row items-center space-x-3 mt-2.5">
-              <TextIconBlueButton
-                onClick={() => navigate("/app")}
-                icon={<BsArrowRight className="h-[18px] w-[18px] ml-1" />}
-                text={"Manage"}
-                // iconSize={"18px"}
-              />
+              <div
+                // onClick={onClick}
+                class="bg-[#F2F3F7]  text-[#8E8E8E]  py-1 px-2.5 rounded-md inline-flex items-center "
+              >
+                <span className="text-[14px] select-none">Integrated</span>
+                <IoMdCheckmark className="ml-1" />
+              </div>
             </div>
           </div>
         </div>

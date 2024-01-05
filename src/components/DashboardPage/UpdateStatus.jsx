@@ -26,11 +26,59 @@ const UpdateStatus = (props) => {
   return (
     <div
       data-tour="2"
-      className="md:visible invisible md:mt-6 mt-0 md:h-auto h-0"
+      className="md:visible invisible md:mt-10 mt-0 md:h-auto h-0"
     >
-      <span className="text-[20px] font-normal dark:text-white">
-        Update’s Status
-      </span>
+      <div className="flex flex-row items-center justify-between">
+        <span className="text-[26px] dark:text-white font-bold">
+          Feature status
+        </span>
+
+        <div className="flex flex-wrap ">
+          <div className="ml-auto">
+            {progress === 4 && tourStarted === false ? (
+              <>
+                <Popup
+                  trigger={
+                    <TextIconBlueButton
+                      text={"Add feature"}
+                      icon={<AiOutlinePlus className="ml-1.5" />}
+                      // icon={AddSVG}
+                      // ml={"ml-1.5"}
+                    />
+                  }
+                  closeOnDocumentClick={false}
+                  nested={false}
+                  modal
+                >
+                  {(close) => (
+                    <>
+                      {/* Add a new feature modal */}
+                      <AddFeatureModal close={close} />
+                    </>
+                  )}
+                </Popup>
+              </>
+            ) : (
+              <>
+                {/* Disabled button because the project isn't done yet to add more features */}
+                {/* <TooltipComponent
+                  className="tooltip-box"
+                  content="You can add additional features once your app is live."
+                  target="#tooltip"
+                > */}
+                <div id="tooltip">
+                  <DisabledButton
+                    text={"Add a new feature"}
+                    icon={<AiOutlinePlus className="ml-1.5" />}
+                    ml={"ml-1.5"}
+                  />
+                </div>
+                {/* </TooltipComponent> */}
+              </>
+            )}
+          </div>
+        </div>
+      </div>
 
       {/* Update's kanban area */}
 
@@ -40,8 +88,8 @@ const UpdateStatus = (props) => {
         <div className="flex flex-row items-center  pt-3 pl-5 pb-3">
           <div className="flex-1 ">
             <div className="flex flex-row items-center ">
-              <BsListUl className="mr-2 dark:text-white" />
-              <span className="dark:text-white">Feature</span>
+              {/* <BsListUl className="mr-2 dark:text-white" /> */}
+              <span className="dark:text-white">🔨 Feature</span>
             </div>
           </div>
 
@@ -50,9 +98,9 @@ const UpdateStatus = (props) => {
           </div>
           <div className="flex-1">
             <div className="flex flex-row items-center dark:text-white">
-              <BsCheck2 className="mr-1 text-green" />
+              {/* <BsCheck2 className="mr-1 text-green" /> */}
               {/* <img src={GreenCheckSVG} className="mr-1" alt="" /> */}
-              <span>Done</span>
+              <span>✅ Done</span>
             </div>
           </div>
         </div>
@@ -111,51 +159,6 @@ const UpdateStatus = (props) => {
                     data={item}
                   />
                 ))}
-              </>
-            )}
-          </div>
-        </div>
-        <div className="flex flex-wrap ">
-          <div className="ml-auto pb-5 pr-5">
-            {progress === 4 && tourStarted === false ? (
-              <>
-                <Popup
-                  trigger={
-                    <TextIconBlueButton
-                      text={"Add a new feature"}
-                      icon={<AiOutlinePlus className="ml-1.5" />}
-                      // icon={AddSVG}
-                      // ml={"ml-1.5"}
-                    />
-                  }
-                  closeOnDocumentClick={false}
-                  nested={false}
-                  modal
-                >
-                  {(close) => (
-                    <>
-                      {/* Add a new feature modal */}
-                      <AddFeatureModal close={close} />
-                    </>
-                  )}
-                </Popup>
-              </>
-            ) : (
-              <>
-                {/* Disabled button because the project isn't done yet to add more features */}
-                {/* <TooltipComponent
-                  className="tooltip-box"
-                  content="You can add additional features once your app is live."
-                  target="#tooltip"
-                > */}
-                <div id="tooltip">
-                  <DisabledButton
-                    text={"Add a new feature"}
-                    icon={<AiOutlinePlus className="ml-1.5" />}
-                    ml={"ml-1.5"}
-                  />
-                </div>
-                {/* </TooltipComponent> */}
               </>
             )}
           </div>

@@ -10,6 +10,8 @@ import {
   MobileUpdateStatus,
   MobileBugFixesStatus,
   ExpandedBugCarousel,
+  SearchBar,
+  CircularProgress,
 } from "../../components/index";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -17,6 +19,10 @@ import { pagesSearch } from "../../utils/Constants";
 import { projectData } from "../../data/DemoData";
 import useSound from "use-sound";
 import progressSFX from "../../assets/sfx/progress.mp3";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { FiHelpCircle } from "react-icons/fi";
+import TimelineComponent from "../../components/DashboardPage/Timeline";
+
 
 const Dashboard = () => {
   const {
@@ -77,44 +83,33 @@ const Dashboard = () => {
       <div className="page-animation  overflow-x-clip">
         <div className="md:mt-10 md:ml-10 md:mr-10 mt-20 ml-5 mr-5 ">
           <div id="step1" className="flex flex-wrap lg:flex-nowrap ">
-            <span className="text-[27px] dark:text-white">
-              Welcome back, {firstName} 👋
-            </span>
-            {/* Search bar */}
-            <form class="flex items-center ml-auto">
-              <div class="relative md:w-[280px] invisible md:visible">
-                <input
-                  type="text"
-                  id="voice-search"
-                  class="bg-white border border-gray-300  text-gray-900 text-sm rounded-full hover:bg-[#f9f9f9] dark:bg-[#2C2C2C] dark:border-[#323232] dark:text-white block w-full pl-10 p-2.5  transition-all duration-200"
-                  placeholder="Search"
-                  required
-                  autocomplete="off"
-                  onChange={(e) => {
-                    setSearchSettings(e.target.value);
-                    // fetchGuide(e.target.value);
-                  }}
-                />
-                <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                  <svg
-                    aria-hidden="true"
-                    class="w-5 h-5 text-gray-500 dark:text-gray-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
+            <div className="flex flex-col">
+              <div className="flex flex-wrap lg:flex-nowrap ">
+                <div className="flex flex-row justify-center md:mt-0 mt-10">
+                  <span className="text-[26px] font-bold dark:text-white">
+                    {/* {project?.app_name} Cost */}
+                    My App
+                  </span>
                 </div>
               </div>
-            </form>
+              <div className="row mt-1 text-[15px]">
+                <span className="text-gray-400">
+                  Track your app's status and completion progress.
+                </span>
+              </div>
+            </div>
+
+            {/* Search bar */}
+            {/* Search bar */}
+            <SearchBar
+              onChange={(e) => {
+                setSearchSettings(e.target.value);
+                // fetchGuide(e.target.value);
+              }}
+            />
             {/* Search suggestions results */}
             {searchSettings !== "" && (
-              <div className="absolute right-[40px] mt-[60px] bg-greyelement dark:bg-[#323232] w-[280px] h-[193px] rounded-md z-50 overflow-y-scroll shadow-lg">
+              <div className="absolute right-[40px] mt-[64px] bg-greyelement dark:bg-[#323232] w-[240px] h-[193px] rounded-md z-50 overflow-y-scroll shadow-lg">
                 <div className="flex flex-col ">
                   {searchFiltered?.length === 0 ? (
                     <>
@@ -153,18 +148,20 @@ const Dashboard = () => {
                 </div>
               </div>
             )}
+
             {/* END SEARCH */}
             {/* Sync button if there's a project progress update */}
             {/* <SyncButton /> */}
           </div>
-          <div className="row md:mt-2 mt-[-30px] text-[15px] dark:text-white">
+          <hr className="mt-4 mb-5" />
+          {/* <div className="row md:mt-2 mt-[-30px] text-[15px] dark:text-white">
             <span>App status: </span>
             <span className="text-gray-400	">{projectStatus}</span>
-          </div>
+          </div> */}
 
           {/* Desktop view App Status */}
           {/* <Suspense fallback={<div>Loading ...</div>}> */}
-          <AppStatus
+          {/* <AppStatus
             progress={projectProgress}
             onClick={() => {
               if (projectProgress === 0) {
@@ -189,10 +186,10 @@ const Dashboard = () => {
             //     : projectProgress
             // }
             releaseDate={projectData?.release_date}
-          />
+          /> */}
           {/* </Suspense> */}
           {/* Mobile view App Status */}
-          <MobileAppStatus
+          {/* <MobileAppStatus
             progress={projectProgress}
             onClick={() => {
               if (projectProgress === 0) {
@@ -211,8 +208,45 @@ const Dashboard = () => {
                 handleClick();
               }
             }}
-          />
+          /> */}
           {/* Update's status */}
+
+          <div className="delay-3 flex flex-row items-start w-full space-x-4">
+            <div className="border-[1px] border-[#EBEBEB] flex flex-row w-[500px] px-4 py-8 items-center justify-center space-x-10 rounded-lg hover:shadow-md transition-all duration-200">
+              <LazyLoadImage
+                className="flex object-contain h-[364px] w-auto"
+                src="https://media.publit.io/file/screens/PLACE-YOUR-SCREEN-HERE-1.webp"
+              />
+              <div className="flex flex-col items-start space-y-7">
+                <div className="flex flex-col items-start space-y-2">
+                  <h3 className="text-[#595959]">Project Progress</h3>
+
+                  <CircularProgress progress={70} title={"70%"} />
+                </div>
+
+                <div className="flex flex-col items-start space-y-0">
+                  <h3 className="text-[#595959]">Delivery </h3>
+                  <p className="text-[#1E1919] font-semibold">17 Jun 2023</p>
+                </div>
+
+                <div className="flex flex-col items-start space-y-0">
+                  <h3 className="text-[#595959]">Status </h3>
+                  <p className="text-[#1E1919] font-semibold">Ongoing</p>
+                </div>
+
+                <button
+                  onClick={() => {}}
+                  class="bg-[#F2F3F7] hover:bg-[#E4E5EB] dark:bg-[#424242] hover:dark:bg-[#565656] text-black  py-1 px-2.5 rounded-md inline-flex items-center transition-color duration-200"
+                >
+                  <span className="text-[14px] dark:text-white mr-1.5">
+                    Support
+                  </span>
+                  <FiHelpCircle />
+                </button>
+              </div>
+            </div>
+            <TimelineComponent />
+          </div>
 
           <div className="delay-4">
             {/* Update Status Desktop View */}
@@ -227,17 +261,17 @@ const Dashboard = () => {
           </div>
 
           {/* Bug Fixes Status */}
-          <div className="delay-4">
-            {/* Bug Fixes Status Desktop View */}
-            <BugFixesStatus
+          {/* <div className="delay-4"> */}
+          {/* Bug Fixes Status Desktop View */}
+          {/* <BugFixesStatus
               toDoBug={toDoBug}
               fixingBug={fixingBug}
               doneBug={doneBug}
               progress={projectData?.project_progress}
-            />
-            {/* Bug Fixes Status Mobile View */}
-            <MobileBugFixesStatus doneBug={doneBug} />
-          </div>
+            /> */}
+          {/* Bug Fixes Status Mobile View */}
+          {/* <MobileBugFixesStatus doneBug={doneBug} /> */}
+          {/* </div> */}
 
           {/* App releases */}
 

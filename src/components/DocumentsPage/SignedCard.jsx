@@ -32,7 +32,10 @@ const SignedCard = (props) => {
             <div className="ml-auto">
               <div className="flex flex-row items-center">
                 {/* <span className="text-[14px] text-black ">Uploaded</span> */}
-                <BsCheck2 className="text-green" />
+                <div className="bg-[#D7F7C2] p-1 rounded-md">
+                  <BsCheck2 className="text-[#006908]" />
+                </div>
+
                 {/* <img src={GreenCheckSVG} alt="" /> */}
               </div>
             </div>

@@ -38,8 +38,8 @@ const AddOnCard = (props) => {
           {connected === true ? (
             <>
               {" "}
-              <div className="ml-auto relative bg-[#EEF9E9] mb-[25px] rounded-lg dark:bg-[#7fdf59]">
-                <span className="text-[#639C4D] text-[14px] px-2 dark:text-black dark:font-medium">
+              <div className="ml-auto relative bg-[#D7F7C2] px-2 py-0.5 mb-[25px] rounded-md dark:bg-[#7fdf59]">
+                <span className="text-[#006908] text-[14px]  dark:text-black dark:font-medium">
                   Connected
                 </span>
               </div>

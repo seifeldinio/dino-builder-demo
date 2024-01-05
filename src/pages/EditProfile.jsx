@@ -37,19 +37,19 @@ const EditProfile = () => {
     <div className="page-animation">
       <div className="md:mt-10 md:ml-10 md:mr-10 h-full mt-20 ml-5 mr-5 md:overflow-x-visible overflow-x-hidden">
         <div className="flex flex-wrap lg:flex-nowrap ">
-          <div className="flex flex-row items-center">
+          <div className="flex flex-row items-center space-x-1">
             {/* Back button */}
             <button
               onClick={() => {
                 navigate(-1);
               }}
-              className="flex h-[40px] w-[40px] justify-center content-center hover:dark:bg-[#323232] dark:text-white cursor-pointer hover:bg-[#eaeaea] mt-[1px] px-3 py-3 rounded-full  transition-color duration-200  mr-[7px]"
+              className="flex h-[40px] w-[40px] justify-center content-center hover:dark:bg-[#323232] dark:text-white cursor-pointer bg-[#F4F4F4] hover:bg-[#e7e7e7] mt-[1px] px-3 py-3 rounded-full  transition-color duration-200  mr-[7px]"
             >
               <HiOutlineArrowLeft className="scale-110" />
             </button>
             {/* Title */}
-            <span className="text-[27px] dark:text-white">
-              Profile Settings
+            <span className="text-[26px] font-bold dark:text-white">
+              Edit Profile
             </span>
           </div>
         </div>
@@ -85,7 +85,8 @@ const EditProfile = () => {
               type="text"
               id="inline-full-name"
               class="bg-gray-50 border border-gray-300 py-1.5 text-gray-900 dark:placeholder:text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#272727] dark:border-[#272727] dark:placeholder-gray-900 placeholder-gray-900 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder={firstName}
+              // placeholder={firstName}
+              value={inputFirstName}
               required
               onChange={(e) => {
                 setInputFirstName(e.target.value);
@@ -104,7 +105,8 @@ const EditProfile = () => {
               type="text"
               id="first_name"
               class="bg-gray-50 border border-gray-300 py-1.5 text-gray-900 dark:placeholder:text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#272727] dark:border-[#272727] dark:placeholder-gray-900 placeholder-gray-900 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder={lastName}
+              // placeholder={lastName}
+              value={inputLastName}
               required
               onChange={(e) => {
                 setInputLastName(e.target.value);
@@ -121,18 +123,18 @@ const EditProfile = () => {
             >
               Email
             </label>
-            <span className="ml-auto text-[13px] text-gray-400">
+            {/* <span className="ml-auto text-[13px] text-gray-400">
               For logging in
-            </span>
+            </span> */}
           </div>
 
           <input
             type="text"
             id="disabled-input"
             aria-label="disabled input"
-            class="mb-6 bg-gray-100 border mt-2 border-gray-300 py-1.5 w-[180px] text-gray-400 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 cursor-not-allowed dark:bg-[#272727] dark:border-[#272727] dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="bg-gray-50 border border-gray-300 py-1.5 text-gray-900 dark:placeholder:text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-[#272727] dark:border-[#272727] dark:placeholder-gray-900 placeholder-gray-900 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-[180px]"
             placeholder={currentUserData?.email}
-            disabled
+            // disabled
           />
         </div>
         <div className="h-[20px]" />
@@ -177,7 +179,7 @@ const EditProfile = () => {
               //   RequiredFields();
               // }
             }}
-            class="bg-blue hover:bg-darkblue outline outline-2 outline-blue hover:outline-darkblue text-white  py-0.5 px-2.5 rounded-md inline-flex items-center transition-color duration-200 "
+            class="bg-blue hover:bg-darkblue outline outline-2 outline-blue hover:outline-darkblue text-white  py-1 px-2.5 rounded-md inline-flex items-center transition-color duration-200 "
           >
             <span className="text-[14px]">Save changes</span>
           </button>

@@ -10,7 +10,13 @@ import clickA from "../../../assets/sfx/clickA.mp3";
 import useSound from "use-sound";
 
 const ProductPage = (props) => {
-  const {  setDemoAppPage } = useStateContext();
+  const {
+    setDemoAppPage,
+    primaryColor,
+
+    textColor,
+    backgroundColor,
+  } = useStateContext();
 
   const { demoAppProudctId, setDemoAppProudctId } = useStateContext();
   const [product, setProduct] = useState({});
@@ -36,7 +42,13 @@ const ProductPage = (props) => {
   const [playA] = useSound(clickA, { volume: 0.5 });
 
   return (
-    <div className="page-back flex flex-col mt-5">
+    <div
+      className="page-back flex flex-col mt-5"
+      style={{
+        backgroundColor: backgroundColor,
+        color: textColor,
+      }}
+    >
       {/* Demo Indicator */}
       {/* <span className="fixed z-50 ml-[275px] mb-[200px] cursor-pointer">
         <div className="flex items-center content-center justify-center bg-red h-[80px] w-[20px] rotate-[-45deg]	">
@@ -169,8 +181,13 @@ const ProductPage = (props) => {
             setDemoAppPage("credit-card");
             playA();
           }}
-          className="flex items-center content-center justify-center bg-blue rounded-lg mt-5 hover:bg-darkblue cursor-pointer duration-200 transition-all"
+          style={{
+            backgroundColor: primaryColor,
+            // color: preview.linkTextColor,
+          }}
+          className={`flex items-center content-center justify-center rounded-lg mt-5 cursor-pointer duration-200 transition-all`}
         >
+          {/* hover:bg-darkblue  */}
           <span className="text-white font-bold p-2 select-none">Buy</span>
         </div>
 

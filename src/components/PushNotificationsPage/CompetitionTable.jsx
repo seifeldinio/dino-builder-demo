@@ -29,7 +29,7 @@ const CompetitionTable = () => {
     <div className="page-animation">
       <div className="flex flex-row items-center">
         <div className="flex flex-col">
-          <div className="text-[20px] font-normal dark:text-white">
+          <div className="text-[20px] font-medium dark:text-white">
             Competitors’ notifications
           </div>
           <span className="text-[14px] text-[#939393]">
@@ -44,7 +44,7 @@ const CompetitionTable = () => {
               <input
                 type="text"
                 id="voice-search"
-                class="bg-white border border-gray-300  text-gray-900 text-sm rounded-full hover:bg-[#f9f9f9] dark:bg-[#2C2C2C] dark:border-[#323232] dark:text-white block w-full pl-10 p-1.5  transition-all duration-200"
+                class="bg-white border border-gray-300  text-gray-900 text-sm rounded-lg hover:bg-[#f9f9f9] dark:bg-[#2C2C2C] dark:border-[#323232] dark:text-white block w-full pl-10 p-1.5  transition-all duration-200"
                 placeholder="Search"
                 required
                 autocomplete="off"
@@ -85,7 +85,7 @@ const CompetitionTable = () => {
 
       <div class="overflow-x-auto relative mt-5 outline outline-2 outline-[#F2F3F7] rounded-lg dark:outline-[#2C2C2C]">
         <table class="w-full text-sm text-left  text-gray-500 dark:text-gray-400">
-          <thead class="text-xs text-gray-700  bg-[#fafbfd]   dark:text-[#929292] dark:bg-main-dark">
+          <thead class="text-md font-light text-gray-700  bg-[#FAFAFA]   dark:text-[#929292] dark:bg-main-dark">
             <tr>
               <th scope="col" class="py-3 px-6">
                 Notification

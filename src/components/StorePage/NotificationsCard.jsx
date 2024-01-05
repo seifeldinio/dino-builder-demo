@@ -24,7 +24,7 @@ const NotificationsCard = () => {
   return (
     <div
       data-tour="15"
-      className="flex-1  h-auto rounded-lg shadow-md outline outline-1.5 outline-greyelement bg-white dark:bg-section-dark dark:outline-[#202020]"
+      className="flex-1 h-full rounded-lg outline outline-1.5 outline-greyelement bg-white dark:bg-section-dark dark:outline-[#202020] hover:shadow-md transition-all duration-200"
     >
       <div className="p-3">
         <div className="flex flex-col">
@@ -49,10 +49,9 @@ const NotificationsCard = () => {
             )}
           </div>
           <span className="text-[14px] text-[#9A9A9A] mt-1">
-            Send push notifications to your users, promote your offers and
-            communicate directly with them.
+            Send push notifications to your users.
           </span>
-          <div className="flex flex-wrap ">
+          <div className="flex flex-wrap mt-auto">
             <div className="ml-auto">
               <div className="flex flex-row mt-2.5">
                 <TextIconBlueButton

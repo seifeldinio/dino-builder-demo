@@ -15,6 +15,11 @@ import { BottomProfile, TourBottomProfile } from "./index";
 import { currentUserData, notificationsData } from "../data/DemoData";
 // import { LazyLoadImage } from "react-lazy-load-image-component";
 
+import LogoLight from '../assets/images/logo-light.webp'
+import LogoDark from "../assets/images/logo-dark.webp";
+
+
+
 const Sidebar = () => {
   const { currentMode, tourStarted } = useStateContext();
 
@@ -53,7 +58,7 @@ const Sidebar = () => {
               //   placeholderSrc="https://media.publit.io/file/StockPics/roboot-siteheader-dark.svg"
               // />
               <img
-                src="https://media.publit.io/file/StockPics/bloxat-siteheader.svg"
+                src={LogoLight}
                 className="mt-10 ml-3 w-[150px] items-center gap-3 tracking-tight   dark:fill-white	"
                 alt=""
               />
@@ -66,7 +71,7 @@ const Sidebar = () => {
               //   placeholderSrc="https://media.publit.io/file/StockPics/roboot-siteheader-dark.svg"
               // />
               <img
-                src="https://media.publit.io/file/StockPics/bloxat-dark.webp"
+                src={LogoDark}
                 className="mt-10 ml-3 w-[150px] items-center gap-3 tracking-tight   dark:fill-white	"
                 alt=""
               />

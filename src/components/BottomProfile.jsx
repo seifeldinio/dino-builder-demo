@@ -24,7 +24,7 @@ const BottomProfile = (props) => {
   const { profilePicture, firstName, lastName } = useStateContext();
 
   return (
-    <div className="absolute   mr-2 mt-2 ml-2 mb-5  rounded-md outline  outline-2 outline-grey bg-white bottom-0  dark:bg-main-dark dark:outline-[#2C2C2C]">
+    <div className="absolute bg-[#FAFAFA] w-[214px] overflow-x-clip mr-2 mt-2 ml-2 mb-5 rounded-md outline  outline-2 outline-[#DFE0E3] bottom-0  dark:bg-main-dark dark:outline-[#2C2C2C]">
       <Link to="/profile">
         {/* notifications?.length > 0 */}
         {notificationSentFromAdmin || notifications?.length > 0 ? (
@@ -66,7 +66,7 @@ const BottomProfile = (props) => {
             </>
           )}
 
-          <div className="flex flex-col">
+          <div className="flex flex-col w-[100px] overflow-x-hidden">
             <div className="flex flex-row items-center">
               <span className="text-[14px] font-semibold mr-1 dark:text-white">
                 {firstName}
@@ -75,7 +75,7 @@ const BottomProfile = (props) => {
                 {lastName}
               </span>
             </div>
-            <span className="text-[12px] w-[125px] truncate text-ellipsis	dark:text-white">
+            <span className="text-[12px] truncate text-ellipsis	dark:text-white">
               {email}
             </span>
           </div>
@@ -91,7 +91,7 @@ const BottomProfile = (props) => {
               <Tooltip title="Settings">
                 <div
                   data-tour="29"
-                  className="bg-gray-50 p-2 hover:bg-gray-100 rounded-full transition-color duration-200 dark:bg-button-dark dark:hover:bg-hover-dark "
+                  className="bg-[#EEEEEE] p-2 hover:bg-gray-100 rounded-full transition-color duration-200 dark:bg-button-dark dark:hover:bg-hover-dark "
                 >
                   {/* <img className="h-[19px] w-[19px]" src={BellSVG} /> */}
                   <BsGear className="h-[19px] w-[19px] dark:text-white" />

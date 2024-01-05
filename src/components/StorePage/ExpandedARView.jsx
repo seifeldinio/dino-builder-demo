@@ -12,6 +12,8 @@ import {
 import clickB from "../../assets/sfx/clickB.mp3";
 import useSound from "use-sound";
 
+import SmallLogo from "../../assets/images/small-logo.webp";
+
 const ExpandedARView = (props) => {
   const { setExpandedARView } = useStateContext();
 
@@ -45,11 +47,7 @@ const ExpandedARView = (props) => {
           {/* Main content */}
           <div className="absolute z-50  left-7 top-7 ">
             <div className="flex flex-col space-y-3">
-              <img
-                src="https://media.publit.io/file/StockPics/roboot-viewer.svg"
-                className="h-[50px] w-[50px]"
-                alt=""
-              />
+              <img src={SmallLogo} className="h-[50px] w-[50px]" alt="" />
               <div className="flex flex-row items-center text-white">
                 <span className="mr-1.5">Product Name:</span>
                 <span className="font-medium">{productName}</span>

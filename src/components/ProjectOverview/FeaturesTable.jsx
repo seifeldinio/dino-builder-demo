@@ -41,7 +41,7 @@ const FeaturesTable = () => {
             <input
               type="text"
               id="voice-search"
-              class="bg-white border border-gray-300  text-gray-900 dark:bg-[#2C2C2C] dark:border-[#323232] dark:text-white text-sm rounded-full hover:bg-[#f9f9f9] block w-full pl-10 p-1.5  transition-all duration-200"
+              class="bg-white border border-gray-300  text-gray-900 dark:bg-[#2C2C2C] dark:border-[#323232] dark:text-white text-sm rounded-lg hover:bg-[#f9f9f9] block w-full pl-10 p-1.5  transition-all duration-200"
               placeholder="Search"
               required
               value={query}

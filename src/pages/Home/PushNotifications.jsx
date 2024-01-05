@@ -68,7 +68,7 @@ const PushNotifications = () => {
         className="md:mt-10 md:ml-10 md:mr-10 h-full mt-20 ml-5 mr-5 md:overflow-x-visible overflow-x-hidden"
       >
         <div className="flex flex-wrap lg:flex-nowrap ">
-          <div className="flex flex-row items-center">
+          <div className="flex flex-row items-center space-x-1">
             {/* Back button */}
             <button
               onClick={() => {
@@ -78,43 +78,25 @@ const PushNotifications = () => {
                 } else {
                 }
               }}
-              className="flex h-[40px] w-[40px] justify-center content-center hover:dark:bg-[#323232] dark:text-white cursor-pointer hover:bg-[#eaeaea] mt-[1px] px-3 py-3 rounded-full  transition-color duration-200  mr-[7px]"
+              className="flex h-[40px] w-[40px] justify-center content-center hover:dark:bg-[#323232] dark:text-white cursor-pointer bg-[#F4F4F4] hover:bg-[#e7e7e7] mt-[1px] px-3 py-3 rounded-full  transition-color duration-200  mr-[7px]"
             >
               <HiOutlineArrowLeft className="scale-110" />
             </button>
             {/* Title */}
-            <span className="text-[27px] dark:text-white">
+            <span className="text-[26px] dark:text-white font-bold">
               Push notifications
             </span>
-            {storeData?.onesignal_api_key === null && (
-              <>
-                {/* OneSignalAPI === null */}
-                {/* <TooltipComponent
-                  className="tooltip-box"
-                  content="Integrating Roboot.io push notifications into your App."
-                  target="#tooltip"
-                > */}
-                  <div
-                    id="tooltip"
-                    className="border-1 rounded-lg ml-2 border-[#cccccc] dark:border-[#717171] cursor-default"
-                  >
-                    <span className="m-1 font-[14px] text-[#9d9d9d] dark:text-[#9c9c9c]">
-                      Integrating
-                    </span>
-                  </div>
-                {/* </TooltipComponent> */}
-              </>
-            )}
           </div>
         </div>
+        <hr className="mt-5 mb-5" />
         {/* Page content */}
         <div
           data-tour="16"
-          className="flex md:flex-row flex-col md:space-x-7 md:space-y-0 space-y-7  mt-7"
+          className="flex md:flex-row flex-col md:space-x-7 md:space-y-0 space-y-7  "
         >
           {/* Communicate and preview row */}
           <div className="flex-1 ">
-            <div className="md:h-[450px] h-auto rounded-lg outline outline-2 outline-[#F5F5F5] dark:outline-[#202020] dark:bg-section-dark overflow-y-clip">
+            <div className="md:h-[400px] h-auto rounded-lg outline outline-2 outline-[#F5F5F5] dark:outline-[#202020] dark:bg-section-dark overflow-y-clip">
               {/* Content */}
               <CommunicateCard
                 titleOnChange={(e) => setPushNotificationTitle(e.target.value)}
@@ -125,7 +107,7 @@ const PushNotifications = () => {
           </div>
           {/* Notification preview card */}
           <div className="flex-1">
-            <div className="h-[450px] rounded-lg outline outline-2 outline-[#F5F5F5] dark:outline-[#202020] overflow-y-clip dark:bg-section-dark">
+            <div className="h-[400px] rounded-lg outline outline-2 outline-[#F5F5F5] dark:outline-[#202020] overflow-y-clip dark:bg-section-dark">
               <div className="flex flex-col p-4">
                 {/* Card title */}
                 <span className="text-[18px] dark:text-white">
@@ -182,7 +164,7 @@ const PushNotifications = () => {
 
         {/* Recent notifications table */}
         <div className="delay-5">
-          <div className="mt-6">
+          <div className="mt-4">
             <TabsNotifications />
 
             {/* Recent notifications table */}

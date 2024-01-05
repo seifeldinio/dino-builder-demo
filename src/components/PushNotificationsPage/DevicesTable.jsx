@@ -19,11 +19,11 @@ const DevicesTable = () => {
 
   return (
     <div className="page-animation">
-      <span className="text-[20px] font-normal dark:text-white">Devices</span>
+      {/* <span className="text-[20px] font-normal dark:text-white">Devices</span> */}
 
-      <div class="overflow-x-auto relative mt-5 outline outline-2 outline-[#F2F3F7] rounded-lg dark:outline-[#2C2C2C]">
+      <div class="overflow-x-auto relative mt-7 outline outline-2 outline-[#F2F3F7] rounded-lg dark:outline-[#2C2C2C]">
         <table class="w-full text-sm text-left  text-gray-500 dark:text-gray-400">
-          <thead class="text-xs text-gray-700  bg-[#fafbfd]   dark:text-[#929292] dark:bg-main-dark">
+          <thead class="text-md font-light text-gray-700  bg-[#FAFAFA]   dark:text-[#929292] dark:bg-main-dark">
             <tr>
               <th scope="col" class="py-3 px-6">
                 Device

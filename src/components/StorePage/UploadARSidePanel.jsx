@@ -77,15 +77,15 @@ const UploadARSidePanel = () => {
             />
           </div>
           <div className="flex flex-col">
-            <span className="mt-8 text-[20px]">Product images</span>
-            <span className="mt-1 font-normal text-[14px] text-[#8E8E8E]">
+            <span className="mt-8 text-[20px] font-bold">Product images</span>
+            <span className="mt-1 font-normal text-[16px] text-[#8E8E8E]">
               Please upload 4 pictures of your product with different angles
               (Front, Back, Right, Left).
             </span>
             {/* Alert  */}
             {placeholderClicked && (
               <Alert
-                message="Demo 💡: Enabled when you have a Bloxat Built app."
+                message="Demo 💡: Enabled when you have a built app."
                 type="warning"
                 closable
                 className="mt-3 mb-2 fade-down"

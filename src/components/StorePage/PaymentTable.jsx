@@ -33,8 +33,8 @@ const PaymentTable = () => {
   return (
     <>
       <div class="overflow-x-auto relative outline outline-2 outline-grey rounded-lg dark:outline-[#2C2C2C]">
-        <table class="w-full  text-sm text-left text-gray-500 dark:text-gray-400 ">
-          <thead class=" text-gray-700  bg-gray-50 dark:bg-main-dark dark:text-gray-400">
+        <table class="w-full  text-sm font-light text-left text-gray-500 dark:text-gray-400 ">
+          <thead class=" text-gray-700  bg-[#FAFAFA] dark:bg-main-dark dark:text-gray-400">
             <tr>
               <th scope="col" class="py-3 px-6">
                 Method
@@ -43,7 +43,7 @@ const PaymentTable = () => {
                 <span className="ml-[400px]">Status</span>
               </th>
               <div className="flex flex-wrap ">
-                <div className="ml-auto mr-20">
+                <div className=" mr-20">
                   <th scope="col" class="py-3">
                     Scan
                   </th>
@@ -69,9 +69,12 @@ const PaymentTable = () => {
                   {/* <img src={item?.icon} className="rounded-lg" alt="" /> */}
                 </th>
                 <td class="py-4 px-6">
-                  <div className="flex flex-row items-center ml-[380px]">
-                    <span className="text-green">Functional</span>
-                    <BsCheck2 className="w-[20px] h-[20px] ml-2 text-green" />
+                  <div className="flex flex-row items-center ml-[400px]">
+                    <div className="flex flex-row items-center bg-[#D7F7C2] px-1.5 py-0.5 rounded-md">
+                      <span className="text-[#006908]">Functional</span>
+                      <BsCheck2 className="w-[16px] h-[16px] ml-2 text-[#006908]" />
+                    </div>
+
                     {/* <img
                         src={GreenCheckSVG}
                         className="w-[20px] h-[20px] ml-2"
@@ -80,12 +83,14 @@ const PaymentTable = () => {
                   </div>
                 </td>
                 <div className="flex flex-wrap ">
-                  <div className="ml-auto mr-10 mt-3">
-                    <th scope="col" class="py-3">
-                      <span className="text-[#797979] font-normal">
-                        {" "}
-                        No bugs detected.
-                      </span>
+                  <div className="mr-10 mt-3">
+                    <th scope="col" class="py-1">
+                      <div className="flex flex-row items-center bg-[#F8F8F8] dark:bg-[#262626]  px-1.5 py-0.5 rounded-md ">
+                        <span className="text-[#4D4D4D] dark:text-white font-normal">
+                          {" "}
+                          No bugs detected.
+                        </span>
+                      </div>
                     </th>
                   </div>
                 </div>

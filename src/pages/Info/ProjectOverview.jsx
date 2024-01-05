@@ -71,7 +71,9 @@ const ProjectOverview = () => {
         <div data-tour="24">
           <div className="flex flex-wrap lg:flex-nowrap ">
             <div className="flex flex-row items-center">
-              <span className="text-[27px] dark:text-white">Overview</span>
+              <span className="text-[26px] dark:text-white font-bold">
+                Overview
+              </span>
             </div>
           </div>
           <div className="row mt-1 text-[15px]">

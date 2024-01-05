@@ -11,7 +11,7 @@ const SettingsCard = (props) => {
   return (
     <div
       onClick={onClick}
-      class="p-4 rounded-lg outline outline-2 outline-greyelement bg-white  cursor-pointer dark:bg-section-dark dark:outline-[#202020]"
+      class="p-4 rounded-lg outline outline-2 outline-greyelement bg-white  cursor-pointer dark:bg-section-dark dark:outline-[#202020] hover:shadow-md transition-all duration-200"
     >
       <div className="flex flex-row items-center">
         <div className="flex h-[60px] w-[60px] bg-[#F8F9FD] dark:bg-divider-dark dark:text-white rounded-lg items-center content-center justify-center">

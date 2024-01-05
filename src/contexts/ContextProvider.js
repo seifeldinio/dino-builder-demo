@@ -53,10 +53,17 @@ export const ContextProvider = ({ children }) => {
   // const [errorConnectingToSocket, setErrorConnectingToSocket] = useState(false);
   // Temporary profile data
   const [profilePicture, setProfilePicture] = useState(
-    "https://media.publit.io/file/StockPics/DefaultProfilePic-h.webp"
+    "https://media.publit.io/file/StockPics/ezgif.com-png-to-webp-converter.webp"
   );
   const [firstName, setFirstName] = useState("Seif");
   const [lastName, setLastName] = useState("Radwane");
+
+  // APP CUSTOMIZATION
+  const [primaryColor, setPrimaryColor] = useState("#43A4FF");
+  // const [secondaryColor, setSecondaryColor] = useState("#FCEB56");
+  const [textColor, setTextColor] = useState("#000000");
+  const [backgroundColor, setBackgroundColor] = useState("#FFFFFF");
+
   // THEME (DARK MODE/ LIGHT MODE)
   const [currentMode, setCurrentMode] = useState("Light");
 
@@ -136,6 +143,14 @@ export const ContextProvider = ({ children }) => {
         setFirstName,
         lastName,
         setLastName,
+        primaryColor,
+        setPrimaryColor,
+        // secondaryColor,
+        // setSecondaryColor,
+        textColor,
+        setTextColor,
+        backgroundColor,
+        setBackgroundColor,
       }}
     >
       {children}

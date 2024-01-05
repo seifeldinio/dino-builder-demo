@@ -9,7 +9,7 @@ const AndroidPreview = (props) => {
   const { message } = props;
 
   return (
-    <div className="flex flex-row items-center justify-center content-center  mt-[60px] fade-up">
+    <div className="flex flex-row items-center justify-center content-center  mt-[16px] fade-up">
       <div className="w-[300px] h-[300px] ">
         {/* iOS Notification preview component */}
         <div className="absolute mt-[195px] ml-[35px] h-auto w-[230px] rounded-lg backdrop-blur-2xl bg-black/40  p-1.5 z-50">

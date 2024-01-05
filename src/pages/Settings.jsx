@@ -7,7 +7,7 @@ import {
   BsCreditCardFill,
   BsFillBagFill,
 } from "react-icons/bs";
-import { IoMdHelpBuoy } from "react-icons/io";
+import { IoMdHelpBuoy, IoMdKey } from "react-icons/io";
 import { RiUser3Fill } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
 import { AddOnCard, SearchBar, SettingsCard, ThemeCards } from "../components";
@@ -74,13 +74,14 @@ const Settings = () => {
               alt=""
             /> */}
             <LazyLoadImage
-              className="rounded-lg w-[65px] h-[65px] object-cover"
+              className="rounded-lg w-[68px] h-[68px] object-cover"
+              // border-[2px] border-gray-100
               src={projectData?.app_icon}
               effect="blur"
               placeholderSrc={projectData?.app_icon}
             />
             <div className="flex flex-col ml-4">
-              <span className="font-medium dark:text-white">
+              <span className="font-bold text-[24px] dark:text-white">
                 {projectData?.app_name}
               </span>
               <span className="text-[#9C9BAB]">{projectData?.app_status}</span>
@@ -95,7 +96,7 @@ const Settings = () => {
             />
             {/* Search suggestions results */}
             {searchSettings !== "" && (
-              <div className="absolute right-[40px] mt-[265px] bg-greyelement dark:bg-[#323232] w-[280px] h-[193px] rounded-md z-50 overflow-y-scroll shadow-lg">
+              <div className="absolute right-[40px] mt-[265px] bg-greyelement dark:bg-[#323232] w-[240px] h-[193px] rounded-md z-50 overflow-y-scroll shadow-lg">
                 <div className="flex flex-col ">
                   {searchFiltered?.length === 0 ? (
                     <>
@@ -139,20 +140,20 @@ const Settings = () => {
         <hr className="mt-7 mb-7 dark:border-[#2C2C2C]" />
         {/* Settings section */}
         <div className="flex flex-col">
-          <span className="text-[22px] font-medium dark:text-white">
+          <span className="text-[22px] font-semibold dark:text-white">
             Settings
           </span>
-          <span className="font-normal text-[#595959] dark:text-[#7e7e7e]">
-            Edit abilities of Bloxat Built
+          <span className="font-light text-[#595959] dark:text-[#7e7e7e]">
+            View your account settings.
           </span>
           {/* Settings cards */}
 
-          <div className="flex md:flex-row flex-col  md:space-x-7 md:space-y-0 space-y-7 mt-4   ">
+          <div className="flex md:flex-row flex-col  md:space-x-7 md:space-y-0 space-y-7 mt-4">
             <div className="flex-1">
               <div className="delay-1">
                 <SettingsCard
                   icon={<RiUser3Fill className="h-[18px] w-[18px]" />}
-                  title={"Profile Settings"}
+                  title={"Edit Profile"}
                   description={"View and update your profile details."}
                   onClick={() => navigate("/edit")}
                 />
@@ -162,10 +163,10 @@ const Settings = () => {
             <div className="flex-1">
               <div className="delay-2">
                 <SettingsCard
-                  icon={<BiNotification className="h-[18px] w-[18px]" />}
-                  title={"Push notifications"}
-                  description={"Send notifications to your users."}
-                  onClick={() => navigate("/store/push-notifications")}
+                  icon={<IoMdKey className="h-[24px] w-[24px]" />}
+                  title={"Security"}
+                  description={"Change or reset your password."}
+                  // onClick={() => navigate("/store/push-notifications")}
                 />
               </div>
             </div>
@@ -205,11 +206,11 @@ const Settings = () => {
             <div className="h-[30px]" />
             <div data-tour="30">
               <div className="flex flex-col">
-                <span className="text-[22px] font-medium dark:text-white">
+                <span className="text-[22px] font-semibold dark:text-white">
                   Appearance
                 </span>
-                <span className="font-normal text-[#595959] dark:text-[#7e7e7e]">
-                  Change Bloxat Built’s theme.
+                <span className="font-light text-[#595959] dark:text-[#7e7e7e]">
+                  Switch to your preferred theme.
                 </span>
               </div>
 
@@ -220,11 +221,11 @@ const Settings = () => {
             <div className="h-[30px]" />
             <div data-tour="31">
               <div className="flex flex-col">
-                <span className="text-[22px] font-medium dark:text-white">
+                <span className="text-[22px] font-semibold dark:text-white">
                   Add-ons
                 </span>
-                <span className="font-normal text-[#595959] dark:text-[#7e7e7e]">
-                  Add-ons in your Bloxat Built App.
+                <span className="font-light text-[#595959] dark:text-[#7e7e7e]">
+                  Add-ons in your app.
                 </span>
               </div>
 
@@ -247,22 +248,18 @@ const Settings = () => {
                   icon={<IoMdHelpBuoy className="h-[25px] w-[25px]" />}
                   bgColor={"bg-lemon"}
                 />
-                <AddOnCard
+                {/* <AddOnCard
                   title={"Abandoned cart"}
-                  description={
-                    "Notifications to check out."
-                  }
+                  description={"Notifications to check out."}
                   connected={
                     storeData?.cart_notifications === true ? true : false
                   }
                   icon={<BsFillBagFill className="h-[20px] w-[20px] " />}
                   bgColor={"bg-lightblue"}
-                />
+                /> */}
                 <AddOnCard
                   title={"Competition analysis"}
-                  description={
-                    "AI Analysis of your competitors."
-                  }
+                  description={"AI Analysis of your competitors."}
                   connected={true}
                   icon={<GrRobot className="h-[23px] w-[23px]" />}
                   bgColor={"bg-purple"}

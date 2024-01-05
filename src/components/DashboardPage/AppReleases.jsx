@@ -28,8 +28,8 @@ const AppReleases = (props) => {
   };
 
   return (
-    <div data-tour="4" className="mt-6">
-      <span className="text-[20px] font-normal dark:text-white">
+    <div data-tour="4" className="md:mt-8">
+      <span className="text-[26px] dark:text-white font-bold">
         App releases
       </span>
 
@@ -63,7 +63,7 @@ const AppReleases = (props) => {
           {/* Releases table */}
           <div class="overflow-x-auto relative outline outline-2 outline-grey rounded-lg mt-5 dark:outline-[#2C2C2C] ">
             <table class="w-full  text-sm text-left text-gray-500 dark:text-gray-400 ">
-              <thead class=" text-gray-700   bg-gray-50 dark:bg-main-dark dark:text-[#898989]">
+              <thead class=" text-gray-700   bg-[#FAFAFA] dark:bg-main-dark dark:text-[#898989]">
                 <tr>
                   <th scope="col" class="py-1 px-6">
                     Version number

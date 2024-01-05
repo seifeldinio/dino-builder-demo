@@ -7,7 +7,7 @@ const SmallGreyButton = (props) => {
 
     <button
       onClick={onClick}
-      class="bg-[#F2F3F7] hover:bg-[#E4E5EB] dark:bg-[#424242] hover:dark:bg-[#565656] text-black  py-0.5 px-2.5 rounded-md inline-flex items-center transition-color duration-200"
+      class="bg-[#F2F3F7] hover:bg-[#E4E5EB] dark:bg-[#424242] hover:dark:bg-[#565656] text-black  py-1 px-2.5 rounded-md inline-flex items-center transition-color duration-200"
     >
       <span className="text-[14px] dark:text-white">{text}</span>
     </button>

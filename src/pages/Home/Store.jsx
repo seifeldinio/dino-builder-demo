@@ -60,9 +60,6 @@ const Store = () => {
 
   // console.log("PROJECT ID", project?.id);
 
-
-  
-
   return (
     <div className="page-animation">
       <div className="md:mt-10 md:ml-10 md:mr-10 h-full mt-10 ml-5 mr-5 ">
@@ -70,14 +67,22 @@ const Store = () => {
           {/* Store data is available */}
           <div className="flex flex-wrap lg:flex-nowrap ">
             <div className="flex flex-row items-center md:mt-0 mt-10">
-              <span className="text-[27px] dark:text-white">
-                Manage your store
+              <span className="text-[26px] dark:text-white font-bold">
+                Store
               </span>
-              <FiBox className="ml-2.5 w-[23px] h-[23px] dark:text-white" />
+              {/* <FiBox className="ml-2.5 w-[23px] h-[23px] dark:text-white" /> */}
               {/* <img className="ml-2.5 w-[23px] h-[23px]" src={BoxSVG} alt="" /> */}
             </div>
           </div>
-          <div className="flex md:flex-row flex-col  md:space-x-7  md:space-y-0 space-y-7 items-center mt-7">
+          <div className="row mt-1 text-[15px]">
+            <span className="text-gray-400	">
+              Manage your AR Products, Payment methods, and more.
+            </span>
+
+            <hr className="mt-4 mb-5" />
+          </div>
+          <div className="flex md:flex-row flex-col md:space-x-7  md:space-y-0 space-y-7 items-start ">
+            {/* h-[152px] */}
             {/* Cards */}
             <ARCard
               arProductsLimit={storeData?.ar_products_limit}
@@ -93,8 +98,8 @@ const Store = () => {
           </div>
           {/* Payment methods */}
           <div className="delay-4">
-            <div className="mt-9">
-              <span className="text-[20px] font-normal dark:text-white">
+            <div className="mt-12">
+              <span className="text-[26px] dark:text-white font-bold">
                 In-app payment methods
               </span>
             </div>

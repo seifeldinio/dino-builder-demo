@@ -13,8 +13,8 @@ const NotificationsSettingsTab = () => {
 
   return (
     <div className="page-animation">
-      <span className="text-[20px] font-normal dark:text-white">Settings</span>
-      <div class="overflow-x-auto relative mt-5 outline outline-2 outline-[#F2F3F7] rounded-lg p-3.5 dark:outline-[#202020] dark:bg-section-dark">
+      {/* <span className="text-[20px] font-normal dark:text-white">Settings</span> */}
+      <div class="overflow-x-auto relative mt-7 outline outline-2 outline-[#F2F3F7] rounded-lg p-3.5 dark:outline-[#202020] dark:bg-section-dark">
         <div className="flex flex-row items-center">
           <div className="flex flex-col">
             <span className="dark:text-white">

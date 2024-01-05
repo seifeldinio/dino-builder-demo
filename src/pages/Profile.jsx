@@ -122,13 +122,13 @@ const Profile = () => {
             />
 
             <div className="flex flex-col ml-5 md:mt-0 mt-10">
-              <div className="flex flex-row items-center ">
-                <span className="text-[24px] mr-2 dark:text-white">
+              <div className="flex flex-row font-semibold items-center ">
+                <span className="text-[24px] mr-1.5 dark:text-white">
                   {firstName}
                 </span>
                 <span className="text-[24px] dark:text-white">{lastName}</span>
               </div>
-              <span className="text-[16px] text-[#767676] font-normal dark:text-[#979797]">
+              <span className="text-[16px] text-[#767676] font-light dark:text-[#979797]">
                 {currentUserData?.email}
               </span>
             </div>

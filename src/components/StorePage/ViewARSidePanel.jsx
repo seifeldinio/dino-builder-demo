@@ -96,7 +96,7 @@ const ViewARSidePanel = () => {
             {arProductData?.count === 0 ? (
               <>
                 {/* There's no AR Products yet */}
-                <span className="mt-8 text-[20px]">AR Products View</span>
+                <span className="mt-8 text-[20px] font-bold">AR Products</span>
                 <span className="mt-1 font-normal text-[14px] text-[#8E8E8E]">
                   View your converted AR Products that are displayed in your
                   app.
@@ -130,10 +130,13 @@ const ViewARSidePanel = () => {
             ) : (
               <>
                 {/* There is AR Products to display */}
-                <span className="mt-8 text-[20px]">AR Products View</span>
-                <span className="mt-1 font-normal text-[14px] text-[#8E8E8E]">
-                  View your converted AR Products that are displayed in your
-                  app.
+                <div className="mt-8 flex flex-row items-center space-x-1">
+                  <span className=" text-[20px] font-bold">AR Products</span>
+                  <span className="text-[20px] font-light">(17)</span>
+                </div>
+
+                <span className="mt-1 font-normal text-[16px] text-[#8E8E8E]">
+                  View your converted AR Products displayed in your built app.
                 </span>
                 <div data-tour="10" className="flex flex-col">
                   {/* 3d viewer area */}
@@ -195,7 +198,7 @@ const ViewARSidePanel = () => {
                   </div>
                   {/* Product title and switcher */}
                   <div className="flex flex-row items-center mt-[15px]">
-                    <span className="font-medium">
+                    <span className="font-medium text-[18px]">
                       {currentArProduct?.product_name}
                     </span>
                     <div className="ml-auto">
@@ -237,7 +240,7 @@ const ViewARSidePanel = () => {
                       </span>
                     </div>
                   ) : (
-                    <div class="bg-[#323232] text-white  w-[168px] py-0.5 px-2.5 rounded-md inline-flex items-center justify-center content-center">
+                    <div class="bg-[#D7F7C2] text-[#006908]  w-[168px] py-1 px-1 rounded-md inline-flex items-center justify-center content-center">
                       <div className="flex flex-row items-center ">
                         <span className="text-[14px]">
                           Available in your app

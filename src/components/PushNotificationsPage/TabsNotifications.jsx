@@ -16,7 +16,7 @@ const TabsNotifications = () => {
   return (
     <>
       {" "}
-      <div class="mb-4 border-b border-gray-200 dark:border-[#2C2C2C] mt-4">
+      <div class="mb-4 border-b border-[] dark:border-[#2C2C2C] mt-4">
         <ul
           class="flex flex-wrap -mb-px text-sm font-medium text-center"
           id="myTab"
@@ -28,8 +28,8 @@ const TabsNotifications = () => {
             <button
               class={
                 recentsTab === true
-                  ? "md:inline-block hidden p-4 rounded-t-lg border-b-2 border-blue transition-all duration-200 dark:text-white "
-                  : "md:inline-block hidden  p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 hover:dark:text-white hover:dark:border-[#424242] dark:text-[#bdbdbd]  transition-all duration-200"
+                  ? "md:inline-block hidden p-4 rounded-t-lg border-b-2 border-blue transition-all duration-200 text-blue dark:text-white "
+                  : "md:inline-block hidden  p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 hover:dark:text-white hover:dark:border-[#424242] dark:text-[#bdbdbd] text-[#7B7B7B] transition-all duration-200"
               }
               onClick={() => {
                 setRecentsTab(true);
@@ -52,8 +52,8 @@ const TabsNotifications = () => {
             <button
               class={
                 devicesTab === true
-                  ? "inline-block p-4 rounded-t-lg border-b-2 border-blue transition-all duration-200 dark:text-white"
-                  : "inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 hover:dark:text-white hover:dark:border-[#424242] dark:text-[#bdbdbd]  transition-all duration-200"
+                  ? "inline-block p-4 rounded-t-lg border-b-2 border-blue transition-all duration-200 text-blue dark:text-white"
+                  : "inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 hover:dark:text-white hover:dark:border-[#424242] dark:text-[#bdbdbd] text-[#7B7B7B]  transition-all duration-200"
               }
               onClick={() => {
                 setDevicesTab(true);
@@ -76,8 +76,8 @@ const TabsNotifications = () => {
             <button
               class={
                 competitionTab === true
-                  ? "inline-block p-4 rounded-t-lg border-b-2 border-blue transition-all duration-200 dark:text-white"
-                  : "inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 hover:dark:text-white hover:dark:border-[#424242] dark:text-[#bdbdbd]  transition-all duration-200"
+                  ? "inline-block p-4 rounded-t-lg border-b-2 border-blue transition-all duration-200 text-blue dark:text-white"
+                  : "inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 hover:dark:text-white hover:dark:border-[#424242] dark:text-[#bdbdbd] text-[#7B7B7B] transition-all duration-200"
               }
               onClick={() => {
                 setCompetitionTab(true);
@@ -100,8 +100,8 @@ const TabsNotifications = () => {
             <button
               class={
                 settingsTab === true
-                  ? "inline-block p-4 rounded-t-lg border-b-2 border-blue transition-all duration-200 dark:text-white"
-                  : "inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 hover:dark:text-white hover:dark:border-[#424242] dark:text-[#bdbdbd]  transition-all duration-200"
+                  ? "inline-block p-4 rounded-t-lg border-b-2 border-blue transition-all duration-200 text-blue dark:text-white"
+                  : "inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 hover:dark:text-white hover:dark:border-[#424242] dark:text-[#bdbdbd] text-[#7B7B7B] transition-all duration-200"
               }
               onClick={() => {
                 setSettingsTab(true);

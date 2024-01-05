@@ -116,11 +116,12 @@ const App = () => {
           {/* Demo Label */}
           <DemoLabel />
           {/* Left menu */}
-          <div className="invisible w-0 md:w-72 md:visible md:fixed sidebar dark:bg-main-dark dark:border-r   dark:border-[#2C2C2C] bg-white ">
+          {/* sidebar */}
+          <div className="invisible w-0 md:w-[252px] md:visible md:fixed dark:bg-main-dark dark:border-r   dark:border-[#2C2C2C] bg-[#FAFAFA]">
             <Sidebar />
           </div>
           <div
-            className={`bg-white min-h-screen w-full dark:bg-main-dark md:ml-72`}
+            className={`bg-white min-h-screen w-full dark:bg-main-dark md:ml-[252px]`}
           >
             {/* Header visible only on mobile */}
             {<MobileHeader />}
