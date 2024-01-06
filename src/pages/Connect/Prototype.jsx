@@ -245,7 +245,7 @@ const Prototype = () => {
                     </Dropdown>
                   </div>
                   {/* Phone */}
-                  <div className="flex flex-row items-center content-center justify-center mt-[5px] mb-[10px] scale-90">
+                  <div className="flex flex-row items-center content-center justify-center mt-[5px] mb-[10px] scale-90 antialiased transform ">
                     {/* Simulator Mockup */}
                     {device === "iOS" ? (
                       <LazyLoadImage

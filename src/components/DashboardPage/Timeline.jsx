@@ -40,11 +40,11 @@ const TimelineComponent = () => {
                   <div className="border-l border-gray-300 h-[260px] " />
                 </div> */}
         {/* Event */}
-        <div className="ml-20 bg-white dark:bg-[#2C2C2C] hover:shadow-md transition-all duration-200 border-t-[1px] border-r-[1px] border-b-[1px] border-l-[6px] border-t-[#EBEBEB] border-r-[#EBEBEB] border-b-[#EBEBEB] dark:border-t-[#2C2C2C] dark:border-r-[#2C2C2C] dark:border-b-[#2C2C2C] border-l-[#F6E6B9] rounded-md py-4 pl-4 pr-40 w-fit ">
+        <div className="ml-20 bg-white dark:bg-[#2C2C2C] hover:shadow-md transition-all duration-200 border-t-[1px] border-r-[1px] border-b-[1px] border-l-[6px] border-t-[#EBEBEB] border-r-[#EBEBEB] border-b-[#EBEBEB] dark:border-t-[#2C2C2C] dark:border-r-[#2C2C2C] dark:border-b-[#2C2C2C] border-l-[#F6E6B9] rounded-md py-4 pl-4 pr-40 2xl:pr-60 w-fit ">
           <span className="text-[14px] font-semibold">Design</span>
         </div>
         {/* Event */}
-        <div className="ml-auto 2xl:mr-80 mr-[126px] bg-white dark:bg-[#2C2C2C] hover:shadow-md transition-all duration-200 border-t-[1px] border-r-[1px] border-b-[1px] border-l-[6px] border-t-[#EBEBEB] border-r-[#EBEBEB] border-b-[#EBEBEB] dark:border-t-[#2C2C2C] dark:border-r-[#2C2C2C] dark:border-b-[#2C2C2C] border-l-[#F6E6B9] rounded-md py-4 pl-4 pr-60 w-fit ">
+        <div className="ml-auto 2xl:mr-60 mr-[126px] bg-white dark:bg-[#2C2C2C] hover:shadow-md transition-all duration-200 border-t-[1px] border-r-[1px] border-b-[1px] border-l-[6px] border-t-[#EBEBEB] border-r-[#EBEBEB] border-b-[#EBEBEB] dark:border-t-[#2C2C2C] dark:border-r-[#2C2C2C] dark:border-b-[#2C2C2C] border-l-[#F6E6B9] rounded-md py-4 pl-4 md:pr-40 xl:pr-40 2xl:pr-50 3xl:pr-1/2 w-fit ">
           <span className="text-[14px] font-semibold">Prototype</span>
         </div>
         {/* Event */}
