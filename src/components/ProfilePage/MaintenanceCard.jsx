@@ -31,7 +31,7 @@ const MaintenanceCard = (props) => {
             <span class="text-[#676767]  leading-tight dark:text-[#9a9a9a]">
               Maintenance status
             </span>
-            <div className="flex flex-row">
+            <div className="flex flex-row items-center space-x-1">
               <p class="text-green text-[16px] font-medium  leading-tight">
                 Active
               </p>

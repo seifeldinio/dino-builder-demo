@@ -25,15 +25,19 @@ const ColorsAccordion = () => {
         }}
         className="flex flex-row items-center justify-between w-full py-4 cursor-pointer"
       >
-        <h2 className="text-[18px] font-semibold">Colors</h2>
-        {open ? <IoIosArrowUp /> : <IoIosArrowDown />}
+        <h2 className="text-[18px] font-semibold dark:text-white">Colors</h2>
+        {open ? (
+          <IoIosArrowUp className="dark:text-white" />
+        ) : (
+          <IoIosArrowDown className="dark:text-white" />
+        )}
       </div>
 
       {open ? (
         <>
           {/* Accordion body */}
-          <div className="pt-4 pb-8 flex flex-wrap items-center space-x-5 border-b">
-            <div className="flex flex-row items-center space-x-2 px-2.5 py-2 rounded-md border-[1px] border-[#E1DFDD] w-fit">
+          <div className="pt-4 pb-8 flex flex-wrap items-center space-x-5 border-b dark:border-[#393939] ">
+            <div className="flex flex-row items-center space-x-2 px-2.5 py-2 rounded-md border-[1px] border-[#E1DFDD] dark:border-[#393939] w-fit dark:bg-[#202020]">
               <input
                 type="color"
                 value={primaryColor}
@@ -42,9 +46,9 @@ const ColorsAccordion = () => {
                   // console.log(`${e.target.value}`);
                 }}
               />
-              <span>Primary color</span>
+              <span className="dark:text-white">Primary color</span>
             </div>
-            <div className="flex flex-row items-center space-x-2 px-2.5 py-2 rounded-md border-[1px] border-[#E1DFDD] w-fit">
+            <div className="flex flex-row items-center space-x-2 px-2.5 py-2 rounded-md border-[1px] border-[#E1DFDD] dark:border-[#393939]  w-fit dark:bg-[#202020]">
               <input
                 type="color"
                 value={localColor}
@@ -53,9 +57,9 @@ const ColorsAccordion = () => {
                   // console.log(`${e.target.value}`);
                 }}
               />
-              <span>Secondary color</span>
+              <span className="dark:text-white">Secondary color</span>
             </div>
-            <div className="flex flex-row items-center space-x-2 px-2.5 py-2 rounded-md border-[1px] border-[#E1DFDD] w-fit">
+            <div className="flex flex-row items-center space-x-2 px-2.5 py-2 rounded-md border-[1px] border-[#E1DFDD] dark:border-[#393939]  w-fit dark:bg-[#202020]">
               <input
                 type="color"
                 value={textColor}
@@ -64,9 +68,9 @@ const ColorsAccordion = () => {
                   // console.log(`${e.target.value}`);
                 }}
               />
-              <span>Text color</span>
+              <span className="dark:text-white">Text color</span>
             </div>
-            <div className="flex flex-row items-center space-x-2 px-2.5 py-2 rounded-md border-[1px] border-[#E1DFDD] w-fit">
+            <div className="flex flex-row items-center space-x-2 px-2.5 py-2 rounded-md border-[1px] border-[#E1DFDD] dark:border-[#393939]  w-fit dark:bg-[#202020]">
               <input
                 type="color"
                 value={backgroundColor}
@@ -75,12 +79,12 @@ const ColorsAccordion = () => {
                   // console.log(`${e.target.value}`);
                 }}
               />
-              <span>Background color</span>
+              <span className="dark:text-white">Background color</span>
             </div>
           </div>
         </>
       ) : (
-        <hr className="mt-2 mb-4" />
+        <hr className="mt-2 mb-4 dark:border-[#393939] " />
       )}
     </>
   );

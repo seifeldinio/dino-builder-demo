@@ -47,7 +47,7 @@ const ARCard = (props) => {
               {/* Our engine will convert your static image to a 3D VR product display
             in your app. */}
             </span>
-            <div className="flex flex-wrap mt-2">
+            <div className="flex flex-wrap mt-2 dark:mt-4">
               <div className="ml-auto">
                 <div className="flex flex-row mt-1">
                   <div className="mr-2">

@@ -20,12 +20,12 @@ const Documents = () => {
             </div>
           </div>
           <div className="row mt-1 text-[15px]">
-            <span className="text-gray-400	">
+            <span className="text-[#595959]	dark:text-[#B5B5B5]">
               Confidentiality is our top priority. Your project is protected by
               these contracts and we'll never share it with third parties.
             </span>
 
-            <hr className="mt-4 mb-5" />
+            <hr className="mt-4 mb-5 dark:border-[#353535]" />
           </div>
 
           {/* Area */}

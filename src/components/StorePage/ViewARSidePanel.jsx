@@ -240,7 +240,7 @@ const ViewARSidePanel = () => {
                       </span>
                     </div>
                   ) : (
-                    <div class="bg-[#D7F7C2] text-[#006908]  w-[168px] py-1 px-1 rounded-md inline-flex items-center justify-center content-center">
+                    <div class="bg-[#D7F7C2] text-[#006908]  w-fit py-1 px-2 rounded-md inline-flex items-center justify-center content-center">
                       <div className="flex flex-row items-center ">
                         <span className="text-[14px]">
                           Available in your app

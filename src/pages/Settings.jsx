@@ -84,7 +84,9 @@ const Settings = () => {
               <span className="font-bold text-[24px] dark:text-white">
                 {projectData?.app_name}
               </span>
-              <span className="text-[#9C9BAB]">{projectData?.app_status}</span>
+              <span className="text-[#595959]	dark:text-[#B5B5B5]">
+                {projectData?.app_status}
+              </span>
             </div>
 
             {/* Search bar */}

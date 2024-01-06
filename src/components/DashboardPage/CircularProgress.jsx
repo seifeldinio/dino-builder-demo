@@ -58,7 +58,11 @@ const CircularProgress = (props) => {
                     stroke: "#01D95A",
                   },
 
-                  text: { fill: "#ffffff", fontSize: "13px" },
+                  text: {
+                    fill: "#ffffff",
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                  },
                 }}
                 strokeWidth={4}
               />

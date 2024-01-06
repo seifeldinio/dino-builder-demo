@@ -4,11 +4,11 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 const ScreenCard = ({ label, image, active }) => {
   return (
     <div
-      className={`flex flex-col px-10 py-3 space-y-2 items-center rounded-md cursor-pointer hover:bg-[#fdfdfd] duration-200 transition-all ease-in-out ${
-        active ? "bg-[#FAFAFA]" : "bg-transparent"
+      className={`flex flex-col px-10 py-3 space-y-2 items-center rounded-md cursor-pointer hover:bg-[#fdfdfd] dark:hover:bg-[#1b1b1b] duration-200 transition-all ease-in-out ${
+        active ? "bg-[#FAFAFA] dark:bg-[#282828]" : "bg-transparent"
       }`}
     >
-      <span>{label}</span>
+      <span className="dark:text-white">{label}</span>
 
       <div className="flex h-[200px] w-[100px]">
         <LazyLoadImage

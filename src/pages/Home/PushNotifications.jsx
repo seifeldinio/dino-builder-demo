@@ -78,7 +78,7 @@ const PushNotifications = () => {
                 } else {
                 }
               }}
-              className="flex h-[40px] w-[40px] justify-center content-center hover:dark:bg-[#323232] dark:text-white cursor-pointer bg-[#F4F4F4] hover:bg-[#e7e7e7] mt-[1px] px-3 py-3 rounded-full  transition-color duration-200  mr-[7px]"
+              className="flex h-[40px] w-[40px] justify-center content-center hover:dark:bg-[#323232] dark:text-white cursor-pointer bg-[#F4F4F4] dark:bg-[#2D2D2D] hover:bg-[#e7e7e7] mt-[1px] px-3 py-3 rounded-full  transition-color duration-200  mr-[7px]"
             >
               <HiOutlineArrowLeft className="scale-110" />
             </button>
@@ -88,7 +88,7 @@ const PushNotifications = () => {
             </span>
           </div>
         </div>
-        <hr className="mt-5 mb-5" />
+        <hr className="mt-5 mb-5 dark:border-[#353535]" />
         {/* Page content */}
         <div
           data-tour="16"
@@ -96,7 +96,7 @@ const PushNotifications = () => {
         >
           {/* Communicate and preview row */}
           <div className="flex-1 ">
-            <div className="md:h-[400px] h-auto rounded-lg outline outline-2 outline-[#F5F5F5] dark:outline-[#202020] dark:bg-section-dark overflow-y-clip">
+            <div className="md:h-[400px] h-auto rounded-lg outline outline-2 outline-[#F5F5F5]  dark:outline-[#2E2E2E]  dark:bg-section-dark overflow-y-clip">
               {/* Content */}
               <CommunicateCard
                 titleOnChange={(e) => setPushNotificationTitle(e.target.value)}
@@ -107,7 +107,7 @@ const PushNotifications = () => {
           </div>
           {/* Notification preview card */}
           <div className="flex-1">
-            <div className="h-[400px] rounded-lg outline outline-2 outline-[#F5F5F5] dark:outline-[#202020] overflow-y-clip dark:bg-section-dark">
+            <div className="h-[400px] rounded-lg outline outline-2 outline-[#F5F5F5] dark:outline-[#2E2E2E] overflow-y-clip dark:bg-section-dark">
               <div className="flex flex-col p-4">
                 {/* Card title */}
                 <span className="text-[18px] dark:text-white">

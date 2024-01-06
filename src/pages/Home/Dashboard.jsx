@@ -23,7 +23,6 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { FiHelpCircle } from "react-icons/fi";
 import TimelineComponent from "../../components/DashboardPage/Timeline";
 
-
 const Dashboard = () => {
   const {
     expandedBugCarousel,
@@ -93,7 +92,7 @@ const Dashboard = () => {
                 </div>
               </div>
               <div className="row mt-1 text-[15px]">
-                <span className="text-gray-400">
+                <span className="text-[#595959]	dark:text-[#B5B5B5]">
                   Track your app's status and completion progress.
                 </span>
               </div>
@@ -153,7 +152,7 @@ const Dashboard = () => {
             {/* Sync button if there's a project progress update */}
             {/* <SyncButton /> */}
           </div>
-          <hr className="mt-4 mb-5" />
+          <hr className="mt-4 mb-5 dark:border-[#353535]" />
           {/* <div className="row md:mt-2 mt-[-30px] text-[15px] dark:text-white">
             <span>App status: </span>
             <span className="text-gray-400	">{projectStatus}</span>
@@ -212,26 +211,36 @@ const Dashboard = () => {
           {/* Update's status */}
 
           <div className="delay-3 flex flex-row items-start w-full space-x-4">
-            <div className="border-[1px] border-[#EBEBEB] flex flex-row w-[500px] px-4 py-8 items-center justify-center space-x-10 rounded-lg hover:shadow-md transition-all duration-200">
+            <div className="border-[1px] border-[#EBEBEB] dark:border-[#2E2E2E] dark:bg-[#202020] flex flex-row w-[500px] px-4 py-8 items-center justify-center space-x-10 rounded-lg hover:shadow-md transition-all duration-200">
               <LazyLoadImage
                 className="flex object-contain h-[364px] w-auto"
                 src="https://media.publit.io/file/screens/PLACE-YOUR-SCREEN-HERE-1.webp"
               />
               <div className="flex flex-col items-start space-y-7">
                 <div className="flex flex-col items-start space-y-2">
-                  <h3 className="text-[#595959]">Project Progress</h3>
+                  <h3 className="text-[#595959] dark:text-[#9B9B9B]">
+                    Project Progress
+                  </h3>
 
                   <CircularProgress progress={70} title={"70%"} />
                 </div>
 
                 <div className="flex flex-col items-start space-y-0">
-                  <h3 className="text-[#595959]">Delivery </h3>
-                  <p className="text-[#1E1919] font-semibold">17 Jun 2023</p>
+                  <h3 className="text-[#595959] dark:text-[#9B9B9B]">
+                    Delivery{" "}
+                  </h3>
+                  <p className="text-[#1E1919] font-semibold dark:text-white">
+                    17 Jun 2023
+                  </p>
                 </div>
 
                 <div className="flex flex-col items-start space-y-0">
-                  <h3 className="text-[#595959]">Status </h3>
-                  <p className="text-[#1E1919] font-semibold">Ongoing</p>
+                  <h3 className="text-[#595959] dark:text-[#9B9B9B]">
+                    Status{" "}
+                  </h3>
+                  <p className="text-[#1E1919] font-semibold dark:text-white">
+                    Ongoing
+                  </p>
                 </div>
 
                 <button
@@ -241,7 +250,7 @@ const Dashboard = () => {
                   <span className="text-[14px] dark:text-white mr-1.5">
                     Support
                   </span>
-                  <FiHelpCircle />
+                  <FiHelpCircle className="dark:text-white" />
                 </button>
               </div>
             </div>

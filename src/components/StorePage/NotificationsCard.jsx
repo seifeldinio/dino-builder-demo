@@ -53,7 +53,7 @@ const NotificationsCard = () => {
           </span>
           <div className="flex flex-wrap mt-auto">
             <div className="ml-auto">
-              <div className="flex flex-row mt-2.5">
+              <div className="flex flex-row mt-2.5 dark:mt-5">
                 <TextIconBlueButton
                   onClick={() => {
                     if (tourStarted === false) {

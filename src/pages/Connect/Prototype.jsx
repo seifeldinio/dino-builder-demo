@@ -177,7 +177,7 @@ const Prototype = () => {
                 </div>
               </div>
               <div className="row mt-1 text-[15px]">
-                <span className="text-gray-400	">
+                <span className="text-[#595959]	dark:text-[#B5B5B5]">
                   Preview & customize your app.
                 </span>
               </div>
@@ -191,7 +191,7 @@ const Prototype = () => {
                 <span className="text-[14px] dark:text-white mr-1.5">
                   Support
                 </span>
-                <FiHelpCircle />
+                <FiHelpCircle className="dark:text-white" />
               </button>
 
               <TextIconBlueButton
@@ -203,7 +203,7 @@ const Prototype = () => {
             </div>
           </div>
 
-          <hr className="mt-4 mb-5" />
+          <hr className="mt-4 mb-5 dark:border-[#353535]" />
           <div className="delay-4 mb-12">
             {/* COLORS */}
             <ColorsAccordion />

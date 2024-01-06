@@ -77,7 +77,7 @@ const ProjectOverview = () => {
             </div>
           </div>
           <div className="row mt-1 text-[15px]">
-            <span className="text-gray-400	">
+            <span className="text-[#595959]	dark:text-[#B5B5B5]">
               General overview of your project.
             </span>
           </div>

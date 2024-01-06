@@ -75,11 +75,11 @@ const Store = () => {
             </div>
           </div>
           <div className="row mt-1 text-[15px]">
-            <span className="text-gray-400	">
+            <span className="text-[#595959]	dark:text-[#B5B5B5]">
               Manage your AR Products, Payment methods, and more.
             </span>
 
-            <hr className="mt-4 mb-5" />
+            <hr className="mt-4 mb-5 dark:border-[#353535]" />
           </div>
           <div className="flex md:flex-row flex-col md:space-x-7  md:space-y-0 space-y-7 items-start ">
             {/* h-[152px] */}

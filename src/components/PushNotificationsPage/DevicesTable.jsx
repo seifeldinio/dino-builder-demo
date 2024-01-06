@@ -23,7 +23,7 @@ const DevicesTable = () => {
 
       <div class="overflow-x-auto relative mt-7 outline outline-2 outline-[#F2F3F7] rounded-lg dark:outline-[#2C2C2C]">
         <table class="w-full text-sm text-left  text-gray-500 dark:text-gray-400">
-          <thead class="text-md font-light text-gray-700  bg-[#FAFAFA]   dark:text-[#929292] dark:bg-main-dark">
+          <thead class="text-md font-light text-gray-700  bg-[#FAFAFA]   dark:text-white dark:bg-[#202020]">
             <tr>
               <th scope="col" class="py-3 px-6">
                 Device

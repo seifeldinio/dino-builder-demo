@@ -57,7 +57,7 @@ const StoreManagerCard = (props) => {
             <div className="ml-auto flex flex-row items-center space-x-3 mt-2.5">
               <div
                 // onClick={onClick}
-                class="bg-[#F2F3F7]  text-[#8E8E8E]  py-1 px-2.5 rounded-md inline-flex items-center "
+                class="bg-[#F2F3F7] dark:bg-[#424242]  text-[#8E8E8E] dark:text-[#878787]  py-1 px-2.5 rounded-md inline-flex items-center "
               >
                 <span className="text-[14px] select-none">Integrated</span>
                 <IoMdCheckmark className="ml-1" />

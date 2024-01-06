@@ -50,8 +50,12 @@ const FeaturesAccordion = () => {
         }}
         className="flex flex-row items-center justify-between w-full py-4 cursor-pointer"
       >
-        <h2 className="text-[18px] font-semibold">Features</h2>
-        {open ? <IoIosArrowUp /> : <IoIosArrowDown />}
+        <h2 className="text-[18px] font-semibold dark:text-white">Features</h2>
+        {open ? (
+          <IoIosArrowUp className="dark:text-white" />
+        ) : (
+          <IoIosArrowDown className="dark:text-white" />
+        )}
       </div>
 
       {open ? (
@@ -59,7 +63,7 @@ const FeaturesAccordion = () => {
           {" "}
           {/* Accordion body */}
           <div className="pt-0 flex flex-col pb-2">
-            <h3 className="text-[16px] text-[#595959]">
+            <h3 className="text-[16px] text-[#595959] dark:text-[#B5B5B5]">
               Enable or disable features.
             </h3>
           </div>
@@ -94,7 +98,7 @@ const FeaturesAccordion = () => {
           </div>
         </form> */}
           </div>
-          <div className="flex-wrap mt-[20px] h-[350px] outline outline-2 outline-[#ECECEC] dark:outline-[#2C2C2C] rounded-md  overflow-y-scroll overflow-x-clip">
+          <div className="flex-wrap mt-[20px] h-[350px] outline outline-2 outline-[#ECECEC] dark:outline-[#2C2C2C] dark:bg-[#202020] rounded-md  overflow-y-scroll overflow-x-clip">
             <div className="flex  flex-col  ml-[15px] mr-[15px]">
               {results?.map((item, i) => (
                 <>
@@ -150,7 +154,7 @@ const FeaturesAccordion = () => {
           </div>
         </>
       ) : (
-        <hr className="mt-2 mb-4" />
+        <hr className="mt-2 mb-4 dark:border-[#353535]" />
       )}
     </>
   );
