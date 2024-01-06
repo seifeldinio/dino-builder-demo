@@ -18,7 +18,7 @@ const CreditCardPage = () => {
   const [playB] = useSound(clickB, { volume: 0.5 });
 
   return (
-    <div className="page-animation flex flex-col mt-5 ">
+    <div className="page-animation flex flex-col mt-5">
       <div className="flex flex-row items-center bg-white shadow-sm py-1">
         {/* Back button */}
         <button
@@ -33,7 +33,7 @@ const CreditCardPage = () => {
         <span className="font-medium text-[18px]">Payment</span>
       </div>
       {/* Content */}
-      <div className="flex flex-col w-[335px] pl-5 pr-5 pb-5 space-y-4">
+      <div className="flex flex-col w-[295px] pl-6 pr-6 pb-8 space-y-4">
         {/* <div className="flex justify-center items-center content-center mt-4 ">
           <LazyLoadImage
             src={"https://media.publit.io/file/StockPics/demo-visa.webp"}

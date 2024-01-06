@@ -36,8 +36,8 @@ const ColorsAccordion = () => {
       {open ? (
         <>
           {/* Accordion body */}
-          <div className="pt-4 pb-8 flex flex-wrap items-center space-x-5 border-b dark:border-[#393939] ">
-            <div className="flex flex-row items-center space-x-2 px-2.5 py-2 rounded-md border-[1px] border-[#E1DFDD] dark:border-[#393939] w-fit dark:bg-[#202020]">
+          <div className="pt-4 pb-5 flex flex-wrap items-center  border-b dark:border-[#393939] ">
+            <div className="flex flex-row items-center mb-3 mr-3 space-x-2 px-2.5 py-2 rounded-md border-[1px] border-[#E1DFDD] dark:border-[#393939] w-fit dark:bg-[#202020]">
               <input
                 type="color"
                 value={primaryColor}
@@ -48,7 +48,7 @@ const ColorsAccordion = () => {
               />
               <span className="dark:text-white">Primary color</span>
             </div>
-            <div className="flex flex-row items-center space-x-2 px-2.5 py-2 rounded-md border-[1px] border-[#E1DFDD] dark:border-[#393939]  w-fit dark:bg-[#202020]">
+            <div className="flex flex-row items-center mb-3 mr-3 space-x-2 px-2.5 py-2 rounded-md border-[1px] border-[#E1DFDD] dark:border-[#393939] w-fit dark:bg-[#202020]">
               <input
                 type="color"
                 value={localColor}
@@ -59,7 +59,7 @@ const ColorsAccordion = () => {
               />
               <span className="dark:text-white">Secondary color</span>
             </div>
-            <div className="flex flex-row items-center space-x-2 px-2.5 py-2 rounded-md border-[1px] border-[#E1DFDD] dark:border-[#393939]  w-fit dark:bg-[#202020]">
+            <div className="flex flex-row items-center mb-3 mr-3 space-x-2 px-2.5 py-2 rounded-md border-[1px] border-[#E1DFDD] dark:border-[#393939] w-fit dark:bg-[#202020]">
               <input
                 type="color"
                 value={textColor}
@@ -70,7 +70,7 @@ const ColorsAccordion = () => {
               />
               <span className="dark:text-white">Text color</span>
             </div>
-            <div className="flex flex-row items-center space-x-2 px-2.5 py-2 rounded-md border-[1px] border-[#E1DFDD] dark:border-[#393939]  w-fit dark:bg-[#202020]">
+            <div className="flex flex-row items-center mb-3 mr-3 space-x-2 px-2.5 py-2 rounded-md border-[1px] border-[#E1DFDD] dark:border-[#393939] w-fit dark:bg-[#202020]">
               <input
                 type="color"
                 value={backgroundColor}

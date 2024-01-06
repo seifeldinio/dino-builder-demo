@@ -5,7 +5,7 @@ const ModelViewer = (props) => {
   const { glb } = props;
 
   return (
-    <div className="z-1 flex content-center justify-center items-center bg-[#F8F8F8] h-[200px] w-[335px]">
+    <div className="z-1 flex content-center justify-center items-center bg-[#F8F8F8] h-[180px] w-[295px]">
       {/* Favorites Button */}
       {/* <span className="fixed z-50 ml-[275px] mb-[150px] cursor-pointer">
         <BsHeart className="text-[#656565]" />

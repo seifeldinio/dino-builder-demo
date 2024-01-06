@@ -43,7 +43,7 @@ const EditProfile = () => {
               onClick={() => {
                 navigate(-1);
               }}
-              className="flex h-[40px] w-[40px] justify-center content-center hover:dark:bg-[#323232] dark:text-white cursor-pointer bg-[#F4F4F4] hover:bg-[#e7e7e7] mt-[1px] px-3 py-3 rounded-full  transition-color duration-200  mr-[7px]"
+              className="flex h-[40px] w-[40px] justify-center content-center hover:dark:bg-[#323232] dark:text-white cursor-pointer bg-[#F4F4F4] dark:bg-[#2D2D2D] hover:bg-[#e7e7e7] mt-[1px] px-3 py-3 rounded-full  transition-color duration-200  mr-[7px]"
             >
               <HiOutlineArrowLeft className="scale-110" />
             </button>

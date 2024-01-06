@@ -3,6 +3,7 @@ import React from "react";
 const TimelineComponent = () => {
   return (
     <div className="border-[1px] border-[#EBEBEB] dark:border-[#2E2E2E] dark:bg-[#202020] dark:text-white flex  flex-col w-2/3 rounded-lg h-[430px] ">
+      {/* w-2/3 */}
       <div className="flex flex-row items-center space-x-1 text-[18px] w-full py-4 px-5">
         <h4>Remaining Time</h4>
         <span className="font-semibold">22 Weeks</span>
@@ -43,16 +44,16 @@ const TimelineComponent = () => {
           <span className="text-[14px] font-semibold">Design</span>
         </div>
         {/* Event */}
-        <div className="ml-auto mr-80 bg-white dark:bg-[#2C2C2C] hover:shadow-md transition-all duration-200 border-t-[1px] border-r-[1px] border-b-[1px] border-l-[6px] border-t-[#EBEBEB] border-r-[#EBEBEB] border-b-[#EBEBEB] dark:border-t-[#2C2C2C] dark:border-r-[#2C2C2C] dark:border-b-[#2C2C2C] border-l-[#F6E6B9] rounded-md py-4 pl-4 pr-60 w-fit ">
+        <div className="ml-auto 2xl:mr-80 mr-[126px] bg-white dark:bg-[#2C2C2C] hover:shadow-md transition-all duration-200 border-t-[1px] border-r-[1px] border-b-[1px] border-l-[6px] border-t-[#EBEBEB] border-r-[#EBEBEB] border-b-[#EBEBEB] dark:border-t-[#2C2C2C] dark:border-r-[#2C2C2C] dark:border-b-[#2C2C2C] border-l-[#F6E6B9] rounded-md py-4 pl-4 pr-60 w-fit ">
           <span className="text-[14px] font-semibold">Prototype</span>
         </div>
         {/* Event */}
         <div className="flex flex-row space-x-0">
-          <div className="absolute right-20 bottom-[-54px]  bg-white dark:bg-[#2C2C2C] hover:shadow-md transition-all duration-200 border-t-[1px] border-r-[1px] border-b-[1px] border-l-[6px] border-t-[#EBEBEB] border-r-[#EBEBEB] border-b-[#EBEBEB] dark:border-t-[#2C2C2C] dark:border-r-[#2C2C2C] dark:border-b-[#2C2C2C] border-l-[#F6E6B9] rounded-md py-4 pl-4 pr-60 w-fit ">
+          <div className="absolute md:right-14 2xl:right-20 bottom-[-54px]  bg-white dark:bg-[#2C2C2C] hover:shadow-md transition-all duration-200 border-t-[1px] border-r-[1px] border-b-[1px] border-l-[6px] border-t-[#EBEBEB] border-r-[#EBEBEB] border-b-[#EBEBEB] dark:border-t-[#2C2C2C] dark:border-r-[#2C2C2C] dark:border-b-[#2C2C2C] border-l-[#F6E6B9] rounded-md py-4 pl-4 pr-60 w-fit ">
             <span className="text-[14px] font-semibold">Full build</span>
           </div>
           {/* DATE INDICATOR */}
-          <div className="absolute right-10 bottom-[-82px] flex flex-col justify-center items-center">
+          <div className="absolute md:right-4 2xl:right-10 bottom-[-82px] flex flex-col justify-center items-center">
             <div className="flex flex-col items-start bg-white border-[1px] border-[#EBEBEB] dark:border-[#4C4C4C] dark:bg-[#3C3C3C] shadow-md p-2 rounded-lg">
               <span className="text-[12px] font-semibold">Delivery</span>
               <span className="text-[12px] font-light">17 Jun 2023</span>

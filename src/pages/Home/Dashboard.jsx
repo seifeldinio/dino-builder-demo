@@ -115,7 +115,7 @@ const Dashboard = () => {
                       <div className=" flex content-center justify-center mt-[60px]">
                         <div className="flex flex-col justify-center items-center content-center">
                           {/* <CgSearch className="h-[25px] w-[25px] text-[#979797]" /> */}
-                          <span className="mb-1 text-[18px]">🤷</span>
+                          <span className="mb-1 text-[18px]">😐</span>
                           <span className="text-[14px] text-[#979797]">
                             No results found
                           </span>
@@ -211,7 +211,8 @@ const Dashboard = () => {
           {/* Update's status */}
 
           <div className="delay-3 flex flex-row items-start w-full space-x-4">
-            <div className="border-[1px] border-[#EBEBEB] dark:border-[#2E2E2E] dark:bg-[#202020] flex flex-row w-[500px] px-4 py-8 items-center justify-center space-x-10 rounded-lg hover:shadow-md transition-all duration-200">
+            <div className="border-[1px] border-[#EBEBEB] dark:border-[#2E2E2E] dark:bg-[#202020] flex flex-row w-1/2 2xl:w-[500px] px-4 py-8 items-center justify-center space-x-10 rounded-lg hover:shadow-md transition-all duration-200">
+              {/* w-[500px] */}
               <LazyLoadImage
                 className="flex object-contain h-[364px] w-auto"
                 src="https://media.publit.io/file/screens/PLACE-YOUR-SCREEN-HERE-1.webp"

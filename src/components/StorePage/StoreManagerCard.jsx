@@ -33,7 +33,12 @@ const StoreManagerCard = (props) => {
   const navigate = useNavigate();
 
   return (
-    <div className="md:flex hidden h-full w-full flex-1 rounded-lg outline outline-1.5 outline-greyelement bg-white dark:bg-section-dark dark:outline-[#202020] hover:shadow-md transition-all duration-200">
+    <div 
+    
+    // className="md:flex hidden h-full w-full flex-1 rounded-lg outline outline-1.5 outline-greyelement bg-white dark:bg-section-dark dark:outline-[#202020] hover:shadow-md transition-all duration-200"
+    className="flex-1  rounded-lg  border-[1px] border-[#E1DFDD] bg-white dark:bg-section-dark dark:border-[#202020] hover:shadow-md transition-all duration-200"
+
+    >
       <div className="p-3 w-full">
         <div className="flex flex-col ">
           <div className="flex flex-row items-center ">

@@ -31,7 +31,7 @@ const LayoutAccordion = () => {
               Select the screen you want to edit.
             </h3>
 
-            <div className="flex flex-row items-start space-x-12 w-full overflow-x-scroll mt-8 border-b pb-8 dark:border-[#393939]">
+            <div className="flex flex-row items-start space-x-12 md:w-[740px] 2xl:w-[1000px] overflow-x-scroll mt-8 border-b pb-8 dark:border-[#393939]">
               <ScreenCard
                 label={"Login"}
                 image={"https://media.publit.io/file/screens/Log-In.webp"}

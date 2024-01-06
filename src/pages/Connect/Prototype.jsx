@@ -165,7 +165,8 @@ const Prototype = () => {
     <div className="page-animation">
       <div className="flex flex-row h-full ">
         {/* Page content */}
-        <div className="mt-10 md:ml-10 md:mr-10 ml-5 mr-5 w-3/5 ">
+        <div className="mt-10 md:ml-10 md:mr-[394px] w-full">
+          {/* w-3/5 */}
           <div className="flex flex-row items-center justify-between">
             <div className="flex flex-col">
               <div className="flex flex-wrap lg:flex-nowrap ">
@@ -218,7 +219,9 @@ const Prototype = () => {
           <div className="delay-1">
             <div
               data-tour="6"
-              className=" h-full dark:text-gray-200 bg-white shadow-md dark:bg-section-dark w-[454px]	"
+              className=" h-full dark:text-gray-200 bg-white shadow-md dark:bg-section-dark w-[354px]	"
+              // 354px
+              // 454px
             >
               <div className="flex flex-col h-full  ">
                 <div className="flex flex-col px-5 pb-5 pt-8">
@@ -242,7 +245,7 @@ const Prototype = () => {
                     </Dropdown>
                   </div>
                   {/* Phone */}
-                  <div className="flex flex-row items-center content-center justify-center mt-[60px] mb-10">
+                  <div className="flex flex-row items-center content-center justify-center mt-[5px] mb-[10px] scale-90">
                     {/* Simulator Mockup */}
                     {device === "iOS" ? (
                       <LazyLoadImage
@@ -257,7 +260,12 @@ const Prototype = () => {
                     )}
 
                     {/* App content */}
-                    <div className="flex flex-col bg-white w-[335px] h-[720px] pt-[25px] rounded-lg overflow-y-scroll overflow-x-hidden scroll-smooth ">
+                    <div
+                      className={`flex flex-col bg-white w-[295px] ${
+                        device === "iOS" ? "h-[600px] " : "h-[632px] "
+                      } pt-[25px] rounded-xl overflow-y-scroll overflow-x-hidden scroll-smooth`}
+                    >
+                      {/* h-[720px] */}
                       <div className="flex text-black  ">
                         <Main />
                       </div>

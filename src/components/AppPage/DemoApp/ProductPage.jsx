@@ -64,7 +64,7 @@ const ProductPage = (props) => {
       {/* Product viewer */}
       <ModelViewer glb={product?.glb} />
       {/* Page content */}
-      <div className="p-5">
+      <div className="pr-6 pl-6 pb-8 pt-5">
         <div className="flex flex-row items-center">
           <span className="font-medium ">{product?.product_name}</span>
           <div className="flex flex-row items-center ml-auto space-x-1">

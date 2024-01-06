@@ -105,7 +105,7 @@ const Settings = () => {
                       <div className=" flex content-center justify-center mt-[60px]">
                         <div className="flex flex-col justify-center items-center content-center">
                           {/* <CgSearch className="h-[25px] w-[25px] text-[#979797]" /> */}
-                          <span className="mb-1 text-[18px]">🤷</span>
+                          <span className="mb-1 text-[18px]">😐</span>
                           <span className="text-[14px] text-[#979797]">
                             No results found
                           </span>
@@ -232,7 +232,7 @@ const Settings = () => {
               </div>
 
               {/* Add-ons grid */}
-              <div className="md:grid md:grid-cols-3 md:gap-7 mt-4 md:space-y-0  flex flex-col space-y-7 mb-8">
+              <div className="md:grid md:grid-cols-3 md:gap-7 mt-4 md:space-y-0  flex flex-col space-y-7 mb-20">
                 <AddOnCard
                   title={"AR Products"}
                   description={`${storeData?.ar_products_limit} Interactive AR Products`}
@@ -260,8 +260,8 @@ const Settings = () => {
                   bgColor={"bg-lightblue"}
                 /> */}
                 <AddOnCard
-                  title={"Competition analysis"}
-                  description={"AI Analysis of your competitors."}
+                  title={"AI Analysis"}
+                  description={"Analysis of your competitors."}
                   connected={true}
                   icon={<GrRobot className="h-[23px] w-[23px]" />}
                   bgColor={"bg-purple"}
