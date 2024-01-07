@@ -7,9 +7,9 @@ const MobileUpdateStatus = (props) => {
   const { doneFeatures } = props;
 
   return (
-    <div className="md:invisible md:h-0 md:w-0 visible mt-4 md:mt-0">
-      <span className="text-[20px] font-normal dark:text-white">
-        Update’s Status
+    <div className="md:invisible md:h-0 md:w-0 visible mt-6 md:mt-0">
+      <span className="text-[26px] dark:text-white font-bold">
+        Feature status
       </span>
 
       {/* Update's kanban area */}
@@ -29,7 +29,7 @@ const MobileUpdateStatus = (props) => {
         <div className="flex flex-row space-x-7 pl-5 pb-5 pr-5">
           <div className="flex-1 flex flex-col space-y-7">
             {/* Done */}
-            {doneFeatures?.length == 0 ? (
+            {doneFeatures?.length === 0 ? (
               <EmptyKanbanCard />
             ) : (
               <>

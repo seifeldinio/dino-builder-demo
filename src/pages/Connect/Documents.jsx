@@ -10,7 +10,7 @@ const Documents = () => {
   return (
     <div className="page-animation">
       <div className="md:mt-10 md:ml-10 md:mr-10 mt-20 ml-5 mr-5">
-        <div data-tour="21">
+        <div data-tour="20">
           <div className="flex flex-wrap lg:flex-nowrap ">
             <div className="flex flex-row items-center">
               <span className="text-[26px] dark:text-white font-bold">
@@ -48,7 +48,7 @@ const Documents = () => {
         </div>
 
         {/* Second section */}
-        <div data-tour="22" className="delay-4">
+        <div data-tour="21" className="delay-4">
           <div className="mt-8">
             <span className="text-[26px] dark:text-white font-bold">
               Branding

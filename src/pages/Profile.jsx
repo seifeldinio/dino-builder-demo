@@ -106,7 +106,7 @@ const Profile = () => {
   // console.log("NOTIFICATIONS IN PROFILE PAGE", notifications);
 
   return (
-    <div data-tour="27" className="page-animation">
+    <div data-tour="26" className="page-animation">
       <div className="flex h-[210px] bg-[#FAFAFA] dark:bg-section-dark">
         {/* <div></div> */}
         <div className="mt-auto mb-auto md:ml-10 ml-5 mr-10 ">
@@ -240,7 +240,7 @@ const Profile = () => {
         {/* Expected Feedback List */}
 
         <div className="md:flex hidden mt-[45px] mb-[50px]  h-[350px]  rounded-md outline outline-2 outline-[#ECECEC] dark:outline-[#2C2C2C] overflow-y-scroll overflow-x-clip">
-          <div data-tour="28" className="relative w-full ">
+          <div data-tour="27" className="relative w-full ">
             <div className="fixed backdrop-blur-md bg-white/90 dark:backdrop-blur-2xl dark:bg-black/80 md:left-[40px] md:right-[46px] left-[20px] right-[26px] rounded-md h-[60px]">
               <div className="flex flex-col">
                 <span className=" text-[20px] font-normal ml-[15px] mt-[13px] dark:text-white">
@@ -251,7 +251,7 @@ const Profile = () => {
             </div>
             <div className="mt-[75px]" />
             {/*  List Tiles */}
-            {expectedFeedbacksData?.length == 0 ? (
+            {expectedFeedbacksData?.length === 0 ? (
               <>
                 {/* No expected feedback yet (Empty state) */}
                 <div className="flex w-full h-[200px]  items-center justify-center content-center">

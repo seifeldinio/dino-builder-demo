@@ -15,10 +15,8 @@ import { BottomProfile, TourBottomProfile } from "./index";
 import { currentUserData, notificationsData } from "../data/DemoData";
 // import { LazyLoadImage } from "react-lazy-load-image-component";
 
-import LogoLight from '../assets/images/logo-light.webp'
+import LogoLight from "../assets/images/logo-light.webp";
 import LogoDark from "../assets/images/logo-dark.webp";
-
-
 
 const Sidebar = () => {
   const { currentMode, tourStarted } = useStateContext();
@@ -109,9 +107,9 @@ const Sidebar = () => {
                           : link.slug === "connect"
                           ? "18"
                           : link.slug === "documents"
-                          ? "20"
+                          ? "19"
                           : link.slug === "overview"
-                          ? "23"
+                          ? "22"
                           : null
                       }
                     >
@@ -152,9 +150,9 @@ const Sidebar = () => {
                           : link.slug === "connect"
                           ? "18"
                           : link.slug === "documents"
-                          ? "20"
+                          ? "19"
                           : link.slug === "overview"
-                          ? "23"
+                          ? "22"
                           : null
                       }
                     >

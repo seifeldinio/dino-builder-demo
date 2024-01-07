@@ -2,7 +2,10 @@ import React from "react";
 
 const TimelineComponent = () => {
   return (
-    <div className="border-[1px] border-[#EBEBEB] dark:border-[#2E2E2E] dark:bg-[#202020] dark:text-white flex  flex-col w-2/3 rounded-lg h-[430px] ">
+    <div
+      data-tour="2"
+      className="hidden md:flex flex-col w-2/3 rounded-lg h-[430px] border-[1px] border-[#EBEBEB] dark:border-[#2E2E2E] dark:bg-[#202020] dark:text-white  "
+    >
       {/* w-2/3 */}
       <div className="flex flex-row items-center space-x-1 text-[18px] w-full py-4 px-5">
         <h4>Remaining Time</h4>

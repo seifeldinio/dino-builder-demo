@@ -10,6 +10,7 @@ import startUp from "../../assets/sfx/startUp.mp3";
 import clickA from "../../assets/sfx/clickA.mp3";
 import clickB from "../../assets/sfx/clickB.mp3";
 import { useNavigate } from "react-router-dom";
+import smallLogo from '../../assets/images/small-logo-light.webp'
 
 const StartTourModal = () => {
   const {
@@ -70,7 +71,7 @@ const StartTourModal = () => {
                 <div className="absolute z-50 bottom-0 m-6">
                   <div className="flex flex-col z-50">
                     <span className="font-bold text-[20px] mb-1.5 text-black">
-                      New to Bloxat Built? 👋
+                      New to Palm Builder? 👋
                     </span>
                     <span className="text-[#9e9e9e]  mb-4">
                       Click on "Start Tour" for a quick walkthrough! 😄
@@ -104,8 +105,9 @@ const StartTourModal = () => {
                 </button>
 
                 <img
-                  className="absolute h-[70px] right-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-[100px] z-50 w-auto items-center justify-center content-center"
-                  src="https://media.publit.io/file/StockPics/console-light.webp"
+                  className="absolute h-[74px] right-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-[110px] z-50 w-auto items-center justify-center content-center"
+                  // src="https://media.publit.io/file/StockPics/console-light.webp"
+                  src={smallLogo}
                   alt=""
                 />
                 <img

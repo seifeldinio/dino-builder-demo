@@ -9,8 +9,8 @@ const SearchBar = (props) => {
 
   return (
     <>
-      <form class="flex items-center ml-auto">
-        <div class="relative md:w-[240px] invisible md:visible">
+      <form class="md:flex hidden items-center ml-auto">
+        <div class="relative md:w-[240px] ">
           <input
             type="text"
             id="voice-search"

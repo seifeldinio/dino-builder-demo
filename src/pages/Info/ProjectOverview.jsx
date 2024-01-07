@@ -68,7 +68,7 @@ const ProjectOverview = () => {
   return (
     <div className="page-animation">
       <div className="md:mt-10 md:ml-10 md:mr-10 mt-20 ml-5 mr-5">
-        <div data-tour="24">
+        <div data-tour="23">
           <div className="flex flex-wrap lg:flex-nowrap ">
             <div className="flex flex-row items-center">
               <span className="text-[26px] dark:text-white font-bold">
@@ -303,7 +303,7 @@ const ProjectOverview = () => {
         </div>
         {/* Features */}
 
-        <div data-tour="25">
+        <div data-tour="24">
           {/* Features table */}
           <FeaturesTable />
           {/* Add a new feature button */}

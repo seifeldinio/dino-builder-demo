@@ -20,9 +20,9 @@ const Notifications = () => {
             <span className="text-[27px] dark:text-white">Notifications</span>
             <div className="row mt-1 text-[15px]">
               <span className="text-gray-400	">
-                {unReadNotifications?.length == 0 ? (
+                {unReadNotifications?.length === 0 ? (
                   <>No new notifications.</>
-                ) : unReadNotifications?.length == 1 ? (
+                ) : unReadNotifications?.length === 1 ? (
                   <>{unReadNotifications?.length} New notification.</>
                 ) : (
                   <>{unReadNotifications?.length} New notifications.</>
@@ -31,7 +31,7 @@ const Notifications = () => {
             </div>
             <hr className="w-full mt-[18px] dark:border-[#2C2C2C] " />
 
-            {notificationsData?.length == 0 ? (
+            {notificationsData?.length === 0 ? (
               <>
                 {/* Empty no notifications sent at all yet */}
                 <div className="flex-1 w-full items-center content-center justify-center  ">

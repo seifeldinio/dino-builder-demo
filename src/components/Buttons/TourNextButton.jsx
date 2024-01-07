@@ -15,7 +15,7 @@ const TourNextButton = (props) => {
     setGoToApp,
     setGoToStore,
     setGoToPush,
-    setGoToConnect,
+    // setGoToConnect,
     setGoToDocs,
     setGoToOverview,
     setGoToProfile,
@@ -61,31 +61,25 @@ const TourNextButton = (props) => {
           setTimeout(() => {
             onClick();
           }, 1000);
-        } else if (currentStep === 17) {
+        } else if (currentStep === 18) {
           setGoToPush(false);
-          setGoToConnect(true);
-          setTimeout(() => {
-            onClick();
-          }, 500);
-        } else if (currentStep === 19) {
-          setGoToConnect(false);
           setGoToDocs(true);
           setTimeout(() => {
             onClick();
           }, 500);
-        } else if (currentStep === 22) {
+        } else if (currentStep === 21) {
           setGoToDocs(false);
           setGoToOverview(true);
           setTimeout(() => {
             onClick();
           }, 500);
-        } else if (currentStep === 25) {
+        } else if (currentStep === 24) {
           setGoToOverview(false);
           setGoToProfile(true);
           setTimeout(() => {
             onClick();
           }, 500);
-        } else if (currentStep === 28) {
+        } else if (currentStep === 27) {
           setGoToProfile(false);
           setGoToSettings(true);
           setTimeout(() => {

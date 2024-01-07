@@ -35,7 +35,7 @@ const MobileBugFixesStatus = (props) => {
         <div className="flex flex-row space-x-7 pl-5 pb-5 pr-5">
           <div className="flex-1 flex flex-col space-y-7">
             {/* Done */}
-            {doneBug?.length == 0 ? (
+            {doneBug?.length === 0 ? (
               <EmptyKanbanCard />
             ) : (
               <>

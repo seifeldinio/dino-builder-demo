@@ -61,11 +61,12 @@ const App = () => {
     goToApp,
     goToStore,
     goToPush,
-    goToConnect,
+    // goToConnect,
     goToDocs,
     goToOverview,
     goToProfile,
     goToSettings,
+    tourStarted,
   } = useStateContext();
 
   // To check if it's opened on a phone or not
@@ -113,8 +114,11 @@ const App = () => {
     <div className={currentMode === "Dark" ? "dark" : ""}>
       <BrowserRouter>
         <div className="flex relative select-none dark:bg-main-dark overflow-x-hidden">
+          {/* select-none */}
           {/* Demo Label */}
-          <DemoLabel />
+
+          {!tourStarted && <DemoLabel />}
+
           {/* Left menu */}
           {/* sidebar */}
           <div className="invisible w-0 md:w-[252px] md:visible md:fixed dark:bg-main-dark dark:border-r   dark:border-[#2C2C2C] bg-[#FAFAFA]">
@@ -139,7 +143,7 @@ const App = () => {
               {mobileSidebar && <MobileSidebar />}
               {showStartTourModal && <StartTourModal />}
               {showMobileStart && <MobileStartModal />}
-
+              {/* <MobileStartModal /> */}
               {goToApp && (
                 <>
                   <Suspense fallback={<LoadingSkeleton />}>
@@ -161,13 +165,13 @@ const App = () => {
                   </Suspense>
                 </>
               )}
-              {goToConnect && (
+              {/* {goToConnect && (
                 <>
                   <Suspense fallback={<LoadingSkeleton />}>
                     <Connect />
                   </Suspense>
                 </>
-              )}
+              )} */}
               {goToDocs && (
                 <>
                   <Suspense fallback={<LoadingSkeleton />}>
@@ -212,7 +216,6 @@ const App = () => {
                       goToApp ||
                       goToStore ||
                       goToPush ||
-                      goToConnect ||
                       goToDocs ||
                       goToOverview ||
                       goToProfile ||

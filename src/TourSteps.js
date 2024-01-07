@@ -2,12 +2,15 @@ const steps = [
   {
     selector: '[data-tour="1"]',
     content: (
-      <div className="flex flex-col">
-        <span className="font-normal">
-          ☝️ This is your development progress (updates automatically).
-          <br />
-          <span className="font-bold">Click on any progress indicator. 🖱️</span>
-        </span>
+      <div className="flex flex-col space-y-2">
+        <p className="font-normal">
+          ☝️ <span className="font-semibold">Track</span> your project's
+          progress.
+        </p>
+        <p>
+          📱 <span className="font-semibold">Monitor</span> the ongoing status
+          and find support when needed.
+        </p>
       </div>
     ),
     highlightedSelectors: [".ReactModal__Content"],
@@ -16,24 +19,22 @@ const steps = [
   {
     selector: '[data-tour="2"]',
     content: (
-      <div className="flex flex-col">
-        <span className="font-normal">
-          ☝️ Your updates' progress.
-          <br />
-          <span className="font-normal text-[#8d8d8d]">
-            Progress from ... <br /> (Feature to Building to Done)
-          </span>
-        </span>
+      <div className="flex flex-col space-y-2">
+        <p className="font-semibold">📅 Project timeline.</p>
+        <p className="font-normal text-[#8d8d8d]">
+          Stay on track from start to delivery. Showcasing milestones like
+          Design, Prototype, and Full Build.
+        </p>
       </div>
     ),
   },
   {
     selector: '[data-tour="3"]',
-    content: "☝️ Bug reports' status can be found here.",
+    content: "Easily monitor your project's feature progression.",
   },
   {
     selector: '[data-tour="4"]',
-    content: "👇 This is a list of all your app releases.",
+    content: "👇 Check your latest app releases.",
   },
   { selector: '[data-tour="5"]', content: "Let's get to the fun part 🚀" },
   {
@@ -44,7 +45,7 @@ const steps = [
           Here you'll find a simulation of your app running. 👉
           <br />
           <span className="font-normal text-[#8d8d8d]">
-            You can interact with your simple built demo app!
+            You can interact with this simple built demo app!
           </span>
         </span>
       </div>
@@ -53,14 +54,12 @@ const steps = [
   {
     selector: '[data-tour="7"]',
     content: (
-      <div className="flex flex-col">
-        <span className="font-normal">
-          These nodes are the building 'Blox' of your app. ⛏️
-          <br />
-          <span className="font-normal text-[#8d8d8d]">
-            Each node represents a page including its functionalities.
-          </span>
-        </span>
+      <div className="flex flex-col space-y-2">
+        <p className="font-semibold">App customization. ⛏️</p>
+        <p className="font-normal text-[#8d8d8d]">
+          Customize your app effortlessly with options for colors, layouts , and
+          features.
+        </p>
       </div>
     ),
   },
@@ -144,18 +143,17 @@ const steps = [
   //   content: "Competition tab to clone notifications",
   // },
   // { selector: '[data-tour="20"]', content: "Abandoned cart settings" },
-  { selector: '[data-tour="18"]', content: "We got you covered! 🙋‍♀️" },
   {
-    selector: '[data-tour="19"]',
-    content: "Dedicated support. 🙌",
+    selector: '[data-tour="18"]',
+    content: "🗣️ Stay connected seamlessly with the team",
   },
-  { selector: '[data-tour="20"]', content: "Access documents from here. 📄" },
+  { selector: '[data-tour="19"]', content: "Access documents from here. 📄" },
   {
-    selector: '[data-tour="21"]',
+    selector: '[data-tour="20"]',
     content: (
       <div className="flex flex-col">
         <span className="font-normal mr-1">
-          Your Bloxat Built app is protected by a Master Contract <span> </span>
+          Your app is protected by a Master Contract <span> </span>
           <span className="font-normal text-[#8d8d8d]">
             that you can download, sign 🖋️ then upload. 👍
           </span>
@@ -166,7 +164,7 @@ const steps = [
     //   "Your Bloxat Built app is protected by a Master Contract that you can download, sign 🖋️ then upload. 👍",
   },
   {
-    selector: '[data-tour="22"]',
+    selector: '[data-tour="21"]',
     // content: (
     //   <div className="flex flex-col">
     //     <span className="font-normal">
@@ -178,20 +176,20 @@ const steps = [
     //   </div>
     // ),
     content:
-      "Upload a ZIP file that contains your brand identity for App Store designs. 🎨",
+      "Upload a PDF file that contains your brand identity for App Store designs. 🎨",
   },
-  { selector: '[data-tour="23"]', content: "An overview of your app. 💎" },
+  { selector: '[data-tour="22"]', content: "An overview of your app. 💎" },
   {
-    selector: '[data-tour="24"]',
+    selector: '[data-tour="23"]',
     content: "Some basic information about your app. 👍",
   },
   {
-    selector: '[data-tour="25"]',
+    selector: '[data-tour="24"]',
     content: "Here's all the available features in your app. 👾",
   },
-  { selector: '[data-tour="26"]', content: "Your Bloxat Built profile. 🦾" },
+  { selector: '[data-tour="25"]', content: "Your profile. 🦾" },
   {
-    selector: '[data-tour="27"]',
+    selector: '[data-tour="26"]',
     content: (
       <div className="flex flex-col">
         <span className="font-normal">
@@ -205,7 +203,7 @@ const steps = [
     ),
   },
   {
-    selector: '[data-tour="28"]',
+    selector: '[data-tour="27"]',
     content: (
       <div className="flex flex-col">
         <span className="font-normal mr-1">
@@ -218,18 +216,18 @@ const steps = [
       </div>
     ),
   },
-  { selector: '[data-tour="29"]', content: "Your account's settings. ⚙️" },
+  { selector: '[data-tour="28"]', content: "Your account's settings. ⚙️" },
   {
-    selector: '[data-tour="30"]',
+    selector: '[data-tour="29"]',
     content: (
       <div className="flex flex-col">
         <span className="font-normal ">
-          <span className="text-[#8d8d8d]">
+          {/* <span className="text-[#8d8d8d]">
             Beside the quick access in the settings tab,
-          </span>
+          </span> */}
           <br />
           <span className="font-normal text-black">
-            Bloxat Built is a sight for sore eyes with <span> </span>
+            Palm Builder is a sight for sore eyes with <span> </span>
             <span className="font-medium">Light Mode</span> 👁️.
           </span>
           <br />
@@ -244,12 +242,12 @@ const steps = [
     // content: "  Switch to Dark Mode when you want to turn on the lights 💡.",
   },
   {
-    selector: '[data-tour="31"]',
+    selector: '[data-tour="30"]',
     content: "These are the active add-ons in your account. 🎁",
   },
 
   {
-    selector: '[data-tour="32"]',
+    selector: '[data-tour="31"]',
     content: (
       <div className="flex flex-col">
         <span className="font-normal ">

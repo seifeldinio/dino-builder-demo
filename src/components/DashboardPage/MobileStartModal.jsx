@@ -4,6 +4,7 @@ import { useStateContext } from "../../contexts/ContextProvider";
 import startUp from "../../assets/sfx/startUp.mp3";
 import clickA from "../../assets/sfx/clickA.mp3";
 import { BsArrowRight } from "react-icons/bs";
+import smallLogo from "../../assets/images/small-logo-light.webp";
 
 const MobileStartModal = () => {
   const {
@@ -23,11 +24,9 @@ const MobileStartModal = () => {
     }
   };
 
-
   useEffect(() => {
     localStorage.setItem("mobile-modal-popped", "true");
   }, []);
-
 
   return (
     <>
@@ -51,8 +50,7 @@ const MobileStartModal = () => {
                       Better experience on desktop 👋
                     </span>
                     <span className="text-[#9e9e9e]  mb-4">
-                      We recommend to use Bloxat Built on desktop to get the
-                      full experience! 😄
+                      We suggest using Palm Builder on your desktop! 😄
                     </span>
                     <button
                       onClick={() => {
@@ -69,8 +67,9 @@ const MobileStartModal = () => {
                 </div>
 
                 <img
-                  className="absolute h-[70px] right-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-[100px] z-50 w-auto items-center justify-center content-center"
-                  src="https://media.publit.io/file/StockPics/console-light.webp"
+                  className="absolute h-[74px] right-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-[110px] z-50 w-auto items-center justify-center content-center"
+                  // src="https://media.publit.io/file/StockPics/console-light.webp"
+                  src={smallLogo}
                   alt=""
                 />
                 <img

@@ -10,36 +10,36 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import {
   // AddOnCard,
   Console,
-  FeaturesTable,
+  // FeaturesTable,
   Main,
-  SmallGreyButton,
-  StoreVersion,
+  // SmallGreyButton,
+  // StoreVersion,
   TextIconBlueButton,
   // ProductPage,
   // TextIconBlueButton,
 } from "../../components";
-import { projectData } from "../../data/DemoData";
+// import { projectData } from "../../data/DemoData";
 // import { FaAppStore, FaGooglePlay } from "react-icons/fa";
 // import { BiNotification } from "react-icons/bi";
-import { HiOutlineCubeTransparent } from "react-icons/hi";
+// import { HiOutlineCubeTransparent } from "react-icons/hi";
 // import { BsArrowRight } from "react-icons/bs";
 // import { useNavigate } from "react-router-dom";
 // import { useCurrentUser } from "../../contexts/userContext/UserContext";
 // import { FaAppStore, FaGooglePlay } from "react-icons/fa";
 // import { BsCheck2 } from "react-icons/bs";
-import Tree from "react-d3-tree";
-import { useStateContext } from "../../contexts/ContextProvider";
-import { useNavigate } from "react-router-dom";
+// import Tree from "react-d3-tree";
+// import { useStateContext } from "../../contexts/ContextProvider";
+// import { useNavigate } from "react-router-dom";
 import { FiHelpCircle } from "react-icons/fi";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import ScreenCard from "../../components/AppPage/ScreenCard";
+// import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+// import ScreenCard from "../../components/AppPage/ScreenCard";
 import LayoutAccordion from "../../components/AppPage/LayoutAccordion";
 import ColorsAccordion from "../../components/AppPage/ColorsAccordion";
 import FeaturesAccordion from "../../components/AppPage/FeaturesAccordion";
 import { toast } from "react-toastify";
 
 const Prototype = () => {
-  const { currentMode } = useStateContext();
+  // const { currentMode } = useStateContext();
 
   // for dark mode conditions
   // const { currentMode } = useStateContext();
@@ -70,86 +70,86 @@ const Prototype = () => {
   // This is a simplified example of an org chart with a depth of 2.
   // Note how deeper levels are defined recursively via the `children` property.
   // For nodes/ blox
-  const orgChart = {
-    name: "Simple App",
-    children: [
-      {
-        name: "Main (2 Blox)",
-        attributes: {
-          Blox: "2",
-        },
-        children: [
-          {
-            name: "Product Screen",
-            // attributes: {
-            //   department: "Fabrication",
-            // },
-            // children: [
-            //   {
-            //     name: "Payment",
-            //   },
-            // ],
-          },
-          {
-            name: "Payment Screen",
-            // attributes: {
-            //   department: "Assembly",
-            // },
-            // children: [
-            //   {
-            //     name: "Worker",
-            //   },
-            // ],
-          },
-        ],
-      },
-    ],
-  };
+  // const orgChart = {
+  //   name: "Simple App",
+  //   children: [
+  //     {
+  //       name: "Main (2 Blox)",
+  //       attributes: {
+  //         Blox: "2",
+  //       },
+  //       children: [
+  //         {
+  //           name: "Product Screen",
+  //           // attributes: {
+  //           //   department: "Fabrication",
+  //           // },
+  //           // children: [
+  //           //   {
+  //           //     name: "Payment",
+  //           //   },
+  //           // ],
+  //         },
+  //         {
+  //           name: "Payment Screen",
+  //           // attributes: {
+  //           //   department: "Assembly",
+  //           // },
+  //           // children: [
+  //           //   {
+  //           //     name: "Worker",
+  //           //   },
+  //           // ],
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // };
 
   // Here we're using `renderCustomNodeElement` to represent each node
   // as an SVG `rect` instead of the default `circle`.
-  const renderRectSvgNodeDark = ({ nodeDatum, toggleNode }) => (
-    <g>
-      <rect
-        width="20"
-        height="20"
-        x="-10"
-        onClick={toggleNode}
-        fill="#ddff55"
-      />
-      <text fill="white" strokeWidth="0" floodColor={"#ffff"} x="20">
-        {nodeDatum.name}
-      </text>
+  // const renderRectSvgNodeDark = ({ nodeDatum, toggleNode }) => (
+  //   <g>
+  //     <rect
+  //       width="20"
+  //       height="20"
+  //       x="-10"
+  //       onClick={toggleNode}
+  //       fill="#ddff55"
+  //     />
+  //     <text fill="white" strokeWidth="0" floodColor={"#ffff"} x="20">
+  //       {nodeDatum.name}
+  //     </text>
 
-      {nodeDatum.attributes?.department && (
-        <text fill="white" x="20" dy="20" strokeWidth="0">
-          Department: {nodeDatum.attributes?.department}
-        </text>
-      )}
-    </g>
-  );
+  //     {nodeDatum.attributes?.department && (
+  //       <text fill="white" x="20" dy="20" strokeWidth="0">
+  //         Department: {nodeDatum.attributes?.department}
+  //       </text>
+  //     )}
+  //   </g>
+  // );
 
   // Light mode
-  const renderRectSvgNode = ({ nodeDatum, toggleNode }) => (
-    <g>
-      <rect
-        width="20"
-        height="20"
-        x="-10"
-        onClick={toggleNode}
-        fill="#ddff55"
-      />
-      <text fill="black" strokeWidth="0" x="20">
-        {nodeDatum.name}
-      </text>
+  // const renderRectSvgNode = ({ nodeDatum, toggleNode }) => (
+  //   <g>
+  //     <rect
+  //       width="20"
+  //       height="20"
+  //       x="-10"
+  //       onClick={toggleNode}
+  //       fill="#ddff55"
+  //     />
+  //     <text fill="black" strokeWidth="0" x="20">
+  //       {nodeDatum.name}
+  //     </text>
 
-      {nodeDatum.attributes?.department && (
-        <text fill="black" x="20" dy="20" strokeWidth="0">
-          Department: {nodeDatum.attributes?.department}
-        </text>
-      )}
-    </g>
-  );
+  //     {nodeDatum.attributes?.department && (
+  //       <text fill="black" x="20" dy="20" strokeWidth="0">
+  //         Department: {nodeDatum.attributes?.department}
+  //       </text>
+  //     )}
+  //   </g>
+  // );
 
   // For navigation
 
@@ -165,7 +165,10 @@ const Prototype = () => {
     <div className="page-animation">
       <div className="flex flex-row h-full ">
         {/* Page content */}
-        <div className="mt-10 md:ml-10 md:mr-[394px] w-full">
+        <div
+          data-tour="7"
+          className="mt-10 md:ml-10 md:mr-[394px] w-full h-full"
+        >
           {/* w-3/5 */}
           <div className="flex flex-row items-center justify-between">
             <div className="flex flex-col">

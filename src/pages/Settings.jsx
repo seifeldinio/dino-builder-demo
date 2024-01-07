@@ -1,11 +1,11 @@
 // import Lottie from "lottie-react-web";
 import React, { useState } from "react";
-import { BiNotification } from "react-icons/bi";
+// import { BiNotification } from "react-icons/bi";
 import {
   BsArrowRight,
   // BsBag,
   BsCreditCardFill,
-  BsFillBagFill,
+  // BsFillBagFill,
 } from "react-icons/bs";
 import { IoMdHelpBuoy, IoMdKey } from "react-icons/io";
 import { RiUser3Fill } from "react-icons/ri";
@@ -206,7 +206,7 @@ const Settings = () => {
           {/* Theme section */}
           <div className="delay-4">
             <div className="h-[30px]" />
-            <div data-tour="30">
+            <div data-tour="29">
               <div className="flex flex-col">
                 <span className="text-[22px] font-semibold dark:text-white">
                   Appearance
@@ -221,7 +221,7 @@ const Settings = () => {
             </div>
             {/* Add-ons */}
             <div className="h-[30px]" />
-            <div data-tour="31">
+            <div data-tour="30">
               <div className="flex flex-col">
                 <span className="text-[22px] font-semibold dark:text-white">
                   Add-ons

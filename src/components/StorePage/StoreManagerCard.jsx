@@ -2,13 +2,13 @@
 // import IconButton from "../Buttons/IconButton";
 // import LinkSVG from "../../assets/Icons/Link.svg";
 // import { TooltipComponent } from "@syncfusion/ej2-react-popups";
-import { AiOutlineAppstoreAdd } from "react-icons/ai";
+// import { AiOutlineAppstoreAdd } from "react-icons/ai";
 // import { FiExternalLink, FiUser } from "react-icons/fi";
 // import { IoMdKey } from "react-icons/io";
 // import { toast } from "react-toastify";
-import TextIconBlueButton from "../Buttons/TextIconBlueButton";
-import { BsArrowRight } from "react-icons/bs";
-import { useNavigate } from "react-router-dom";
+// import TextIconBlueButton from "../Buttons/TextIconBlueButton";
+// import { BsArrowRight } from "react-icons/bs";
+// import { useNavigate } from "react-router-dom";
 import wooCommerceLogo from "../../assets/images/woocommerce.webp";
 import { IoMdCheckmark } from "react-icons/io";
 
@@ -30,14 +30,12 @@ const StoreManagerCard = (props) => {
   // };
 
   // for navigation
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
-    <div 
-    
-    // className="md:flex hidden h-full w-full flex-1 rounded-lg outline outline-1.5 outline-greyelement bg-white dark:bg-section-dark dark:outline-[#202020] hover:shadow-md transition-all duration-200"
-    className="flex-1  rounded-lg  border-[1px] border-[#E1DFDD] bg-white dark:bg-section-dark dark:border-[#202020] hover:shadow-md transition-all duration-200"
-
+    <div
+      // className="md:flex hidden h-full w-full flex-1 rounded-lg outline outline-1.5 outline-greyelement bg-white dark:bg-section-dark dark:outline-[#202020] hover:shadow-md transition-all duration-200"
+      className="flex-1 w-full rounded-lg  border-[1px] border-[#E1DFDD] bg-white dark:bg-section-dark dark:border-[#202020] hover:shadow-md transition-all duration-200"
     >
       <div className="p-3 w-full">
         <div className="flex flex-col ">

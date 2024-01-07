@@ -57,7 +57,7 @@ const BugFixesStatus = (props) => {
         <div className="flex flex-row space-x-7 pl-5 pb-5 pr-5">
           <div className="flex-1 flex flex-col space-y-7">
             {/* Bug */}
-            {toDoBug?.length == 0 ? (
+            {toDoBug?.length === 0 ? (
               <EmptyKanbanCard />
             ) : (
               <>
@@ -75,7 +75,7 @@ const BugFixesStatus = (props) => {
 
           <div className="flex-1 flex flex-col space-y-7">
             {/* Fixing */}
-            {fixingBug?.length == 0 ? (
+            {fixingBug?.length === 0 ? (
               <EmptyKanbanCard />
             ) : (
               <>
@@ -93,7 +93,7 @@ const BugFixesStatus = (props) => {
 
           <div className="flex-1 flex flex-col space-y-7">
             {/* Done */}
-            {doneBug?.length == 0 ? (
+            {doneBug?.length === 0 ? (
               <EmptyKanbanCard />
             ) : (
               <>

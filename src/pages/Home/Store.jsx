@@ -24,7 +24,7 @@ import {
 // import ShippingSVG from "../../assets/Illustrations/Shipping.svg";
 // import { useStateContext } from "../../contexts/ContextProvider";
 // import { BsArrowRight } from "react-icons/bs";
-import { FiBox } from "react-icons/fi";
+// import { FiBox } from "react-icons/fi";
 import { arProductData, projectData, storeData } from "../../data/DemoData";
 
 const Store = () => {

@@ -1,4 +1,4 @@
-import { BsCheck2, BsListUl } from "react-icons/bs";
+// import { BsCheck2, BsListUl } from "react-icons/bs";
 // import GreenCheckSVG from "../../assets/Icons/GreenCheck.svg";
 import TextIconBlueButton from "../Buttons/TextIconBlueButton";
 import EmptyKanbanCard from "./EmptyKanbanCard";
@@ -25,7 +25,7 @@ const UpdateStatus = (props) => {
 
   return (
     <div
-      data-tour="2"
+      data-tour="3"
       className="md:visible invisible md:mt-10 mt-0 md:h-auto h-0"
     >
       <div className="flex flex-row items-center justify-between">
@@ -109,7 +109,7 @@ const UpdateStatus = (props) => {
           <div className="flex-1 flex flex-col space-y-7">
             {/* Features */}
 
-            {toDoFeatures?.length == 0 ? (
+            {toDoFeatures?.length === 0 ? (
               <EmptyKanbanCard />
             ) : (
               <>
@@ -129,7 +129,7 @@ const UpdateStatus = (props) => {
 
           <div className="flex-1 flex flex-col space-y-7">
             {/* Building */}
-            {buildingFeatures?.length == 0 ? (
+            {buildingFeatures?.length === 0 ? (
               <EmptyKanbanCard />
             ) : (
               <>
@@ -147,7 +147,7 @@ const UpdateStatus = (props) => {
 
           <div className="flex-1 flex flex-col space-y-7">
             {/* Done */}
-            {doneFeatures?.length == 0 ? (
+            {doneFeatures?.length === 0 ? (
               <EmptyKanbanCard />
             ) : (
               <>

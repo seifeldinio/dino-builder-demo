@@ -1,14 +1,14 @@
 import "../../_animations.scss";
-import AppStatus from "../../components/DashboardPage/AppStatus";
+// import AppStatus from "../../components/DashboardPage/AppStatus";
 import { useStateContext } from "../../contexts/ContextProvider";
 import { BsArrowRight } from "react-icons/bs";
 import {
   UpdateStatus,
-  BugFixesStatus,
+  // BugFixesStatus,
   AppReleases,
-  MobileAppStatus,
+  // MobileAppStatus,
   MobileUpdateStatus,
-  MobileBugFixesStatus,
+  // MobileBugFixesStatus,
   ExpandedBugCarousel,
   SearchBar,
   CircularProgress,
@@ -17,8 +17,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { pagesSearch } from "../../utils/Constants";
 import { projectData } from "../../data/DemoData";
-import useSound from "use-sound";
-import progressSFX from "../../assets/sfx/progress.mp3";
+// import useSound from "use-sound";
+// import progressSFX from "../../assets/sfx/progress.mp3";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { FiHelpCircle } from "react-icons/fi";
 import TimelineComponent from "../../components/DashboardPage/Timeline";
@@ -26,11 +26,11 @@ import TimelineComponent from "../../components/DashboardPage/Timeline";
 const Dashboard = () => {
   const {
     expandedBugCarousel,
-    projectProgress,
-    setProjectProgress,
-    projectStatus,
-    setProjectStatus,
-    firstName,
+    // projectProgress,
+    // setProjectProgress,
+    // projectStatus,
+    // setProjectStatus,
+    // firstName,
   } = useStateContext();
 
   // For navigation
@@ -50,9 +50,9 @@ const Dashboard = () => {
   );
 
   // For bug updates
-  const toDoBug = projectData?.bugs.filter((bug) => bug?.progress === 0);
-  const fixingBug = projectData?.bugs.filter((bug) => bug?.progress === 1);
-  const doneBug = projectData?.bugs.filter((bug) => bug?.progress === 2);
+  // const toDoBug = projectData?.bugs.filter((bug) => bug?.progress === 0);
+  // const fixingBug = projectData?.bugs.filter((bug) => bug?.progress === 1);
+  // const doneBug = projectData?.bugs.filter((bug) => bug?.progress === 2);
 
   //Last App releases
   const appReleases = projectData?.app_releases;
@@ -66,15 +66,15 @@ const Dashboard = () => {
     item?.keywords.includes(searchSettings.toLowerCase())
   );
 
-  const [playbackRate, setPlaybackRate] = useState(2);
-  const [play] = useSound(progressSFX, {
-    playbackRate,
-    volume: 0.5,
-  });
-  const handleClick = () => {
-    setPlaybackRate(playbackRate + 0.1);
-    play();
-  };
+  // const [playbackRate, setPlaybackRate] = useState(2);
+  // const [play] = useSound(progressSFX, {
+  //   playbackRate,
+  //   volume: 0.5,
+  // });
+  // const handleClick = () => {
+  //   setPlaybackRate(playbackRate + 0.1);
+  //   play();
+  // };
 
   return (
     <>
@@ -84,7 +84,7 @@ const Dashboard = () => {
           <div id="step1" className="flex flex-wrap lg:flex-nowrap ">
             <div className="flex flex-col">
               <div className="flex flex-wrap lg:flex-nowrap ">
-                <div className="flex flex-row justify-center md:mt-0 mt-10">
+                <div className="flex flex-row justify-center md:mt-0 mt-0">
                   <span className="text-[26px] font-bold dark:text-white">
                     {/* {project?.app_name} Cost */}
                     My App
@@ -210,8 +210,11 @@ const Dashboard = () => {
           /> */}
           {/* Update's status */}
 
-          <div className="delay-3 flex flex-row items-start w-full space-x-4">
-            <div className="border-[1px] border-[#EBEBEB] dark:border-[#2E2E2E] dark:bg-[#202020] flex flex-row w-1/2 2xl:w-[500px] px-4 py-8 items-center justify-center space-x-10 rounded-lg hover:shadow-md transition-all duration-200">
+          <div className="delay-3 flex md:flex-row flex-col items-start w-full space-x-4">
+            <div
+              data-tour="1"
+              className="border-[1px] border-[#EBEBEB] dark:border-[#2E2E2E] dark:bg-[#202020] flex flex-row w-full md:w-1/2 2xl:w-[500px] px-4 py-8 items-center justify-center space-x-10 rounded-lg hover:shadow-md transition-all duration-200"
+            >
               {/* w-[500px] */}
               <LazyLoadImage
                 className="flex object-contain h-[364px] w-auto"

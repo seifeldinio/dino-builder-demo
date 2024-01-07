@@ -510,22 +510,23 @@ export const paymentMethodsData = [
 export const featuresData = [
   {
     id: 9,
-    feature_title: "Easy login & registration",
+    feature_title: "Multi-Currency Support",
     description:
-      "Streamline the process of logging into your app by simplifying registration forms.",
+      "Facilitate global transactions effortlessly.",
     added: false,
   },
   {
     id: 8,
-    feature_title: "Intuitive UI/UX",
+    feature_title: "Order Tracking",
     description:
-      "Users understand its behavior and effect without the use of reason, experimentation, or assistance.",
+      "Allowing customers to monitor the status and estimated delivery time.",
     added: true,
   },
   {
     id: 7,
-    feature_title: "Data Privacy and Security",
-    description: "Make users feel more comfortable interacting with it.",
+    feature_title: "Product Reviews",
+    description:
+      "Enabling users to share feedback and make informed purchasing decisions.",
     added: true,
   },
   {
@@ -537,7 +538,7 @@ export const featuresData = [
   },
   {
     id: 5,
-    feature_title: "20 AR Products",
+    feature_title: "17 AR Products",
     description: "AR uses a real-world setting to display your products.",
     added: true,
   },
@@ -557,9 +558,9 @@ export const featuresData = [
   },
   {
     id: 2,
-    feature_title: "Filtered search",
+    feature_title: "Search Functionality",
     description:
-      "A search tool that lets users to restrict their search to a certain section of your app.",
+      "Helping customers quickly find specific products within your extensive inventory.",
     added: true,
   },
   {
@@ -577,9 +578,9 @@ export const approvedFeaturesData = [
     id: 8,
     feature_id: 8,
     project_id: 1,
-    feature_title: "Intuitive UI/UX",
+    feature_title: "Order Tracking",
     description:
-      "Users understand its behavior and effect without the use of reason, experimentation, or assistance.",
+      "Allowing customers to monitor the status and estimated delivery time.",
 
     request_approved: true,
     status: "Added",
@@ -589,9 +590,9 @@ export const approvedFeaturesData = [
     id: 7,
     feature_id: 7,
     project_id: 1,
-    feature_title: "Data Privacy and Security",
+    feature_title: "Product Reviews",
     description:
-      "The privacy and security feature your app offers can make users feel more comfortable interacting with it.",
+      "Enabling users to share feedback and make informed purchasing decisions.",
     request_approved: true,
     status: "Added",
     enabled: true,
@@ -611,7 +612,7 @@ export const approvedFeaturesData = [
     id: 5,
     feature_id: 5,
     project_id: 1,
-    feature_title: "20 AR Products",
+    feature_title: "17 AR Products",
     description: "AR uses a real-world setting to display your products.",
     request_approved: true,
     status: "Added",
@@ -645,9 +646,9 @@ export const approvedFeaturesData = [
     id: 2,
     feature_id: 2,
     project_id: 1,
-    feature_title: "Filtered search",
+    feature_title: "Search Functionality",
     description:
-      "A search tool that lets users to restrict their search to a certain section of your app.",
+      "Helping customers quickly find specific products within your extensive inventory.",
 
     request_approved: true,
     status: "Added",

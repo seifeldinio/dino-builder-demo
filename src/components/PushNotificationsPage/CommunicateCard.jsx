@@ -12,7 +12,7 @@ import { useStateContext } from "../../contexts/ContextProvider";
 const CommunicateCard = (props) => {
   const { titleOnChange } = props;
   const { messageOnChange } = props;
-  const { oneSignalApiKey } = props;
+  // const { oneSignalApiKey } = props;
 
   const {
     pushNotificationTitle,
