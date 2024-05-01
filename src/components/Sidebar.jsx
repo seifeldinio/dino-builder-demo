@@ -57,7 +57,7 @@ const Sidebar = () => {
               // />
               <img
                 src={LogoLight}
-                className="mt-10 ml-3 w-[150px] items-center gap-3 tracking-tight   dark:fill-white	"
+                className="mt-10 ml-3 w-[150px] items-center gap-3 tracking-tight   dark:fill-white	dark:invert"
                 alt=""
               />
             ) : (

@@ -18,7 +18,7 @@ const Console = () => {
         {/* Console message */}
         <div className="flex flex-row items-center w-full select-none">
           <img
-            className="h-[30px] w-[30px]"
+            className="h-[26px] w-[26px]"
             src={currentMode === "Light" ? SmallLogoLight : SmallLogoDark}
             alt=""
           />
@@ -26,9 +26,9 @@ const Console = () => {
           <MdDone className="text-[#006908] ml-1" />
         </div>
         {/* Console message */}
-        <div className="flex flex-row items-center w-full mt-1.5 select-none">
+        <div className="flex flex-row items-center w-full mt-3 select-none">
           <img
-            className="h-[30px] w-[30px]"
+            className="h-[26px] w-[26px]"
             src={currentMode === "Light" ? SmallLogoLight : SmallLogoDark}
             alt=""
           />

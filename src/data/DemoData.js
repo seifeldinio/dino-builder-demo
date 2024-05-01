@@ -4,7 +4,7 @@ export const currentUserData = {
   id: 1,
   first_name: "Seif",
   last_name: "Radwane",
-  email: "seif@gmail.com",
+  email: "hello@seifradwane.com",
   avatar_url:
     "https://media.publit.io/file/StockPics/ezgif.com-png-to-webp-converter.webp",
   // avatar_url: "https://media.publit.io/file/StockPics/DefaultProfilePic-h.webp",

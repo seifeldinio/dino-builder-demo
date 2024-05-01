@@ -71,7 +71,7 @@ const StartTourModal = () => {
                 <div className="absolute z-50 bottom-0 m-6">
                   <div className="flex flex-col z-50">
                     <span className="font-bold text-[20px] mb-1.5 text-black">
-                      New to Palm Builder? 👋
+                      New to Dino Builder? 👋
                     </span>
                     <span className="text-[#9e9e9e]  mb-4">
                       Click on "Start Tour" for a quick walkthrough! 😄
